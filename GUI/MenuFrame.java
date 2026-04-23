@@ -23,7 +23,7 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         setLocationRelativeTo(null); // Centrar la ventana en la pantalla
 
 //********************************************************************************************************************************
-        // Cambiar el color predeterminado del texto para todos los componentes
+        // Cambiar el color predeterminado del texto para todo
         UIManager.put("Label.foreground", Color.LIGHT_GRAY);
         UIManager.put("Button.foreground", Color.LIGHT_GRAY);
         
@@ -33,7 +33,9 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         // Panel para las opciones del menú en la parte izquierda
         JPanel panel = new JPanel(new GridLayout(5,1));
         panel.setBackground(Color.DARK_GRAY);
-        mainPanel.setBackground(Color.GREEN);
+
+        // PAnel principal abierto
+        mainPanel.setBackground(Color.GREEN);// Panel principal verde (Se puede poner un logo para theriana o mensaje de bienvenida)
         mainPanel.setLayout(new GridLayout(1,1));
         
 //********************************************************************************************************************************

@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Opcion1 extends JPanel {
     private JLabel label;
-//Aquí las busquedas y la tabla solo muestran vehiculos activos
+
     public Opcion1() {
         
         JPanel PanelT = new JPanel(new BorderLayout());
@@ -15,9 +15,5 @@ public class Opcion1 extends JPanel {
         JLabel label = new JLabel("Este es un panel personalizado Panel 1");
         PanelT.add(label);
         
-    }
-
-    public void setText(String text) {
-        label.setText(text);
     }
 }
