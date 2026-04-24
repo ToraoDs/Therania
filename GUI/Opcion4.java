@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Opcion4 extends JPanel {
-    private JLabel label;
+    //private JLabel label;
 
     public Opcion4() {
         
