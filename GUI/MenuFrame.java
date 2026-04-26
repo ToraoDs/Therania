@@ -20,7 +20,7 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
     
 
     public MenuFrame() {
-        setTitle("Theriana");
+        setTitle("Therania");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setSize(1000, 650);
@@ -41,7 +41,7 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
 
 
         // Panel principal con imagen de fondo
-        JLabel Bienvenida = new JLabel("Bienvenid@ a Therania", SwingConstants.CENTER);
+        JLabel Bienvenida = new JLabel("Sistema  de distribucion de habitantes del reino constitucional de Therania", SwingConstants.CENTER);
         Bienvenida.setFont(new Font("Arial", Font.BOLD, 32));
         imagen = new ImageIcon("Imagenes/Principal.png").getImage();
         mainPanel = new JPanel() {
@@ -93,7 +93,7 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
             public void componentResized(ComponentEvent e) 
             {
                 // Ajustar el contenido del panel según su nuevo tamaño
-                Dimension size = mainPanel.getSize();
+                //Dimension size = mainPanel.getSize();
             }
         });
 
