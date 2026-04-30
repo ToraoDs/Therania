@@ -1,3 +1,4 @@
+package Especies;
 public class AfiliacionManada {
 
     private String FechaIngreso;
@@ -8,9 +9,8 @@ public class AfiliacionManada {
         this.FechaIngreso = FechaIngreso;
         this.Rol = Rol;
         this.Compromiso = Compromiso;
-
-
     }
+
     public void setFechaIngreso(String FechaIngreso){
         this.FechaIngreso = FechaIngreso;
     }
@@ -18,26 +18,20 @@ public class AfiliacionManada {
     public void setRol(String Rol){
         this.Rol = Rol;
     }
+
     public void setComprimiso(int Compromiso){
         this.Compromiso = Compromiso;
     }
 
-
-
-
     public String getFechaIngreso(){
-
         return FechaIngreso;
     }
 
     public String getRol(){
-
         return Rol;
-
     } 
 
     public int getCompromiso(){
-
         return Compromiso;
     }
 }
