@@ -10,11 +10,24 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     private String EstadoCiudadania;
     private List<String> HistorialEspecie;
     private List<AfiliacionManada> Manadas;
+    private List<Ritual> Rituales;
+    private double ratioCaza;    
+    private double ratioEscape; 
+    private String Rol;    
+    private double IAA;     
 
 
-    public CiudadanoTherian(String Nombre, String Apellido, String Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual){
+    public CiudadanoTherian(String Nombre, String Apellido, String Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador){
         
-        super(EspecieActual);
+        super(EspecieActual, esPredador);
+        if (esPredador){
+            this.ratioCaza= 25.0;
+            this.ratioEscape= 0.0;
+        } else {
+            this.ratioCaza = 0.0;
+            this.ratioEscape = 25.0;
+        }
+        this.Rol = "Observador";
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.Id = Id;
@@ -22,6 +35,8 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         this.EstadoCiudadania = EstadoCiudadania;
         this.HistorialEspecie = new ArrayList<>();
         this.Manadas = new ArrayList<>();
+        this.Rituales = new ArrayList<>();
+        this.IAA = 0;
     }
 
     public void AgregarManada(AfiliacionManada Manada){
@@ -32,9 +47,16 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         HistorialEspecie.add(EspecieActual);
     }
 
+    public void agregarRitual(Ritual ritual) {
+        Rituales.add(ritual);
+    }
+
     public List<AfiliacionManada> getManadas(){
         return Manadas;
     }
+
+
+    // getters
 
     public String geTNombre(){
         return Nombre;
@@ -55,9 +77,58 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     public String getEstadoCiudadania(){
         return EstadoCiudadania;
     }
+    public List<Ritual> getRituales() {
+        return Rituales;
+    }
+
+    public double getRatioCaza(){
+        return ratioCaza;
+    }
+
+    public double getRatioEscape(){
+        return ratioEscape;
+    }
+
+    public String getRol(){
+        return Rol;
+    }
+
+    public double getIAA(){
+        return IAA;
+    }
+    
+
+    // setters
 
     public void setEstadoCiudadania(String EstadoCiudadania){
         this.EstadoCiudadania = EstadoCiudadania;
     }
 
+    public void setRol(String Rol){
+        this.Rol = Rol;
+    }
+
+    public void setRatioCaza(Double ratioCaza ){
+        this.ratioCaza = ratioCaza;
+    }
+
+    public void setRatioEscape(Double ratioEscape){
+        this.ratioEscape = ratioEscape;
+    }
+
+    public void setIAA(double IAA){
+        this.IAA = IAA;
+    }
+
+
+    
+    // Contador de rituales
+
+    public int contarRitualesAsistidos(){
+        int contador = 0;
+        for (Ritual r : Rituales) {
+        if (r.isAsistio()) contador++;
+        }
+    return contador;
+    }
 }
