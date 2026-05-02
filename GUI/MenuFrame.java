@@ -11,6 +11,7 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
     private JButton option3Button;
     private JButton option4Button;
     private JButton option5Button;
+    private JButton option6Button;  
     
     JPanel mainPanel;
 
@@ -35,7 +36,7 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         UIManager.put("Button.background", Color.DARK_GRAY);
 //********************************************************************************************************************************
         // Panel para las opciones del menú en la parte izquierda
-        JPanel panel = new JPanel(new GridLayout(5,1));
+        JPanel panel = new JPanel(new GridLayout(6,1));
         panel.setBackground(Color.DARK_GRAY);
 
 
@@ -80,10 +81,15 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         panel.add(option4Button);
 
         // Opción 5
-        option5Button = new JButton("Salir");
-        option5Button.setBackground(Color.RED); // Color de fondo
+        option5Button = new JButton("Global");
         option5Button.addActionListener(this);
         panel.add(option5Button);
+
+        // Opción 6
+        option6Button = new JButton("Salir");
+        option6Button.setBackground(Color.RED); // Color de fondo
+        option6Button.addActionListener(this);
+        panel.add(option6Button);
        
 //********************************************************************************************************************************
         // Agregar un ComponentListener para detectar cambios en el tamaño del panel
@@ -124,6 +130,9 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
             Opcion4 O4 = new Opcion4();
             MPAdd(O4);
         } else if (e.getSource() == option5Button) {
+            Opcion5 O5 = new Opcion5();
+            MPAdd(O5);
+        } else if (e.getSource() == option6Button) {
             JOptionPane.showMessageDialog(this, "Cerrando programa");
             System.exit(0);
         }
