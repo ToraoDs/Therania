@@ -123,7 +123,7 @@ public class Opcion5 extends JPanel implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        throw new UnsupportedOperationException("No se ha implementado la lógica de búsqueda aún."); 
     }
 
 }
