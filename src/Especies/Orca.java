@@ -16,9 +16,9 @@ public class Orca extends CiudadanoTherian {
         return "Las orcas son inteligentes, emotivas y altamente organizadas. Su instinto las lleva a comunicarse con precisión y a construir lazos de por vida.";
     }
 
-    public static final Manada MANADA_PROFUNDA = new Manada("Manada Profunda",  "Orcas reservadas y observadoras", 20, 0,  40);
-    public static final Manada MANADA_CORRIENTE= new Manada("Manada Corriente", "Orcas comunicativas y familiares", 20, 41, 70);
-    public static final Manada MANADA_ABISMO   = new Manada("Manada Abismo",   "Orcas dominantes e inteligentes", 20, 71, 100);
+    public static final Manada MANADA_PROFUNDA = new Manada("Manada Profunda", "Orcas reservadas y observadoras", 20, 0, 40, "Las profundidades guardan nuestros secretos","Fosa del Océano Oscuro");
+    public static final Manada MANADA_CORRIENTE = new Manada("Manada Corriente", "Orcas comunicativas y familiares", 20, 41, 70,"Nuestra voz viaja donde el ojo no llega","Corrientes del Mar Interior");
+    public static final Manada MANADA_ABISMO = new Manada("Manada Abismo", "Orcas dominantes e inteligentes", 20, 71, 100, "Dominamos el abismo porque lo conocemos","Abismo de las Aguas Eternas");
 
     public static Manada asignarManada(double iaa) {
         if (iaa <= 40) return MANADA_PROFUNDA;

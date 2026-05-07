@@ -16,9 +16,9 @@ public class Halcon extends CiudadanoTherian{
         return "Los halcones son precisos, independientes y de visión aguda. Su instinto los impulsa a observar desde las alturas y actuar con determinación en el momento exacto.";
     }
 
-    public static final Manada MANADA_BRISA    = new Manada("Manada Brisa",    "Halcones observadores y pacientes", 20, 0,  40);
-    public static final Manada MANADA_TORMENTA = new Manada("Manada Tormenta", "Halcones precisos e independientes", 20, 41, 70);
-    public static final Manada MANADA_ZENITH   = new Manada("Manada Zenith",   "Halcones estrategas y dominantes", 20, 71, 100);
+    public static final Manada MANADA_BRISA = new Manada("Manada Brisa", "Halcones observadores y pacientes", 20, 0, 40,"Observar es saber, saber es poder","Acantilados del Viento Sur");
+    public static final Manada MANADA_TORMENTA = new Manada("Manada Tormenta", "Halcones precisos e independientes", 20, 41, 70,"En la tormenta demostramos quiénes somos","Crestas de la Tormenta");
+    public static final Manada MANADA_ZENITH = new Manada("Manada Zenith", "Halcones estrategas y dominantes", 20, 71, 100,"Desde el punto más alto todo es claro","Pico del Zenith Eterno");
 
     public static Manada asignarManada(double iaa) {
         if (iaa <= 40) return MANADA_BRISA;

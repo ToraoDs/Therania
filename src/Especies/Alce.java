@@ -16,9 +16,9 @@ public class Alce extends CiudadanoTherian {
         return "Los alces son solitarios y majestuosos, con un fuerte sentido territorial. Su instinto los lleva a la calma pero reaccionan con gran fuerza ante la amenaza.";
     }
 
-    public static final Manada MANADA_PRADERA  = new Manada("Manada Pradera",  "Alces tranquilos y contemplativos", 20, 0,  40);
-    public static final Manada MANADA_BOSQUE   = new Manada("Manada Bosque",   "Alces guardianes del territorio", 20, 41, 70);
-    public static final Manada MANADA_CUMBRE   = new Manada("Manada Cumbre",   "Alces líderes y majestuosos", 20, 71, 100);
+    public static final Manada MANADA_PRADERA  = new Manada("Manada Pradera",  "Alces tranquilos y contemplativos", 20, 0,  40, "La calma es nuestra mayor fortaleza", "Llanuras del Amanecer");
+    public static final Manada MANADA_BOSQUE   = new Manada("Manada Bosque",   "Alces guardianes del territorio", 20, 41, 70, "Protegemos lo que la naturaleza nos dio", "Bosque Antiguo del Este");
+    public static final Manada MANADA_CUMBRE   = new Manada("Manada Cumbre",   "Alces líderes y majestuosos", 20, 71, 100, "Desde las alturas guiamos al resto", "Cima de la Gran Cordillera");
 
     public static Manada asignarManada(double iaa) {
         if (iaa <= 40) {return MANADA_PRADERA;}

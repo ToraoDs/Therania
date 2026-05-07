@@ -1,6 +1,8 @@
 package Manadas;
 
 import Especies.CiudadanoTherian;
+import Especies.Ritual;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,15 +14,22 @@ public class Manada {
     private double IAAMinimo;  // rango inferior
     private double IAAMaximo;  // rango superior
     private List<CiudadanoTherian> Miembros;
+    private String Lema;
+    private String Territorio;
+    private List<Ritual> Rituales;
 
     public Manada(String NombreManada, String Descripcion, int CupoMaximo,
-                  double IAAMinimo, double IAAMaximo) {
+                  double IAAMinimo, double IAAMaximo, String Lema, String Territorio) {
         this.NombreManada = NombreManada;
         this.Descripcion = Descripcion;
         this.CupoMaximo = CupoMaximo;
         this.IAAMinimo = IAAMinimo;
         this.IAAMaximo = IAAMaximo;
         this.Miembros = new ArrayList<>();
+        this.Lema = Lema;
+        this.Rituales = new ArrayList<>();
+        this.Territorio = Territorio;
+
     }
 
     // Intenta agregar un ciudadano según su IAA y cupo disponible
@@ -57,4 +66,10 @@ public class Manada {
     public double getIAAMinimo() { return IAAMinimo; }
     public double getIAAMaximo() { return IAAMaximo; }
     public List<CiudadanoTherian> getMiembros() { return Miembros; }
+    public List<Ritual> getRituales(){return Rituales;}
+    public String getLema(){return Lema;}
+    public String getTerrirotio(){return Territorio;}
+
+    
+
 }
