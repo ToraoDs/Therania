@@ -14,7 +14,8 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     private double ratioCaza;    
     private double ratioEscape; 
     private String Rol;    
-    private double IAA;     
+    private double IAA;  
+    private int PuntuacionManada;   
 
 
     public CiudadanoTherian(String Nombre, String Apellido, String Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador){
@@ -37,6 +38,7 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         this.Manadas = new ArrayList<>();
         this.Rituales = new ArrayList<>();
         this.IAA = 0;
+        this.PuntuacionManada = 0;
     }
 
     public boolean AgregarManada(AfiliacionManada nuevaManada) {
@@ -102,6 +104,10 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     public double getIAA(){
         return IAA;
     }
+
+    public int getPuntuacionManada(){
+        return PuntuacionManada;
+    }
     
 
     // setters
@@ -124,6 +130,10 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
 
     public void setIAA(double IAA){
         this.IAA = IAA;
+    }
+
+    public void setPuntuacionManada(int PuntuacionManada){
+        this.PuntuacionManada = PuntuacionManada;
     }
 
 
