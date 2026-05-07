@@ -3,9 +3,13 @@ package Manadas;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import Especies.AfiliacionManada;
 import Especies.CiudadanoTherian;
+import Especies.TherianException;
 
 public class CalculadoraIAA {
 
@@ -19,21 +23,19 @@ public class CalculadoraIAA {
     private static final int MAX_COMPROMISO = 100;
     private static final int MAX_PUNTUACION = 100;
 
+    // ─── Calculo del IAA ────────────────────────────────────────────────
+
     public static double calcularIAA(CiudadanoTherian ciudadano) {
 
-        // Factor 1 - Rituales asistidos
         int ritualesAsistidos = ciudadano.contarRitualesAsistidos();
         double puntajeRituales = Math.min(ritualesAsistidos, MAX_RITUALES) / (double) MAX_RITUALES;
 
-        // Factor 2 - Tiempo en especie
         long mesesEnEspecie = calcularMesesEnEspecie(ciudadano.getManadas());
         double puntajeTiempo = Math.min(mesesEnEspecie, MAX_MESES) / (double) MAX_MESES;
 
-        // Factor 3 - Compromiso promedio
         double promedioCompromiso = calcularPromedioCompromiso(ciudadano.getManadas());
         double puntajeCompromiso = Math.min(promedioCompromiso, MAX_COMPROMISO) / MAX_COMPROMISO;
 
-        // Factor 4 - Puntuacion dada por otros miembros (guardada en el ciudadano)
         int puntuacionInterna = ciudadano.getPuntuacionManada();
         double puntajePuntuacion = Math.min(puntuacionInterna, MAX_PUNTUACION) / (double) MAX_PUNTUACION;
 
@@ -44,6 +46,8 @@ public class CalculadoraIAA {
 
         return Math.round(IAA * 100.0) / 100.0;
     }
+
+    // ─── Helpers del calculo ────────────────────────────────────────────
 
     private static long calcularMesesEnEspecie(List<AfiliacionManada> manadas) {
         if (manadas == null || manadas.isEmpty()) return 0;
@@ -68,5 +72,58 @@ public class CalculadoraIAA {
             total += m.getCompromiso();
         }
         return total / (double) manadas.size();
+    }
+
+    // ─── Elite y rankings ───────────────────────────────────────────────
+
+    // Todos los miembros de manadas con IAA minimo >= 71
+    public static List<CiudadanoTherian> obtenerCiudadanosElite(List<Manada> todasLasManadas) {
+        List<CiudadanoTherian> elite = new ArrayList<>();
+        for (Manada m : todasLasManadas) {
+            if (m.getIAAMinimo() >= 71) {
+                elite.addAll(m.getMiembros());
+            }
+        }
+        return elite;
+    }
+
+    // Alfa Honorario: ciudadano con mayor IAA del grupo elite
+    public static CiudadanoTherian obtenerAlfaHonorario(List<Manada> todasLasManadas) {
+        List<CiudadanoTherian> elite = obtenerCiudadanosElite(todasLasManadas);
+        if (elite.isEmpty()) {
+            throw new TherianException(TherianException.TipoError.CIUDADANO_NO_ENCONTRADO,
+                                       "No hay ciudadanos en el grupo elite");
+        }
+        CiudadanoTherian alfa = elite.get(0);
+        for (CiudadanoTherian c : elite) {
+            if (c.getIAA() > alfa.getIAA()) alfa = c;
+        }
+        return alfa;
+    }
+
+    // Top 20 global del grupo elite ordenado de mayor a menor IAA
+    public static List<CiudadanoTherian> obtenerTop20(List<Manada> todasLasManadas) {
+        List<CiudadanoTherian> elite = obtenerCiudadanosElite(todasLasManadas);
+        if (elite.isEmpty()) {
+            throw new TherianException(TherianException.TipoError.CIUDADANO_NO_ENCONTRADO,
+                                       "No hay ciudadanos en el grupo elite");
+        }
+        Collections.sort(elite, new Comparator<CiudadanoTherian>() {
+            public int compare(CiudadanoTherian a, CiudadanoTherian b) {
+                return Double.compare(b.getIAA(), a.getIAA());
+            }
+        });
+        return elite.subList(0, Math.min(20, elite.size()));
+    }
+
+    // Ranking interno de una manada especifica
+    public static List<CiudadanoTherian> rankingManada(Manada manada) {
+        List<CiudadanoTherian> miembros = new ArrayList<>(manada.getMiembros());
+        Collections.sort(miembros, new Comparator<CiudadanoTherian>() {
+            public int compare(CiudadanoTherian a, CiudadanoTherian b) {
+                return Double.compare(b.getIAA(), a.getIAA());
+            }
+        });
+        return miembros;
     }
 }

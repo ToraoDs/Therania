@@ -16,6 +16,8 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     private String Rol;    
     private double IAA;  
     private int PuntuacionManada;   
+    private String InicioCargoAlfa;
+    private int DuracionCargoMeses;
 
 
     public CiudadanoTherian(String Nombre, String Apellido, String Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador){
@@ -39,6 +41,9 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         this.Rituales = new ArrayList<>();
         this.IAA = 0;
         this.PuntuacionManada = 0;
+        this.InicioCargoAlfa = null;
+        this.DuracionCargoMeses = 0;
+
     }
 
     public boolean AgregarManada(AfiliacionManada nuevaManada) {
@@ -108,7 +113,13 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     public int getPuntuacionManada(){
         return PuntuacionManada;
     }
-    
+    public String getInicioCargoAlfa() { 
+        return InicioCargoAlfa; 
+    }
+
+    public int getDuracionCargoMeses() { 
+        return DuracionCargoMeses; 
+    }
 
     // setters
 
@@ -135,7 +146,14 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     public void setPuntuacionManada(int PuntuacionManada){
         this.PuntuacionManada = PuntuacionManada;
     }
-
+    
+    public void setInicioCargoAlfa(String fecha) { 
+        this.InicioCargoAlfa = fecha; 
+    }
+    
+    public void setDuracionCargoMeses(int meses) { 
+        this.DuracionCargoMeses = meses; 
+    }
 
     
     // Contador de rituales
