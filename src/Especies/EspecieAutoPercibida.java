@@ -4,10 +4,6 @@ public abstract class EspecieAutoPercibida {
     private String EspecieActual;
     private boolean esPredador;
 
-    public EspecieAutoPercibida(String EspecieActual){
-        this.EspecieActual = EspecieActual;
-    }
-
     public abstract String instinto();
 
     public String getEspecieActual(){
