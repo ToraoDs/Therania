@@ -68,8 +68,10 @@ public class Manada {
     public List<CiudadanoTherian> getMiembros() { return Miembros; }
     public List<Ritual> getRituales(){return Rituales;}
     public String getLema(){return Lema;}
-    public String getTerrirotio(){return Territorio;}
+    public String getTerritorio(){return Territorio;}
 
-    
+    public void agregarRitual(Ritual ritual){
+        Rituales.add(ritual);
+    }
 
 }
