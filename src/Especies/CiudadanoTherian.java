@@ -39,8 +39,14 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         this.IAA = 0;
     }
 
-    public void AgregarManada(AfiliacionManada Manada){
-        Manadas.add(Manada);
+    public boolean AgregarManada(AfiliacionManada nuevaManada) {
+        for (AfiliacionManada m : Manadas) {
+            if (m.estaActivo()) {
+                throw new TherianException(TherianException.TipoError.MANADA_ACTIVA, getNombre());
+            }
+        }
+        Manadas.add(nuevaManada);
+        return true;
     }
 
     public void AgregarEspecie(String EspecieActual){
@@ -58,7 +64,7 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
 
     // getters
 
-    public String geTNombre(){
+    public String getNombre(){
         return Nombre;
     }
 
@@ -131,4 +137,6 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         }
     return contador;
     }
+
+    
 }

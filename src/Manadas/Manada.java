@@ -2,6 +2,7 @@ package Manadas;
 
 import Especies.CiudadanoTherian;
 import Especies.Ritual;
+import Especies.TherianException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,12 +36,11 @@ public class Manada {
     // Intenta agregar un ciudadano según su IAA y cupo disponible
     public boolean agregarMiembro(CiudadanoTherian ciudadano, double iaa) {
         if (!aceptaIAA(iaa)) {
-            System.out.println("IAA " + iaa + " fuera del rango de " + NombreManada);
-            return false;
+            throw new TherianException(TherianException.TipoError.IAA_FUERA_DE_RANGO, "IAA: " + iaa);
         }
         if (estaLlena()) {
-            System.out.println("La manada " + NombreManada + " está llena.");
-            return false;
+            throw new TherianException(TherianException.TipoError.CUPO_LLENO, getNombreManada());
+
         }
         Miembros.add(ciudadano);
         return true;
