@@ -10,7 +10,6 @@ public class SimulacionTherania {
 
     private static final Random random = new Random();
 
-    // Datos de prueba
     private static final String[] NOMBRES = {
         "Aiden", "Luna", "Kira", "Dante", "Sora", "Nyx", "Raven", "Zion",
         "Lyra", "Orion", "Ember", "Storm", "Ash", "Nova", "Sage", "Blaze",
@@ -51,7 +50,6 @@ public class SimulacionTherania {
     // ─── Generacion de ciudadanos ────────────────────────────────────────
 
     private void generarCiudadanos() {
-        // 25 ciudadanos por especie = 100 total (4 especies)
         for (int i = 0; i < 25; i++) generarCiudadano("Lobo",   true);
         for (int i = 0; i < 25; i++) generarCiudadano("Leon",   true);
         for (int i = 0; i < 25; i++) generarCiudadano("Ciervo", false);
@@ -80,7 +78,6 @@ public class SimulacionTherania {
     // ─── Registro de manadas ─────────────────────────────────────────────
 
     private void registrarManadas() {
-        // 3 manadas por especie = 12 total, usamos 10 activas
         manadas.add(Lobo.MANADA_SOMBRA);
         manadas.add(Lobo.MANADA_LUNA);
         manadas.add(Lobo.MANADA_AURORA);
@@ -99,15 +96,16 @@ public class SimulacionTherania {
         for (CiudadanoTherian c : ciudadanos) {
             String fechaIngreso = generarFechaAleatoria(2020, 2024);
             int compromiso      = random.nextInt(101);
-            AfiliacionManada afiliacion = new AfiliacionManada(fechaIngreso, "Miembro", compromiso, null);
-
+            AfiliacionManada afiliacion = new AfiliacionManada(
+                fechaIngreso, "Miembro", compromiso, null
+            );
             Manada manada = obtenerManadaParaCiudadano(c);
             if (manada != null && !manada.estaLlena()) {
                 try {
                     c.AgregarManada(afiliacion);
                     manada.agregarMiembro(c, c.getIAA());
                 } catch (TherianException e) {
-                    // ciudadano ya tiene manada activa, se omite
+                    // ciudadano ya tiene manada activa
                 }
             }
         }
@@ -115,14 +113,31 @@ public class SimulacionTherania {
 
     private Manada obtenerManadaParaCiudadano(CiudadanoTherian c) {
         String especie = c.getEspecieActual();
-        int indice     = random.nextInt(3);
-        switch (especie) {
-            case "Lobo":   return indice == 0 ? Lobo.MANADA_SOMBRA   : indice == 1 ? Lobo.MANADA_LUNA     : Lobo.MANADA_AURORA;
-            case "Leon":   return indice == 0 ? Leon.MANADA_DESIERTO  : indice == 1 ? Leon.MANADA_SAVANA   : Leon.MANADA_REAL;
-            case "Ciervo": return indice == 0 ? Ciervo.MANADA_ROCIO   : indice == 1 ? Ciervo.MANADA_ARBOLEDA : Ciervo.MANADA_ROCIO;
-            case "Alce":   return indice == 0 ? Alce.MANADA_PRADERA   : Alce.MANADA_CUMBRE;
-            default:       return null;
+        double iaa     = c.getIAA();
+
+        if (iaa <= 40) {
+            switch (especie) {
+                case "Lobo":   return Lobo.MANADA_SOMBRA;
+                case "Leon":   return Leon.MANADA_DESIERTO;
+                case "Ciervo": return Ciervo.MANADA_ROCIO;
+                case "Alce":   return Alce.MANADA_PRADERA;
+            }
+        } else if (iaa <= 70) {
+            switch (especie) {
+                case "Lobo":   return Lobo.MANADA_LUNA;
+                case "Leon":   return Leon.MANADA_SAVANA;
+                case "Ciervo": return Ciervo.MANADA_ARBOLEDA;
+                case "Alce":   return Alce.MANADA_PRADERA;
+            }
+        } else {
+            switch (especie) {
+                case "Lobo":   return Lobo.MANADA_AURORA;
+                case "Leon":   return Leon.MANADA_REAL;
+                case "Ciervo": return Ciervo.MANADA_ARBOLEDA;
+                case "Alce":   return Alce.MANADA_CUMBRE;
+            }
         }
+        return null;
     }
 
     // ─── Generacion de rituales ──────────────────────────────────────────
@@ -135,28 +150,92 @@ public class SimulacionTherania {
             Ritual.TipoRitual tipo = tipos[random.nextInt(tipos.length)];
             double intensidad      = 1.0 + (random.nextDouble() * 9.0);
             String especie         = obtenerEspecieAleatoria();
-            int duracion           = 30 + random.nextInt(151); // 30 a 180 minutos
+            int duracion           = 30 + random.nextInt(151);
 
             Ritual ritual = new Ritual(
                 "Ritual-" + (i + 1), tipo, fecha, duracion, especie, intensidad
             );
 
-            // Asignar entre 3 y 10 participantes aleatorios
             int numParticipantes = 3 + random.nextInt(8);
             List<CiudadanoTherian> candidatos = filtrarPorEspecie(especie);
             for (int j = 0; j < Math.min(numParticipantes, candidatos.size()); j++) {
                 CiudadanoTherian participante = candidatos.get(random.nextInt(candidatos.size()));
                 ritual.agregarParticipante(participante);
-                participante.getRituales().get(participante.getRituales().size() - 1).setAsistio(true);
+                if (!participante.getRituales().isEmpty()) {
+                    participante.getRituales()
+                        .get(participante.getRituales().size() - 1)
+                        .setAsistio(true);
+                }
             }
 
-            // Agregar el ritual a la manada correspondiente
             Manada manada = obtenerManadaPorEspecie(especie);
             if (manada != null) manada.agregarRitual(ritual);
 
             rituales.add(ritual);
         }
+
+        // Actualizar IAA y manada de todos después de los rituales
+        for (CiudadanoTherian c : ciudadanos) {
+            actualizarCiudadano(c);
+        }
     }
+
+    // ─── Actualizar IAA, rol y manada de un ciudadano ────────────────────
+
+    private void actualizarCiudadano(CiudadanoTherian ciudadano) {
+        // 1 - Recalcula IAA
+        double nuevoIAA = CalculadoraIAA.calcularIAA(ciudadano);
+        ciudadano.setIAA(nuevoIAA);
+
+        // 2 - Reasigna rol
+        Encuentro.asignarRol(ciudadano);
+
+        // 3 - Verifica si debe cambiar de manada
+        Manada manadaCorrecta = obtenerManadaParaCiudadano(ciudadano);
+        if (manadaCorrecta == null) return;
+
+        boolean yaEstaEnManadaCorrecta = manadaCorrecta.getMiembros().contains(ciudadano);
+        if (!yaEstaEnManadaCorrecta && !manadaCorrecta.estaLlena()) {
+            // Sale de manada actual
+            for (Manada m : manadas) {
+                if (m.getMiembros().contains(ciudadano)) {
+                    m.getMiembros().remove(ciudadano);
+                    for (AfiliacionManada a : ciudadano.getManadas()) {
+                        if (a.estaActivo()) {
+                            a.setFechaSalida(java.time.LocalDate.now().toString());
+                        }
+                    }
+                    break;
+                }
+            }
+            // Entra a nueva manada
+            try {
+                AfiliacionManada nuevaAfiliacion = new AfiliacionManada(
+                    java.time.LocalDate.now().toString(),
+                    ciudadano.getRol(),
+                    ciudadano.getPuntuacionManada(),
+                    null
+                );
+                ciudadano.AgregarManada(nuevaAfiliacion);
+                manadaCorrecta.agregarMiembro(ciudadano, nuevoIAA);
+                System.out.println(ciudadano.getNombre() + " cambio a " + manadaCorrecta.getNombreManada());
+            } catch (TherianException e) {
+                // No se mueve si hay error
+            }
+        }
+    }
+
+    // ─── Calculo de IAA para todos ───────────────────────────────────────
+
+    private void calcularIAADetodos() {
+        for (CiudadanoTherian c : ciudadanos) {
+            double iaa = CalculadoraIAA.calcularIAA(c);
+            c.setIAA(iaa);
+            Encuentro.asignarRol(c);
+        }
+    }
+
+    // ─── Helpers ─────────────────────────────────────────────────────────
 
     private List<CiudadanoTherian> filtrarPorEspecie(String especie) {
         List<CiudadanoTherian> resultado = new ArrayList<>();
@@ -180,17 +259,6 @@ public class SimulacionTherania {
         String[] especies = {"Lobo", "Leon", "Ciervo", "Alce"};
         return especies[random.nextInt(especies.length)];
     }
-
-    // ─── Calculo de IAA para todos ───────────────────────────────────────
-
-    private void calcularIAADetodos() {
-        for (CiudadanoTherian c : ciudadanos) {
-            double iaa = CalculadoraIAA.calcularIAA(c);
-            c.setIAA(iaa);
-        }
-    }
-
-    // ─── Fecha aleatoria ─────────────────────────────────────────────────
 
     private String generarFechaAleatoria(int anioInicio, int anioFin) {
         int anio = anioInicio + random.nextInt(anioFin - anioInicio + 1);

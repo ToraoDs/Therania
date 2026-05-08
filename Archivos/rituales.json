@@ -1,0 +1,5540 @@
+[
+  {
+    "nombre": "Ritual-Mayo-1",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-05-07",
+    "duracionMinutos": 45,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.8482783638905658,
+    "asistio": true,
+    "participantes": [
+      "CI52",
+      "CI53",
+      "CI65",
+      "CI57",
+      "CI73",
+      "CI75",
+      "CI71",
+      "CI67"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-2",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-05-04",
+    "duracionMinutos": 176,
+    "especieAsociada": "Ciervo",
+    "intensidad": 6.837940278754399,
+    "asistio": true,
+    "participantes": [
+      "CI70",
+      "CI75",
+      "CI68",
+      "CI63",
+      "CI60",
+      "CI61",
+      "CI57"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-3",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-05-20",
+    "duracionMinutos": 45,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.666051718850339,
+    "asistio": true,
+    "participantes": [
+      "CI59",
+      "CI66",
+      "CI64"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-4",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-05-01",
+    "duracionMinutos": 147,
+    "especieAsociada": "Leon",
+    "intensidad": 1.135505469969225,
+    "asistio": true,
+    "participantes": [
+      "LE33",
+      "LE42",
+      "LE31",
+      "LE48",
+      "LE36",
+      "LE37",
+      "LE28",
+      "LE41",
+      "LE35"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-5",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-05-07",
+    "duracionMinutos": 79,
+    "especieAsociada": "Leon",
+    "intensidad": 9.129119783256172,
+    "asistio": true,
+    "participantes": [
+      "LE28",
+      "LE46",
+      "LE50",
+      "LE40",
+      "LE39",
+      "LE29",
+      "LE35",
+      "LE32",
+      "LE26"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-6",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-05-14",
+    "duracionMinutos": 58,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.317908667676278,
+    "asistio": true,
+    "participantes": [
+      "CI60",
+      "CI59",
+      "CI73",
+      "CI55",
+      "CI54",
+      "CI66",
+      "CI57",
+      "CI70",
+      "CI72",
+      "CI51"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-7",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-05-13",
+    "duracionMinutos": 110,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.5887574221262417,
+    "asistio": true,
+    "participantes": [
+      "CI65",
+      "CI57",
+      "CI74",
+      "CI70",
+      "CI69",
+      "CI58"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-8",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-05-08",
+    "duracionMinutos": 169,
+    "especieAsociada": "Leon",
+    "intensidad": 2.0591533304591727,
+    "asistio": true,
+    "participantes": [
+      "LE46",
+      "LE42",
+      "LE41",
+      "LE43",
+      "LE48",
+      "LE30",
+      "LE36",
+      "LE39"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-9",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-05-18",
+    "duracionMinutos": 114,
+    "especieAsociada": "Alce",
+    "intensidad": 2.2248184811243163,
+    "asistio": true,
+    "participantes": [
+      "AL100",
+      "AL96",
+      "AL92",
+      "AL78",
+      "AL79",
+      "AL88",
+      "AL76",
+      "AL83"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-10",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-05-15",
+    "duracionMinutos": 180,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.2734246946887464,
+    "asistio": true,
+    "participantes": [
+      "CI56",
+      "CI59",
+      "CI62",
+      "CI70",
+      "CI63",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-11",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-05-02",
+    "duracionMinutos": 174,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.5548183142056355,
+    "asistio": true,
+    "participantes": [
+      "CI55",
+      "CI52",
+      "CI70",
+      "CI58",
+      "CI54",
+      "CI74"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-12",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-05-23",
+    "duracionMinutos": 40,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.49514434893169,
+    "asistio": true,
+    "participantes": [
+      "CI51",
+      "CI58",
+      "CI66",
+      "CI56",
+      "CI61",
+      "CI55",
+      "CI71",
+      "CI63"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-13",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-05-11",
+    "duracionMinutos": 52,
+    "especieAsociada": "Lobo",
+    "intensidad": 8.872701131224428,
+    "asistio": true,
+    "participantes": [
+      "LO5",
+      "LO6",
+      "LO15",
+      "LO10",
+      "LO22"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-14",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-05-03",
+    "duracionMinutos": 147,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.787795307467049,
+    "asistio": true,
+    "participantes": [
+      "CI66",
+      "CI70",
+      "CI71",
+      "CI64",
+      "CI51",
+      "CI55"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-15",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-05-02",
+    "duracionMinutos": 102,
+    "especieAsociada": "Leon",
+    "intensidad": 9.489785138466118,
+    "asistio": true,
+    "participantes": [
+      "LE40",
+      "LE27",
+      "LE46",
+      "LE48",
+      "LE35"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-16",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-05-03",
+    "duracionMinutos": 154,
+    "especieAsociada": "Leon",
+    "intensidad": 8.633978899544667,
+    "asistio": true,
+    "participantes": [
+      "LE39",
+      "LE50",
+      "LE36",
+      "LE49",
+      "LE42"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-17",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-05-05",
+    "duracionMinutos": 132,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.372412558424701,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI73",
+      "CI74",
+      "CI54",
+      "CI52",
+      "CI58",
+      "CI62",
+      "CI66",
+      "CI51",
+      "CI55"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-18",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-05-25",
+    "duracionMinutos": 144,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.8368861133758565,
+    "asistio": true,
+    "participantes": [
+      "CI71",
+      "CI63",
+      "CI61",
+      "CI64",
+      "CI57",
+      "CI52",
+      "CI54",
+      "CI70"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-19",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-05-23",
+    "duracionMinutos": 179,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.1026812042220682,
+    "asistio": true,
+    "participantes": [
+      "CI68",
+      "CI54",
+      "CI52",
+      "CI67"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-20",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-05-20",
+    "duracionMinutos": 149,
+    "especieAsociada": "Leon",
+    "intensidad": 5.826446441153908,
+    "asistio": true,
+    "participantes": [
+      "LE50",
+      "LE28",
+      "LE44",
+      "LE29"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-21",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-05-21",
+    "duracionMinutos": 83,
+    "especieAsociada": "Lobo",
+    "intensidad": 4.792015680990816,
+    "asistio": true,
+    "participantes": [
+      "LO20",
+      "LO12",
+      "LO19"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-22",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-05-21",
+    "duracionMinutos": 148,
+    "especieAsociada": "Leon",
+    "intensidad": 8.058385628920082,
+    "asistio": true,
+    "participantes": [
+      "LE34",
+      "LE32",
+      "LE42"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-23",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-05-10",
+    "duracionMinutos": 82,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.475464604621367,
+    "asistio": true,
+    "participantes": [
+      "CI53",
+      "CI59",
+      "CI52"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-24",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-05-25",
+    "duracionMinutos": 36,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.952115551339674,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI72",
+      "CI55",
+      "CI73",
+      "CI68"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-25",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-05-23",
+    "duracionMinutos": 103,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.160607590951392,
+    "asistio": true,
+    "participantes": [
+      "CI65",
+      "CI66",
+      "CI55",
+      "CI54",
+      "CI59",
+      "CI73",
+      "CI67"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-26",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-05-02",
+    "duracionMinutos": 126,
+    "especieAsociada": "Alce",
+    "intensidad": 7.086980111461424,
+    "asistio": true,
+    "participantes": [
+      "AL79",
+      "AL81",
+      "AL95",
+      "AL83",
+      "AL80",
+      "AL91",
+      "AL92",
+      "AL89"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-27",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-05-05",
+    "duracionMinutos": 146,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.040048790156638,
+    "asistio": true,
+    "participantes": [
+      "CI73",
+      "CI58",
+      "CI53",
+      "CI68",
+      "CI71",
+      "CI70",
+      "CI69"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-28",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-05-05",
+    "duracionMinutos": 116,
+    "especieAsociada": "Alce",
+    "intensidad": 6.43416574463242,
+    "asistio": true,
+    "participantes": [
+      "AL100",
+      "AL79",
+      "AL95",
+      "AL97",
+      "AL77",
+      "AL86",
+      "AL93",
+      "AL84"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-29",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-05-10",
+    "duracionMinutos": 150,
+    "especieAsociada": "Alce",
+    "intensidad": 7.180033561815152,
+    "asistio": true,
+    "participantes": [
+      "AL77",
+      "AL80",
+      "AL82",
+      "AL98"
+    ]
+  },
+  {
+    "nombre": "Ritual-Mayo-30",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-05-17",
+    "duracionMinutos": 156,
+    "especieAsociada": "Alce",
+    "intensidad": 7.43003332415166,
+    "asistio": true,
+    "participantes": [
+      "AL100",
+      "AL90",
+      "AL92",
+      "AL85"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-1",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-06-18",
+    "duracionMinutos": 39,
+    "especieAsociada": "Alce",
+    "intensidad": 7.496831178092275,
+    "asistio": true,
+    "participantes": [
+      "AL99",
+      "AL91",
+      "AL86"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-2",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-06-05",
+    "duracionMinutos": 33,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.240477092519107,
+    "asistio": true,
+    "participantes": [
+      "LO4",
+      "LO8",
+      "LO6",
+      "LO17",
+      "LO20",
+      "LO9",
+      "LO10"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-3",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-06-23",
+    "duracionMinutos": 59,
+    "especieAsociada": "Alce",
+    "intensidad": 6.473322613631123,
+    "asistio": true,
+    "participantes": [
+      "AL96",
+      "AL93",
+      "AL78",
+      "AL84",
+      "AL79",
+      "AL83",
+      "AL90",
+      "AL99"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-4",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-06-26",
+    "duracionMinutos": 44,
+    "especieAsociada": "Leon",
+    "intensidad": 8.038910906664642,
+    "asistio": true,
+    "participantes": [
+      "LE28",
+      "LE45",
+      "LE41",
+      "LE49"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-5",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-06-04",
+    "duracionMinutos": 166,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.99523579641726,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI56",
+      "CI65",
+      "CI59",
+      "CI57",
+      "CI74",
+      "CI68",
+      "CI75"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-6",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-06-20",
+    "duracionMinutos": 94,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.280455208124895,
+    "asistio": true,
+    "participantes": [
+      "CI61",
+      "CI58",
+      "CI70"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-7",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-06-03",
+    "duracionMinutos": 43,
+    "especieAsociada": "Alce",
+    "intensidad": 4.8463462824449595,
+    "asistio": true,
+    "participantes": [
+      "AL87",
+      "AL79",
+      "AL99",
+      "AL91",
+      "AL98",
+      "AL93",
+      "AL94"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-8",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-06-06",
+    "duracionMinutos": 138,
+    "especieAsociada": "Alce",
+    "intensidad": 3.959510951282507,
+    "asistio": true,
+    "participantes": [
+      "AL83",
+      "AL96",
+      "AL89",
+      "AL78",
+      "AL81",
+      "AL88",
+      "AL82"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-9",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-06-11",
+    "duracionMinutos": 152,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.363033472361316,
+    "asistio": true,
+    "participantes": [
+      "CI74",
+      "CI71",
+      "CI69",
+      "CI68"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-10",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-06-13",
+    "duracionMinutos": 147,
+    "especieAsociada": "Lobo",
+    "intensidad": 4.884262792210656,
+    "asistio": true,
+    "participantes": [
+      "LO8",
+      "LO16",
+      "LO18"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-11",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-06-22",
+    "duracionMinutos": 66,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.8843556240250035,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO15",
+      "LO18",
+      "LO7",
+      "LO14",
+      "LO11"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-12",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-06-23",
+    "duracionMinutos": 60,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.726745853477745,
+    "asistio": true,
+    "participantes": [
+      "CI59",
+      "CI72",
+      "CI61",
+      "CI54",
+      "CI71",
+      "CI56",
+      "CI58",
+      "CI75"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-13",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-06-01",
+    "duracionMinutos": 112,
+    "especieAsociada": "Leon",
+    "intensidad": 9.699396731476877,
+    "asistio": true,
+    "participantes": [
+      "LE49",
+      "LE40",
+      "LE27",
+      "LE42",
+      "LE37",
+      "LE50",
+      "LE30",
+      "LE43"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-14",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-06-10",
+    "duracionMinutos": 131,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.37998994472472,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI74",
+      "CI59",
+      "CI58",
+      "CI75",
+      "CI54",
+      "CI70"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-15",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-06-01",
+    "duracionMinutos": 89,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.447701978597715,
+    "asistio": true,
+    "participantes": [
+      "LO16",
+      "LO3",
+      "LO14",
+      "LO10",
+      "LO8",
+      "LO13"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-16",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-06-05",
+    "duracionMinutos": 128,
+    "especieAsociada": "Alce",
+    "intensidad": 3.520943096775227,
+    "asistio": true,
+    "participantes": [
+      "AL98",
+      "AL79",
+      "AL97",
+      "AL83",
+      "AL92",
+      "AL93",
+      "AL81",
+      "AL85"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-17",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-06-16",
+    "duracionMinutos": 58,
+    "especieAsociada": "Leon",
+    "intensidad": 1.133122000356702,
+    "asistio": true,
+    "participantes": [
+      "LE45",
+      "LE46",
+      "LE48",
+      "LE44",
+      "LE35",
+      "LE28",
+      "LE47",
+      "LE32",
+      "LE41"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-18",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-06-19",
+    "duracionMinutos": 177,
+    "especieAsociada": "Alce",
+    "intensidad": 7.779119632819404,
+    "asistio": true,
+    "participantes": [
+      "AL95",
+      "AL89",
+      "AL76",
+      "AL100",
+      "AL79"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-19",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-06-19",
+    "duracionMinutos": 113,
+    "especieAsociada": "Alce",
+    "intensidad": 7.684543321439438,
+    "asistio": true,
+    "participantes": [
+      "AL82",
+      "AL97",
+      "AL78",
+      "AL84",
+      "AL86",
+      "AL87",
+      "AL92",
+      "AL81"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-20",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-06-16",
+    "duracionMinutos": 79,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.436626227879364,
+    "asistio": true,
+    "participantes": [
+      "CI67",
+      "CI54",
+      "CI74",
+      "CI63"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-21",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-06-14",
+    "duracionMinutos": 144,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.17378365167383,
+    "asistio": true,
+    "participantes": [
+      "CI53",
+      "CI63",
+      "CI68"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-22",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-06-02",
+    "duracionMinutos": 133,
+    "especieAsociada": "Alce",
+    "intensidad": 9.023019086326364,
+    "asistio": true,
+    "participantes": [
+      "AL100",
+      "AL98",
+      "AL84",
+      "AL76",
+      "AL99"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-23",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-06-13",
+    "duracionMinutos": 131,
+    "especieAsociada": "Alce",
+    "intensidad": 2.595223350803098,
+    "asistio": true,
+    "participantes": [
+      "AL97",
+      "AL83",
+      "AL91",
+      "AL80",
+      "AL78",
+      "AL82",
+      "AL96",
+      "AL87",
+      "AL81"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-24",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-06-14",
+    "duracionMinutos": 146,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.336825015870807,
+    "asistio": true,
+    "participantes": [
+      "CI69",
+      "CI75",
+      "CI57",
+      "CI58"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-25",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-06-19",
+    "duracionMinutos": 73,
+    "especieAsociada": "Alce",
+    "intensidad": 3.911286838215161,
+    "asistio": true,
+    "participantes": [
+      "AL96",
+      "AL94",
+      "AL86",
+      "AL77",
+      "AL100",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-26",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-06-02",
+    "duracionMinutos": 81,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.3838363151362696,
+    "asistio": true,
+    "participantes": [
+      "CI52",
+      "CI59",
+      "CI69",
+      "CI72",
+      "CI74",
+      "CI71",
+      "CI67"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-27",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-06-09",
+    "duracionMinutos": 165,
+    "especieAsociada": "Alce",
+    "intensidad": 8.846946808677517,
+    "asistio": true,
+    "participantes": [
+      "AL78",
+      "AL92",
+      "AL90",
+      "AL81",
+      "AL77",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-28",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-06-20",
+    "duracionMinutos": 106,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.854927355101268,
+    "asistio": true,
+    "participantes": [
+      "CI59",
+      "CI56",
+      "CI58",
+      "CI54",
+      "CI73"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-29",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-06-10",
+    "duracionMinutos": 43,
+    "especieAsociada": "Leon",
+    "intensidad": 9.05135406997759,
+    "asistio": true,
+    "participantes": [
+      "LE36",
+      "LE30",
+      "LE31",
+      "LE50",
+      "LE41",
+      "LE27",
+      "LE48"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-30",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-06-20",
+    "duracionMinutos": 123,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.64601649479339,
+    "asistio": true,
+    "participantes": [
+      "CI61",
+      "CI65",
+      "CI64",
+      "CI66",
+      "CI63",
+      "CI62",
+      "CI54"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-31",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-06-03",
+    "duracionMinutos": 180,
+    "especieAsociada": "Alce",
+    "intensidad": 9.220473736003932,
+    "asistio": true,
+    "participantes": [
+      "AL94",
+      "AL78",
+      "AL100"
+    ]
+  },
+  {
+    "nombre": "Ritual-Junio-32",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-06-19",
+    "duracionMinutos": 65,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.763932366669527,
+    "asistio": true,
+    "participantes": [
+      "CI74",
+      "CI73",
+      "CI67",
+      "CI75",
+      "CI59",
+      "CI63",
+      "CI52"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-1",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-16",
+    "duracionMinutos": 160,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.252849577670507,
+    "asistio": true,
+    "participantes": [
+      "LO23",
+      "LO9"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-2",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-10",
+    "duracionMinutos": 106,
+    "especieAsociada": "Alce",
+    "intensidad": 5.246727396412248,
+    "asistio": true,
+    "participantes": [
+      "AL95",
+      "AL86",
+      "AL99",
+      "AL77",
+      "AL84"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-3",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-07-18",
+    "duracionMinutos": 111,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.053141211484971,
+    "asistio": true,
+    "participantes": [
+      "CI72",
+      "CI59",
+      "CI64"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-4",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-07-24",
+    "duracionMinutos": 36,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.25735902820676,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI59",
+      "CI57"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-5",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-17",
+    "duracionMinutos": 116,
+    "especieAsociada": "Leon",
+    "intensidad": 4.174435951682021,
+    "asistio": true,
+    "participantes": [
+      "LE43",
+      "LE30",
+      "LE38"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-6",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-17",
+    "duracionMinutos": 74,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.206253949986761,
+    "asistio": true,
+    "participantes": [
+      "CI67",
+      "CI62",
+      "CI70",
+      "CI69",
+      "CI60",
+      "CI51",
+      "CI74"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-7",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-16",
+    "duracionMinutos": 125,
+    "especieAsociada": "Lobo",
+    "intensidad": 5.328644208675374,
+    "asistio": true,
+    "participantes": [
+      "LO4",
+      "LO19",
+      "LO6",
+      "LO7"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-8",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-07-19",
+    "duracionMinutos": 166,
+    "especieAsociada": "Leon",
+    "intensidad": 1.7578127353952488,
+    "asistio": true,
+    "participantes": [
+      "LE45",
+      "LE44",
+      "LE34",
+      "LE43",
+      "LE47",
+      "LE36",
+      "LE37"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-9",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-07-16",
+    "duracionMinutos": 170,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.6689433507492515,
+    "asistio": true,
+    "participantes": [
+      "CI75",
+      "CI73",
+      "CI58",
+      "CI70",
+      "CI53"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-10",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-03",
+    "duracionMinutos": 123,
+    "especieAsociada": "Alce",
+    "intensidad": 6.336885402408496,
+    "asistio": true,
+    "participantes": [
+      "AL82",
+      "AL90",
+      "AL80",
+      "AL77"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-11",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-07-07",
+    "duracionMinutos": 163,
+    "especieAsociada": "Leon",
+    "intensidad": 9.020890900717411,
+    "asistio": true,
+    "participantes": [
+      "LE44",
+      "LE43",
+      "LE31"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-12",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-18",
+    "duracionMinutos": 124,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.399582299942946,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI51",
+      "CI71",
+      "CI73"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-13",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-24",
+    "duracionMinutos": 138,
+    "especieAsociada": "Alce",
+    "intensidad": 9.076833162952925,
+    "asistio": true,
+    "participantes": [
+      "AL81",
+      "AL87",
+      "AL85",
+      "AL98",
+      "AL89"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-14",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-05",
+    "duracionMinutos": 151,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.939738002070302,
+    "asistio": true,
+    "participantes": [
+      "CI58",
+      "CI54",
+      "CI68",
+      "CI62",
+      "CI66",
+      "CI59",
+      "CI63"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-15",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-28",
+    "duracionMinutos": 103,
+    "especieAsociada": "Leon",
+    "intensidad": 2.7996637870516405,
+    "asistio": true,
+    "participantes": [
+      "LE49",
+      "LE37",
+      "LE32",
+      "LE27",
+      "LE47"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-16",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-17",
+    "duracionMinutos": 109,
+    "especieAsociada": "Leon",
+    "intensidad": 6.160194436881355,
+    "asistio": true,
+    "participantes": [
+      "LE48",
+      "LE44",
+      "LE31",
+      "LE45",
+      "LE36",
+      "LE35",
+      "LE41",
+      "LE47",
+      "LE27"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-17",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-09",
+    "duracionMinutos": 31,
+    "especieAsociada": "Leon",
+    "intensidad": 5.1843091111765744,
+    "asistio": true,
+    "participantes": [
+      "LE37",
+      "LE42"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-18",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-07-15",
+    "duracionMinutos": 69,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.651062642063733,
+    "asistio": true,
+    "participantes": [
+      "LO8",
+      "LO17",
+      "LO4",
+      "LO21",
+      "LO10",
+      "LO9"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-19",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-02",
+    "duracionMinutos": 114,
+    "especieAsociada": "Leon",
+    "intensidad": 8.592997557042809,
+    "asistio": true,
+    "participantes": [
+      "LE36",
+      "LE30",
+      "LE33",
+      "LE39",
+      "LE44",
+      "LE29"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-20",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-17",
+    "duracionMinutos": 93,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.561791579846068,
+    "asistio": true,
+    "participantes": [
+      "LO20",
+      "LO12",
+      "LO24",
+      "LO2",
+      "LO5",
+      "LO18",
+      "LO3"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-21",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-07",
+    "duracionMinutos": 93,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.27431779070279,
+    "asistio": true,
+    "participantes": [
+      "LO4",
+      "LO3",
+      "LO15",
+      "LO11",
+      "LO25",
+      "LO7",
+      "LO18",
+      "LO21"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-22",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-18",
+    "duracionMinutos": 145,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.556870055524393,
+    "asistio": true,
+    "participantes": [
+      "LO8",
+      "LO1",
+      "LO22",
+      "LO6",
+      "LO4",
+      "LO23"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-23",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-18",
+    "duracionMinutos": 55,
+    "especieAsociada": "Leon",
+    "intensidad": 4.825051624296313,
+    "asistio": true,
+    "participantes": [
+      "LE40",
+      "LE49",
+      "LE48",
+      "LE29",
+      "LE37",
+      "LE27",
+      "LE38",
+      "LE44"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-24",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-20",
+    "duracionMinutos": 113,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.356436879141454,
+    "asistio": true,
+    "participantes": [
+      "CI75",
+      "CI72",
+      "CI55",
+      "CI57"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-25",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-19",
+    "duracionMinutos": 35,
+    "especieAsociada": "Leon",
+    "intensidad": 8.028790637986434,
+    "asistio": true,
+    "participantes": [
+      "LE30",
+      "LE46",
+      "LE43",
+      "LE31",
+      "LE41",
+      "LE32",
+      "LE42"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-26",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-01",
+    "duracionMinutos": 43,
+    "especieAsociada": "Leon",
+    "intensidad": 1.6461583004668232,
+    "asistio": true,
+    "participantes": [
+      "LE28",
+      "LE32",
+      "LE40",
+      "LE39"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-27",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-22",
+    "duracionMinutos": 53,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.041654233310998,
+    "asistio": true,
+    "participantes": [
+      "LO14",
+      "LO13",
+      "LO22",
+      "LO19"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-28",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-07-16",
+    "duracionMinutos": 61,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.018120470357175,
+    "asistio": true,
+    "participantes": [
+      "CI69",
+      "CI63",
+      "CI73",
+      "CI71",
+      "CI64",
+      "CI51",
+      "CI53",
+      "CI52"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-29",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-09",
+    "duracionMinutos": 99,
+    "especieAsociada": "Alce",
+    "intensidad": 5.966049011404632,
+    "asistio": true,
+    "participantes": [
+      "AL77",
+      "AL98",
+      "AL97",
+      "AL83",
+      "AL79",
+      "AL96"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-30",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-25",
+    "duracionMinutos": 51,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.177231918600253,
+    "asistio": true,
+    "participantes": [
+      "CI60",
+      "CI53",
+      "CI51",
+      "CI56",
+      "CI58",
+      "CI71",
+      "CI63",
+      "CI66"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-31",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-06",
+    "duracionMinutos": 82,
+    "especieAsociada": "Alce",
+    "intensidad": 4.538148835272079,
+    "asistio": true,
+    "participantes": [
+      "AL99",
+      "AL98",
+      "AL83",
+      "AL82",
+      "AL92",
+      "AL78",
+      "AL89"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-32",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-19",
+    "duracionMinutos": 95,
+    "especieAsociada": "Leon",
+    "intensidad": 1.088313720968833,
+    "asistio": true,
+    "participantes": [
+      "LE38",
+      "LE31",
+      "LE45",
+      "LE28",
+      "LE34",
+      "LE29",
+      "LE44"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-33",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-10",
+    "duracionMinutos": 128,
+    "especieAsociada": "Alce",
+    "intensidad": 5.238386408293913,
+    "asistio": true,
+    "participantes": [
+      "AL78",
+      "AL85",
+      "AL83"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-34",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-07-26",
+    "duracionMinutos": 70,
+    "especieAsociada": "Alce",
+    "intensidad": 8.409520001771206,
+    "asistio": true,
+    "participantes": [
+      "AL98",
+      "AL80",
+      "AL97",
+      "AL83",
+      "AL85",
+      "AL82"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-35",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-05",
+    "duracionMinutos": 148,
+    "especieAsociada": "Leon",
+    "intensidad": 3.4068411719335163,
+    "asistio": true,
+    "participantes": [
+      "LE49",
+      "LE41",
+      "LE48",
+      "LE43",
+      "LE46"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-36",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-21",
+    "duracionMinutos": 130,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.289075080728742,
+    "asistio": true,
+    "participantes": [
+      "LO15",
+      "LO7",
+      "LO14",
+      "LO2"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-37",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-27",
+    "duracionMinutos": 154,
+    "especieAsociada": "Leon",
+    "intensidad": 7.427476666190903,
+    "asistio": true,
+    "participantes": [
+      "LE29",
+      "LE35",
+      "LE27",
+      "LE37",
+      "LE33"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-38",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-21",
+    "duracionMinutos": 145,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.182510215599134,
+    "asistio": true,
+    "participantes": [
+      "CI73",
+      "CI54",
+      "CI51"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-39",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-07-13",
+    "duracionMinutos": 177,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.080447078194876,
+    "asistio": true,
+    "participantes": [
+      "CI69",
+      "CI59",
+      "CI51",
+      "CI72",
+      "CI54",
+      "CI74",
+      "CI52",
+      "CI68",
+      "CI70"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-40",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-20",
+    "duracionMinutos": 91,
+    "especieAsociada": "Leon",
+    "intensidad": 3.2275321645980553,
+    "asistio": true,
+    "participantes": [
+      "LE30",
+      "LE32",
+      "LE48",
+      "LE40",
+      "LE33",
+      "LE39"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-41",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-19",
+    "duracionMinutos": 38,
+    "especieAsociada": "Alce",
+    "intensidad": 9.99148834302128,
+    "asistio": true,
+    "participantes": [
+      "AL83",
+      "AL99",
+      "AL95",
+      "AL79"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-42",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-07-18",
+    "duracionMinutos": 174,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.072201468919685,
+    "asistio": true,
+    "participantes": [
+      "CI55",
+      "CI74",
+      "CI56",
+      "CI70",
+      "CI72",
+      "CI65",
+      "CI59",
+      "CI68",
+      "CI73"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-43",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-02",
+    "duracionMinutos": 161,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.870800975812738,
+    "asistio": true,
+    "participantes": [
+      "CI55",
+      "CI59",
+      "CI65",
+      "CI63"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-44",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-07-27",
+    "duracionMinutos": 57,
+    "especieAsociada": "Ciervo",
+    "intensidad": 6.1589705182997845,
+    "asistio": true,
+    "participantes": [
+      "CI74",
+      "CI66",
+      "CI58",
+      "CI65",
+      "CI54",
+      "CI62",
+      "CI55"
+    ]
+  },
+  {
+    "nombre": "Ritual-Julio-45",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-07-11",
+    "duracionMinutos": 141,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.825800998940763,
+    "asistio": true,
+    "participantes": [
+      "LO17",
+      "LO15",
+      "LO19",
+      "LO13"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-1",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-08-16",
+    "duracionMinutos": 36,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.948577183865553,
+    "asistio": true,
+    "participantes": [
+      "CI53",
+      "CI70",
+      "CI66",
+      "CI65",
+      "CI57"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-2",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-19",
+    "duracionMinutos": 31,
+    "especieAsociada": "Alce",
+    "intensidad": 4.48434608227665,
+    "asistio": true,
+    "participantes": [
+      "AL98",
+      "AL91",
+      "AL79",
+      "AL84",
+      "AL92",
+      "AL95"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-3",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-08-20",
+    "duracionMinutos": 59,
+    "especieAsociada": "Alce",
+    "intensidad": 4.397999166600965,
+    "asistio": true,
+    "participantes": [
+      "AL82",
+      "AL81",
+      "AL76",
+      "AL77",
+      "AL91",
+      "AL94"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-4",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-08-02",
+    "duracionMinutos": 52,
+    "especieAsociada": "Leon",
+    "intensidad": 6.130558011124762,
+    "asistio": true,
+    "participantes": [
+      "LE32",
+      "LE31",
+      "LE30",
+      "LE50",
+      "LE28"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-5",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-08-26",
+    "duracionMinutos": 176,
+    "especieAsociada": "Lobo",
+    "intensidad": 5.257981122154958,
+    "asistio": true,
+    "participantes": [
+      "LO12",
+      "LO13",
+      "LO21",
+      "LO3",
+      "LO5",
+      "LO22",
+      "LO25",
+      "LO7",
+      "LO1"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-6",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-01",
+    "duracionMinutos": 127,
+    "especieAsociada": "Alce",
+    "intensidad": 7.929086139537267,
+    "asistio": true,
+    "participantes": [
+      "AL82",
+      "AL86",
+      "AL95",
+      "AL91",
+      "AL85",
+      "AL83",
+      "AL99"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-7",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-08-26",
+    "duracionMinutos": 53,
+    "especieAsociada": "Alce",
+    "intensidad": 4.612014218076164,
+    "asistio": true,
+    "participantes": [
+      "AL99",
+      "AL91",
+      "AL78",
+      "AL77",
+      "AL96",
+      "AL81",
+      "AL85",
+      "AL95"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-8",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-08-13",
+    "duracionMinutos": 174,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.222592264709931,
+    "asistio": true,
+    "participantes": [
+      "CI56",
+      "CI52",
+      "CI75",
+      "CI71",
+      "CI67"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-9",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-17",
+    "duracionMinutos": 50,
+    "especieAsociada": "Leon",
+    "intensidad": 5.468332170162871,
+    "asistio": true,
+    "participantes": [
+      "LE39",
+      "LE50",
+      "LE26",
+      "LE41",
+      "LE34",
+      "LE40"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-10",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-06",
+    "duracionMinutos": 61,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.176573762536129,
+    "asistio": true,
+    "participantes": [
+      "LO1",
+      "LO21",
+      "LO8",
+      "LO23",
+      "LO22",
+      "LO14"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-11",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-08-25",
+    "duracionMinutos": 48,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.7042924860747517,
+    "asistio": true,
+    "participantes": [
+      "LO18",
+      "LO10",
+      "LO23",
+      "LO17",
+      "LO21",
+      "LO22",
+      "LO11"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-12",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-08-09",
+    "duracionMinutos": 97,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.743542328029278,
+    "asistio": true,
+    "participantes": [
+      "CI68",
+      "CI69",
+      "CI59"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-13",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-07",
+    "duracionMinutos": 175,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.048492675833597,
+    "asistio": true,
+    "participantes": [
+      "CI71",
+      "CI74",
+      "CI53",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-14",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-08-02",
+    "duracionMinutos": 169,
+    "especieAsociada": "Lobo",
+    "intensidad": 2.656223524538775,
+    "asistio": true,
+    "participantes": [
+      "LO7",
+      "LO6",
+      "LO14",
+      "LO11"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-15",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-08-25",
+    "duracionMinutos": 133,
+    "especieAsociada": "Ciervo",
+    "intensidad": 6.341603698410197,
+    "asistio": true,
+    "participantes": [
+      "CI67",
+      "CI56",
+      "CI66",
+      "CI53",
+      "CI65",
+      "CI52"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-16",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-08",
+    "duracionMinutos": 127,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.854503845858235,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI75",
+      "CI72",
+      "CI63",
+      "CI65",
+      "CI57"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-17",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-08-10",
+    "duracionMinutos": 79,
+    "especieAsociada": "Leon",
+    "intensidad": 1.374818046798565,
+    "asistio": true,
+    "participantes": [
+      "LE44",
+      "LE28",
+      "LE47",
+      "LE26",
+      "LE48"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-18",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-08-16",
+    "duracionMinutos": 134,
+    "especieAsociada": "Alce",
+    "intensidad": 6.466450719383664,
+    "asistio": true,
+    "participantes": [
+      "AL88",
+      "AL87",
+      "AL92",
+      "AL91",
+      "AL96"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-19",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-15",
+    "duracionMinutos": 56,
+    "especieAsociada": "Alce",
+    "intensidad": 6.314975297622487,
+    "asistio": true,
+    "participantes": [
+      "AL80",
+      "AL76",
+      "AL86",
+      "AL88",
+      "AL93",
+      "AL78",
+      "AL100",
+      "AL96"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-20",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-19",
+    "duracionMinutos": 119,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.932294412002189,
+    "asistio": true,
+    "participantes": [
+      "CI71",
+      "CI69",
+      "CI52",
+      "CI55"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-21",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-08-14",
+    "duracionMinutos": 178,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.076647253850315,
+    "asistio": true,
+    "participantes": [
+      "CI58",
+      "CI72",
+      "CI63",
+      "CI55",
+      "CI62"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-22",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-23",
+    "duracionMinutos": 56,
+    "especieAsociada": "Alce",
+    "intensidad": 7.697371115451001,
+    "asistio": true,
+    "participantes": [
+      "AL90",
+      "AL80",
+      "AL96",
+      "AL94",
+      "AL79",
+      "AL83",
+      "AL100",
+      "AL93"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-23",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-08-14",
+    "duracionMinutos": 98,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.5604316470140485,
+    "asistio": true,
+    "participantes": [
+      "CI52",
+      "CI58",
+      "CI74",
+      "CI63",
+      "CI53"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-24",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-18",
+    "duracionMinutos": 94,
+    "especieAsociada": "Leon",
+    "intensidad": 3.254856730103487,
+    "asistio": true,
+    "participantes": [
+      "LE50",
+      "LE34",
+      "LE33",
+      "LE49",
+      "LE45",
+      "LE37"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-25",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-08-01",
+    "duracionMinutos": 81,
+    "especieAsociada": "Alce",
+    "intensidad": 2.1300842598594656,
+    "asistio": true,
+    "participantes": [
+      "AL96",
+      "AL98",
+      "AL80",
+      "AL85",
+      "AL87",
+      "AL95",
+      "AL89",
+      "AL99",
+      "AL82"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-26",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-08-22",
+    "duracionMinutos": 41,
+    "especieAsociada": "Leon",
+    "intensidad": 4.30482401556317,
+    "asistio": true,
+    "participantes": [
+      "LE44",
+      "LE30",
+      "LE45",
+      "LE36",
+      "LE47",
+      "LE26",
+      "LE32"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-27",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-08-13",
+    "duracionMinutos": 61,
+    "especieAsociada": "Lobo",
+    "intensidad": 2.728365599619409,
+    "asistio": true,
+    "participantes": [
+      "LO5",
+      "LO14",
+      "LO23",
+      "LO9",
+      "LO16",
+      "LO25",
+      "LO3",
+      "LO22",
+      "LO8"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-28",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-08-19",
+    "duracionMinutos": 70,
+    "especieAsociada": "Leon",
+    "intensidad": 5.008996781975415,
+    "asistio": true,
+    "participantes": [
+      "LE39",
+      "LE42",
+      "LE33",
+      "LE37"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-29",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-23",
+    "duracionMinutos": 116,
+    "especieAsociada": "Alce",
+    "intensidad": 8.578242790479099,
+    "asistio": true,
+    "participantes": [
+      "AL76",
+      "AL92",
+      "AL78",
+      "AL88",
+      "AL83",
+      "AL91",
+      "AL87"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-30",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-08-28",
+    "duracionMinutos": 35,
+    "especieAsociada": "Lobo",
+    "intensidad": 2.1111482199343974,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO7",
+      "LO18",
+      "LO8",
+      "LO4"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-31",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-25",
+    "duracionMinutos": 78,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.316626793185553,
+    "asistio": true,
+    "participantes": [
+      "CI58",
+      "CI61"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-32",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-19",
+    "duracionMinutos": 103,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.892214178926537,
+    "asistio": true,
+    "participantes": [
+      "LO1",
+      "LO20",
+      "LO13",
+      "LO8",
+      "LO11",
+      "LO18",
+      "LO21"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-33",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-08-28",
+    "duracionMinutos": 49,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.059358926984951,
+    "asistio": true,
+    "participantes": [
+      "CI66",
+      "CI57",
+      "CI58",
+      "CI65",
+      "CI55",
+      "CI54"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-34",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-17",
+    "duracionMinutos": 83,
+    "especieAsociada": "Alce",
+    "intensidad": 1.2225345763482305,
+    "asistio": true,
+    "participantes": [
+      "AL77",
+      "AL80",
+      "AL83",
+      "AL81",
+      "AL86",
+      "AL78",
+      "AL92"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-35",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-08-22",
+    "duracionMinutos": 64,
+    "especieAsociada": "Leon",
+    "intensidad": 8.146411092447304,
+    "asistio": true,
+    "participantes": [
+      "LE44",
+      "LE28",
+      "LE43",
+      "LE27",
+      "LE39",
+      "LE33",
+      "LE34"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-36",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-08",
+    "duracionMinutos": 174,
+    "especieAsociada": "Alce",
+    "intensidad": 7.127140044083486,
+    "asistio": true,
+    "participantes": [
+      "AL91",
+      "AL86",
+      "AL100",
+      "AL80",
+      "AL88"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-37",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-25",
+    "duracionMinutos": 142,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.7475872223984548,
+    "asistio": true,
+    "participantes": [
+      "LO17",
+      "LO12",
+      "LO20",
+      "LO22",
+      "LO24",
+      "LO9",
+      "LO3"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-38",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-09",
+    "duracionMinutos": 55,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.752278879267077,
+    "asistio": true,
+    "participantes": [
+      "CI58",
+      "CI63",
+      "CI54",
+      "CI68",
+      "CI64",
+      "CI61",
+      "CI72",
+      "CI71"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-39",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-08-09",
+    "duracionMinutos": 51,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.39652124202828,
+    "asistio": true,
+    "participantes": [
+      "CI75",
+      "CI51",
+      "CI63",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-40",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-08-25",
+    "duracionMinutos": 130,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.4423631128922314,
+    "asistio": true,
+    "participantes": [
+      "LO15",
+      "LO20",
+      "LO7"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-41",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-08-06",
+    "duracionMinutos": 115,
+    "especieAsociada": "Lobo",
+    "intensidad": 8.796116383570029,
+    "asistio": true,
+    "participantes": [
+      "LO9",
+      "LO6",
+      "LO21",
+      "LO11",
+      "LO23",
+      "LO17"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-42",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-08-28",
+    "duracionMinutos": 46,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.395000988329738,
+    "asistio": true,
+    "participantes": [
+      "CI70",
+      "CI55",
+      "CI60",
+      "CI66",
+      "CI72",
+      "CI71",
+      "CI56"
+    ]
+  },
+  {
+    "nombre": "Ritual-Agosto-43",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-08-13",
+    "duracionMinutos": 40,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.956631610516132,
+    "asistio": true,
+    "participantes": [
+      "CI67",
+      "CI55",
+      "CI66",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-1",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-09-19",
+    "duracionMinutos": 62,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.994508035489922,
+    "asistio": true,
+    "participantes": [
+      "CI56",
+      "CI66",
+      "CI62",
+      "CI57",
+      "CI51",
+      "CI59",
+      "CI61",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-2",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-09-25",
+    "duracionMinutos": 84,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.5710896794238653,
+    "asistio": true,
+    "participantes": [
+      "CI65",
+      "CI57",
+      "CI67",
+      "CI59",
+      "CI52"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-3",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-09-12",
+    "duracionMinutos": 85,
+    "especieAsociada": "Lobo",
+    "intensidad": 8.13155188831426,
+    "asistio": true,
+    "participantes": [
+      "LO21",
+      "LO12",
+      "LO1",
+      "LO10",
+      "LO4",
+      "LO8",
+      "LO14",
+      "LO3"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-4",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-09-11",
+    "duracionMinutos": 122,
+    "especieAsociada": "Alce",
+    "intensidad": 6.72582920888625,
+    "asistio": true,
+    "participantes": [
+      "AL94",
+      "AL93",
+      "AL90",
+      "AL91",
+      "AL82"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-5",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-09-27",
+    "duracionMinutos": 143,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.973227337810742,
+    "asistio": true,
+    "participantes": [
+      "LO21",
+      "LO23",
+      "LO11",
+      "LO4",
+      "LO14",
+      "LO2",
+      "LO22"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-6",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-08",
+    "duracionMinutos": 143,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.1807411861310833,
+    "asistio": true,
+    "participantes": [
+      "LO19",
+      "LO5",
+      "LO22",
+      "LO21",
+      "LO10",
+      "LO6",
+      "LO15",
+      "LO25"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-7",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-18",
+    "duracionMinutos": 62,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.070838130668927,
+    "asistio": true,
+    "participantes": [
+      "CI73",
+      "CI61",
+      "CI71"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-8",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-09-11",
+    "duracionMinutos": 107,
+    "especieAsociada": "Leon",
+    "intensidad": 7.1711518906303375,
+    "asistio": true,
+    "participantes": [
+      "LE37",
+      "LE34",
+      "LE39",
+      "LE29",
+      "LE47",
+      "LE30",
+      "LE42"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-9",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-09-15",
+    "duracionMinutos": 137,
+    "especieAsociada": "Alce",
+    "intensidad": 8.00790002584867,
+    "asistio": true,
+    "participantes": [
+      "AL93",
+      "AL85",
+      "AL97",
+      "AL79",
+      "AL99"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-10",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-01",
+    "duracionMinutos": 91,
+    "especieAsociada": "Lobo",
+    "intensidad": 3.7204612249933673,
+    "asistio": true,
+    "participantes": [
+      "LO3",
+      "LO22",
+      "LO12",
+      "LO9",
+      "LO13"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-11",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-09-20",
+    "duracionMinutos": 91,
+    "especieAsociada": "Leon",
+    "intensidad": 7.188471713210171,
+    "asistio": true,
+    "participantes": [
+      "LE49",
+      "LE36",
+      "LE37",
+      "LE30",
+      "LE34",
+      "LE44",
+      "LE45"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-12",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-09-27",
+    "duracionMinutos": 179,
+    "especieAsociada": "Alce",
+    "intensidad": 6.860670648172693,
+    "asistio": true,
+    "participantes": [
+      "AL89",
+      "AL87",
+      "AL76",
+      "AL78",
+      "AL85"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-13",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-09-15",
+    "duracionMinutos": 52,
+    "especieAsociada": "Lobo",
+    "intensidad": 3.302767660140391,
+    "asistio": true,
+    "participantes": [
+      "LO3",
+      "LO17",
+      "LO10",
+      "LO21",
+      "LO6",
+      "LO1"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-14",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-09-14",
+    "duracionMinutos": 152,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.4877646784413,
+    "asistio": true,
+    "participantes": [
+      "LO18",
+      "LO19",
+      "LO5"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-15",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-21",
+    "duracionMinutos": 137,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.293753905655029,
+    "asistio": true,
+    "participantes": [
+      "CI74",
+      "CI68",
+      "CI73"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-16",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-09-02",
+    "duracionMinutos": 87,
+    "especieAsociada": "Lobo",
+    "intensidad": 5.411240003047831,
+    "asistio": true,
+    "participantes": [
+      "LO23",
+      "LO19",
+      "LO15",
+      "LO20",
+      "LO18",
+      "LO21",
+      "LO11",
+      "LO24"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-17",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-09-02",
+    "duracionMinutos": 56,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.401352702536085,
+    "asistio": true,
+    "participantes": [
+      "LO2",
+      "LO13",
+      "LO18",
+      "LO7",
+      "LO17",
+      "LO19",
+      "LO12",
+      "LO8"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-18",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-09-15",
+    "duracionMinutos": 155,
+    "especieAsociada": "Lobo",
+    "intensidad": 4.391394621948625,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO21",
+      "LO20"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-19",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-09-03",
+    "duracionMinutos": 105,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.459009369745225,
+    "asistio": true,
+    "participantes": [
+      "CI75",
+      "CI66",
+      "CI72"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-20",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-09-20",
+    "duracionMinutos": 144,
+    "especieAsociada": "Leon",
+    "intensidad": 3.308735220407497,
+    "asistio": true,
+    "participantes": [
+      "LE29",
+      "LE45",
+      "LE28",
+      "LE47",
+      "LE48",
+      "LE44",
+      "LE50"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-21",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-09-13",
+    "duracionMinutos": 36,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.981527917671114,
+    "asistio": true,
+    "participantes": [
+      "LO11",
+      "LO17",
+      "LO1",
+      "LO19",
+      "LO3",
+      "LO21",
+      "LO25"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-22",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-09-05",
+    "duracionMinutos": 58,
+    "especieAsociada": "Alce",
+    "intensidad": 3.063755152091723,
+    "asistio": true,
+    "participantes": [
+      "AL79",
+      "AL97",
+      "AL78",
+      "AL84",
+      "AL92",
+      "AL88",
+      "AL77",
+      "AL100"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-23",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-09-20",
+    "duracionMinutos": 99,
+    "especieAsociada": "Lobo",
+    "intensidad": 4.287292806142659,
+    "asistio": true,
+    "participantes": [
+      "LO9",
+      "LO12"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-24",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-09-24",
+    "duracionMinutos": 96,
+    "especieAsociada": "Alce",
+    "intensidad": 6.29671217160187,
+    "asistio": true,
+    "participantes": [
+      "AL77",
+      "AL84",
+      "AL83",
+      "AL100",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-25",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-20",
+    "duracionMinutos": 48,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.807040573668606,
+    "asistio": true,
+    "participantes": [
+      "CI60",
+      "CI61",
+      "CI67",
+      "CI68",
+      "CI66",
+      "CI74",
+      "CI55"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-26",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-09-22",
+    "duracionMinutos": 64,
+    "especieAsociada": "Alce",
+    "intensidad": 2.592794025793065,
+    "asistio": true,
+    "participantes": [
+      "AL88",
+      "AL77",
+      "AL94",
+      "AL91",
+      "AL96",
+      "AL85"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-27",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-25",
+    "duracionMinutos": 59,
+    "especieAsociada": "Lobo",
+    "intensidad": 3.1013407937429367,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO10",
+      "LO13",
+      "LO22",
+      "LO21",
+      "LO17"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-28",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-09-16",
+    "duracionMinutos": 106,
+    "especieAsociada": "Alce",
+    "intensidad": 9.446259199934227,
+    "asistio": true,
+    "participantes": [
+      "AL88",
+      "AL100",
+      "AL80",
+      "AL84",
+      "AL82",
+      "AL78"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-29",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-09-03",
+    "duracionMinutos": 170,
+    "especieAsociada": "Lobo",
+    "intensidad": 3.685084563200773,
+    "asistio": true,
+    "participantes": [
+      "LO22",
+      "LO20",
+      "LO3",
+      "LO24",
+      "LO18",
+      "LO13"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-30",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-21",
+    "duracionMinutos": 175,
+    "especieAsociada": "Ciervo",
+    "intensidad": 6.907798078756333,
+    "asistio": true,
+    "participantes": [
+      "CI73",
+      "CI51",
+      "CI69",
+      "CI70",
+      "CI68",
+      "CI61",
+      "CI75"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-31",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-09-03",
+    "duracionMinutos": 100,
+    "especieAsociada": "Alce",
+    "intensidad": 1.794785995831687,
+    "asistio": true,
+    "participantes": [
+      "AL91",
+      "AL94",
+      "AL83",
+      "AL95",
+      "AL84",
+      "AL88",
+      "AL96",
+      "AL100",
+      "AL86",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-32",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-09-24",
+    "duracionMinutos": 130,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.323581384226716,
+    "asistio": true,
+    "participantes": [
+      "LO18",
+      "LO6",
+      "LO2",
+      "LO25",
+      "LO21",
+      "LO15",
+      "LO23",
+      "LO11",
+      "LO1"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-33",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-09-07",
+    "duracionMinutos": 149,
+    "especieAsociada": "Leon",
+    "intensidad": 2.156443977395269,
+    "asistio": true,
+    "participantes": [
+      "LE29",
+      "LE38",
+      "LE31",
+      "LE40"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-34",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-25",
+    "duracionMinutos": 92,
+    "especieAsociada": "Lobo",
+    "intensidad": 5.22964861930474,
+    "asistio": true,
+    "participantes": [
+      "LO13",
+      "LO2",
+      "LO15",
+      "LO7",
+      "LO14",
+      "LO17",
+      "LO1"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-35",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-23",
+    "duracionMinutos": 67,
+    "especieAsociada": "Alce",
+    "intensidad": 1.2971874309718534,
+    "asistio": true,
+    "participantes": [
+      "AL87",
+      "AL96",
+      "AL76",
+      "AL93",
+      "AL83"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-36",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-09-24",
+    "duracionMinutos": 94,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.8221234542399314,
+    "asistio": true,
+    "participantes": [
+      "CI74",
+      "CI65",
+      "CI71",
+      "CI69"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-37",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-09-24",
+    "duracionMinutos": 96,
+    "especieAsociada": "Leon",
+    "intensidad": 3.15324778557039,
+    "asistio": true,
+    "participantes": [
+      "LE44",
+      "LE47",
+      "LE49",
+      "LE28",
+      "LE36",
+      "LE27",
+      "LE38",
+      "LE43",
+      "LE42"
+    ]
+  },
+  {
+    "nombre": "Ritual-Septiembre-38",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-09-18",
+    "duracionMinutos": 62,
+    "especieAsociada": "Alce",
+    "intensidad": 8.979298826145296,
+    "asistio": true,
+    "participantes": [
+      "AL78",
+      "AL98",
+      "AL95",
+      "AL80"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-1",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-10-13",
+    "duracionMinutos": 148,
+    "especieAsociada": "Alce",
+    "intensidad": 7.829793368585157,
+    "asistio": true,
+    "participantes": [
+      "AL84",
+      "AL76",
+      "AL94"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-2",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-10-25",
+    "duracionMinutos": 97,
+    "especieAsociada": "Alce",
+    "intensidad": 9.40061727998914,
+    "asistio": true,
+    "participantes": [
+      "AL81",
+      "AL83",
+      "AL96",
+      "AL100"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-3",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-10-19",
+    "duracionMinutos": 30,
+    "especieAsociada": "Alce",
+    "intensidad": 2.785640766140934,
+    "asistio": true,
+    "participantes": [
+      "AL83",
+      "AL97",
+      "AL92"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-4",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-10-14",
+    "duracionMinutos": 45,
+    "especieAsociada": "Lobo",
+    "intensidad": 8.391508220317913,
+    "asistio": true,
+    "participantes": [
+      "LO16",
+      "LO20",
+      "LO22",
+      "LO10",
+      "LO15",
+      "LO12",
+      "LO7"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-5",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-10-13",
+    "duracionMinutos": 133,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.133679386069853,
+    "asistio": true,
+    "participantes": [
+      "LO21",
+      "LO12",
+      "LO23",
+      "LO7",
+      "LO18"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-6",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-10-11",
+    "duracionMinutos": 105,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.446789767609139,
+    "asistio": true,
+    "participantes": [
+      "CI65",
+      "CI54",
+      "CI66",
+      "CI61",
+      "CI59",
+      "CI69",
+      "CI56",
+      "CI72"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-7",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-10-01",
+    "duracionMinutos": 39,
+    "especieAsociada": "Alce",
+    "intensidad": 2.6256965103680905,
+    "asistio": true,
+    "participantes": [
+      "AL90",
+      "AL93",
+      "AL88",
+      "AL80",
+      "AL95",
+      "AL92"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-8",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-10-01",
+    "duracionMinutos": 52,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.749612420501126,
+    "asistio": true,
+    "participantes": [
+      "CI73",
+      "CI63",
+      "CI57"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-9",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-10-20",
+    "duracionMinutos": 148,
+    "especieAsociada": "Leon",
+    "intensidad": 8.481910816752153,
+    "asistio": true,
+    "participantes": [
+      "LE33",
+      "LE44",
+      "LE29",
+      "LE46",
+      "LE28",
+      "LE42",
+      "LE34",
+      "LE37"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-10",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-10-15",
+    "duracionMinutos": 166,
+    "especieAsociada": "Lobo",
+    "intensidad": 2.145477443074191,
+    "asistio": true,
+    "participantes": [
+      "LO10",
+      "LO25",
+      "LO21",
+      "LO11",
+      "LO8",
+      "LO18",
+      "LO24"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-11",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-10-03",
+    "duracionMinutos": 92,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.192121147381992,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO8",
+      "LO3",
+      "LO2",
+      "LO12",
+      "LO18"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-12",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-10-19",
+    "duracionMinutos": 129,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.0877394177281525,
+    "asistio": true,
+    "participantes": [
+      "CI73",
+      "CI53",
+      "CI65",
+      "CI56",
+      "CI61",
+      "CI52",
+      "CI57"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-13",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-10-06",
+    "duracionMinutos": 125,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.433083191550826,
+    "asistio": true,
+    "participantes": [
+      "CI63",
+      "CI67",
+      "CI72"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-14",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-10-19",
+    "duracionMinutos": 56,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.7403463827526133,
+    "asistio": true,
+    "participantes": [
+      "LO18",
+      "LO2",
+      "LO13",
+      "LO9",
+      "LO19"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-15",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-10-22",
+    "duracionMinutos": 124,
+    "especieAsociada": "Leon",
+    "intensidad": 6.109418570437997,
+    "asistio": true,
+    "participantes": [
+      "LE26",
+      "LE43",
+      "LE31",
+      "LE37",
+      "LE49",
+      "LE33",
+      "LE27",
+      "LE38"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-16",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-10-27",
+    "duracionMinutos": 30,
+    "especieAsociada": "Ciervo",
+    "intensidad": 5.337975820413604,
+    "asistio": true,
+    "participantes": [
+      "CI63",
+      "CI70",
+      "CI52",
+      "CI53",
+      "CI56"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-17",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-10-19",
+    "duracionMinutos": 111,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.748243330466753,
+    "asistio": true,
+    "participantes": [
+      "CI53",
+      "CI61",
+      "CI70",
+      "CI69",
+      "CI62"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-18",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-10-22",
+    "duracionMinutos": 140,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.6723067718983051,
+    "asistio": true,
+    "participantes": [
+      "LO6",
+      "LO13",
+      "LO24",
+      "LO11",
+      "LO18",
+      "LO7",
+      "LO14",
+      "LO10"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-19",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-10-14",
+    "duracionMinutos": 175,
+    "especieAsociada": "Leon",
+    "intensidad": 5.901655124217411,
+    "asistio": true,
+    "participantes": [
+      "LE49",
+      "LE30",
+      "LE35",
+      "LE26",
+      "LE34",
+      "LE43",
+      "LE40"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-20",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-10-21",
+    "duracionMinutos": 123,
+    "especieAsociada": "Lobo",
+    "intensidad": 4.599777930970042,
+    "asistio": true,
+    "participantes": [
+      "LO7",
+      "LO9",
+      "LO24",
+      "LO13",
+      "LO17",
+      "LO14"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-21",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-10-15",
+    "duracionMinutos": 78,
+    "especieAsociada": "Alce",
+    "intensidad": 8.028939231169087,
+    "asistio": true,
+    "participantes": [
+      "AL98",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-22",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-10-22",
+    "duracionMinutos": 175,
+    "especieAsociada": "Leon",
+    "intensidad": 4.167572844886974,
+    "asistio": true,
+    "participantes": [
+      "LE33",
+      "LE30",
+      "LE47",
+      "LE48"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-23",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-10-23",
+    "duracionMinutos": 50,
+    "especieAsociada": "Alce",
+    "intensidad": 7.1679287765641675,
+    "asistio": true,
+    "participantes": [
+      "AL84",
+      "AL97",
+      "AL88",
+      "AL89",
+      "AL83",
+      "AL82",
+      "AL94"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-24",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-10-01",
+    "duracionMinutos": 173,
+    "especieAsociada": "Lobo",
+    "intensidad": 3.61205620032921,
+    "asistio": true,
+    "participantes": [
+      "LO23",
+      "LO15",
+      "LO17",
+      "LO20",
+      "LO21",
+      "LO13",
+      "LO12",
+      "LO8"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-25",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-10-10",
+    "duracionMinutos": 35,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.9723333895991,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI74",
+      "CI55",
+      "CI67",
+      "CI52"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-26",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-10-11",
+    "duracionMinutos": 45,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.346456896625659,
+    "asistio": true,
+    "participantes": [
+      "LO2",
+      "LO25",
+      "LO7",
+      "LO1"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-27",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-10-17",
+    "duracionMinutos": 147,
+    "especieAsociada": "Alce",
+    "intensidad": 6.2212759267289774,
+    "asistio": true,
+    "participantes": [
+      "AL88",
+      "AL99",
+      "AL77",
+      "AL79",
+      "AL84",
+      "AL81"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-28",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-10-24",
+    "duracionMinutos": 115,
+    "especieAsociada": "Lobo",
+    "intensidad": 5.197621251376215,
+    "asistio": true,
+    "participantes": [
+      "LO14",
+      "LO24",
+      "LO3",
+      "LO2",
+      "LO11",
+      "LO4"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-29",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-10-07",
+    "duracionMinutos": 42,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.2441470123507963,
+    "asistio": true,
+    "participantes": [
+      "CI75",
+      "CI53",
+      "CI69",
+      "CI52",
+      "CI57",
+      "CI64",
+      "CI51",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-30",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-10-09",
+    "duracionMinutos": 99,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.804307809932798,
+    "asistio": true,
+    "participantes": [
+      "CI69",
+      "CI64",
+      "CI53",
+      "CI71",
+      "CI66",
+      "CI63"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-31",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-10-12",
+    "duracionMinutos": 73,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.878530387643137,
+    "asistio": true,
+    "participantes": [
+      "LO7",
+      "LO19",
+      "LO13",
+      "LO22",
+      "LO2",
+      "LO11",
+      "LO4",
+      "LO24",
+      "LO8",
+      "LO6"
+    ]
+  },
+  {
+    "nombre": "Ritual-Octubre-32",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-10-06",
+    "duracionMinutos": 95,
+    "especieAsociada": "Leon",
+    "intensidad": 2.3808633245225126,
+    "asistio": true,
+    "participantes": [
+      "LE40",
+      "LE28",
+      "LE36",
+      "LE38"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-1",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-20",
+    "duracionMinutos": 59,
+    "especieAsociada": "Leon",
+    "intensidad": 4.245835591704983,
+    "asistio": true,
+    "participantes": [
+      "LE41",
+      "LE36",
+      "LE39",
+      "LE31",
+      "LE45",
+      "LE50",
+      "LE38",
+      "LE33"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-2",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-15",
+    "duracionMinutos": 122,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.883647533861261,
+    "asistio": true,
+    "participantes": [
+      "CI51",
+      "CI71",
+      "CI63",
+      "CI52",
+      "CI56",
+      "CI72",
+      "CI70"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-3",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-11-25",
+    "duracionMinutos": 135,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.4245349910448235,
+    "asistio": true,
+    "participantes": [
+      "CI69",
+      "CI62",
+      "CI64",
+      "CI65",
+      "CI55"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-4",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-11-06",
+    "duracionMinutos": 132,
+    "especieAsociada": "Alce",
+    "intensidad": 8.28051065573116,
+    "asistio": true,
+    "participantes": [
+      "AL92",
+      "AL76",
+      "AL93",
+      "AL79",
+      "AL95"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-5",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-11-18",
+    "duracionMinutos": 42,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.957596784575579,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO4",
+      "LO13",
+      "LO22"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-6",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-01",
+    "duracionMinutos": 70,
+    "especieAsociada": "Alce",
+    "intensidad": 9.377069120928722,
+    "asistio": true,
+    "participantes": [
+      "AL84",
+      "AL94",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-7",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-11-03",
+    "duracionMinutos": 88,
+    "especieAsociada": "Alce",
+    "intensidad": 3.9540444998575555,
+    "asistio": true,
+    "participantes": [
+      "AL76",
+      "AL85",
+      "AL87",
+      "AL79",
+      "AL96",
+      "AL91"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-8",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-11-04",
+    "duracionMinutos": 167,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.9631846049357389,
+    "asistio": true,
+    "participantes": [
+      "CI61",
+      "CI64",
+      "CI62"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-9",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-11-20",
+    "duracionMinutos": 108,
+    "especieAsociada": "Leon",
+    "intensidad": 4.2588876546880865,
+    "asistio": true,
+    "participantes": [
+      "LE44",
+      "LE33",
+      "LE45",
+      "LE49",
+      "LE47",
+      "LE39",
+      "LE34",
+      "LE35",
+      "LE48"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-10",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-11-09",
+    "duracionMinutos": 175,
+    "especieAsociada": "Alce",
+    "intensidad": 4.102500608459802,
+    "asistio": true,
+    "participantes": [
+      "AL78",
+      "AL90",
+      "AL77",
+      "AL87",
+      "AL85",
+      "AL82",
+      "AL92"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-11",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-11-04",
+    "duracionMinutos": 151,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.7980587859839678,
+    "asistio": true,
+    "participantes": [
+      "CI72",
+      "CI70",
+      "CI75"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-12",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-11-06",
+    "duracionMinutos": 91,
+    "especieAsociada": "Alce",
+    "intensidad": 9.370642975748726,
+    "asistio": true,
+    "participantes": [
+      "AL93",
+      "AL81",
+      "AL94",
+      "AL76",
+      "AL90",
+      "AL97",
+      "AL78"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-13",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-11-26",
+    "duracionMinutos": 147,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.337422264513412,
+    "asistio": true,
+    "participantes": [
+      "CI75",
+      "CI52",
+      "CI70",
+      "CI51",
+      "CI57"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-14",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-25",
+    "duracionMinutos": 118,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.359907375069875,
+    "asistio": true,
+    "participantes": [
+      "LO23",
+      "LO1",
+      "LO7",
+      "LO15",
+      "LO25",
+      "LO21",
+      "LO14",
+      "LO6"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-15",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-11-10",
+    "duracionMinutos": 92,
+    "especieAsociada": "Leon",
+    "intensidad": 2.652952578087505,
+    "asistio": true,
+    "participantes": [
+      "LE45",
+      "LE33",
+      "LE48",
+      "LE30",
+      "LE47",
+      "LE49",
+      "LE40"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-16",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-11-28",
+    "duracionMinutos": 107,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.6103642214295935,
+    "asistio": true,
+    "participantes": [
+      "LO16",
+      "LO25",
+      "LO2",
+      "LO10",
+      "LO13",
+      "LO22",
+      "LO19",
+      "LO15"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-17",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-11-10",
+    "duracionMinutos": 111,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.680584742908613,
+    "asistio": true,
+    "participantes": [
+      "CI55",
+      "CI61",
+      "CI74",
+      "CI59",
+      "CI51",
+      "CI54"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-18",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-11-11",
+    "duracionMinutos": 166,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.4676389147817528,
+    "asistio": true,
+    "participantes": [
+      "LO4",
+      "LO10",
+      "LO15",
+      "LO13"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-19",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-11-10",
+    "duracionMinutos": 32,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.332436531369218,
+    "asistio": true,
+    "participantes": [
+      "CI70",
+      "CI71",
+      "CI64",
+      "CI53",
+      "CI51",
+      "CI66",
+      "CI65",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-20",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-28",
+    "duracionMinutos": 146,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.977555589675902,
+    "asistio": true,
+    "participantes": [
+      "CI64",
+      "CI72",
+      "CI53",
+      "CI69",
+      "CI67"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-21",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-11-24",
+    "duracionMinutos": 53,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.331763168749089,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO22",
+      "LO2",
+      "LO10"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-22",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-11-09",
+    "duracionMinutos": 174,
+    "especieAsociada": "Alce",
+    "intensidad": 4.212127156937003,
+    "asistio": true,
+    "participantes": [
+      "AL86",
+      "AL100",
+      "AL78",
+      "AL95"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-23",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-11-09",
+    "duracionMinutos": 32,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.4497021330617472,
+    "asistio": true,
+    "participantes": [
+      "CI70",
+      "CI71",
+      "CI55",
+      "CI59"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-24",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-10",
+    "duracionMinutos": 78,
+    "especieAsociada": "Alce",
+    "intensidad": 8.625789761540084,
+    "asistio": true,
+    "participantes": [
+      "AL96",
+      "AL79",
+      "AL98",
+      "AL93",
+      "AL86",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-25",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-07",
+    "duracionMinutos": 80,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.642419613838643,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO11",
+      "LO17",
+      "LO7",
+      "LO12",
+      "LO25",
+      "LO9",
+      "LO8",
+      "LO16"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-26",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-11-14",
+    "duracionMinutos": 34,
+    "especieAsociada": "Leon",
+    "intensidad": 1.8554124908104923,
+    "asistio": true,
+    "participantes": [
+      "LE26",
+      "LE29",
+      "LE32",
+      "LE43",
+      "LE30",
+      "LE49",
+      "LE42"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-27",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-22",
+    "duracionMinutos": 91,
+    "especieAsociada": "Alce",
+    "intensidad": 5.439698359540277,
+    "asistio": true,
+    "participantes": [
+      "AL99",
+      "AL98",
+      "AL93",
+      "AL86",
+      "AL76",
+      "AL97",
+      "AL85"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-28",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-11-07",
+    "duracionMinutos": 161,
+    "especieAsociada": "Alce",
+    "intensidad": 3.2240047376362666,
+    "asistio": true,
+    "participantes": [
+      "AL82",
+      "AL81",
+      "AL97",
+      "AL88",
+      "AL98"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-29",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-11-14",
+    "duracionMinutos": 76,
+    "especieAsociada": "Alce",
+    "intensidad": 5.159996384716613,
+    "asistio": true,
+    "participantes": [
+      "AL87",
+      "AL95",
+      "AL80",
+      "AL78",
+      "AL82",
+      "AL81",
+      "AL86"
+    ]
+  },
+  {
+    "nombre": "Ritual-Noviembre-30",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-11-08",
+    "duracionMinutos": 162,
+    "especieAsociada": "Alce",
+    "intensidad": 1.0517378949753935,
+    "asistio": true,
+    "participantes": [
+      "AL86",
+      "AL76",
+      "AL97",
+      "AL78",
+      "AL89",
+      "AL80",
+      "AL92",
+      "AL94",
+      "AL95",
+      "AL99"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-1",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-12-27",
+    "duracionMinutos": 84,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.211003244338768,
+    "asistio": true,
+    "participantes": [
+      "LO13",
+      "LO11",
+      "LO4",
+      "LO5"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-2",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-26",
+    "duracionMinutos": 175,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.559579339146202,
+    "asistio": true,
+    "participantes": [
+      "CI67",
+      "CI57",
+      "CI65",
+      "CI56",
+      "CI59",
+      "CI53",
+      "CI68",
+      "CI58",
+      "CI73"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-3",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-12-16",
+    "duracionMinutos": 65,
+    "especieAsociada": "Alce",
+    "intensidad": 2.9957841336020428,
+    "asistio": true,
+    "participantes": [
+      "AL77",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-4",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-12-24",
+    "duracionMinutos": 176,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.7458963490292145,
+    "asistio": true,
+    "participantes": [
+      "LO13",
+      "LO14",
+      "LO17",
+      "LO5",
+      "LO9",
+      "LO11",
+      "LO7"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-5",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-13",
+    "duracionMinutos": 143,
+    "especieAsociada": "Alce",
+    "intensidad": 5.125282847683601,
+    "asistio": true,
+    "participantes": [
+      "AL86",
+      "AL80",
+      "AL94",
+      "AL99",
+      "AL89",
+      "AL82",
+      "AL92"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-6",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-12-21",
+    "duracionMinutos": 72,
+    "especieAsociada": "Alce",
+    "intensidad": 9.830492499957586,
+    "asistio": true,
+    "participantes": [
+      "AL77",
+      "AL86",
+      "AL92"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-7",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-20",
+    "duracionMinutos": 108,
+    "especieAsociada": "Alce",
+    "intensidad": 6.001625544043439,
+    "asistio": true,
+    "participantes": [
+      "AL94",
+      "AL76",
+      "AL86",
+      "AL88",
+      "AL92",
+      "AL96",
+      "AL99",
+      "AL98"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-8",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-14",
+    "duracionMinutos": 93,
+    "especieAsociada": "Leon",
+    "intensidad": 8.07577819297424,
+    "asistio": true,
+    "participantes": [
+      "LE35",
+      "LE31",
+      "LE29",
+      "LE30"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-9",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-12-01",
+    "duracionMinutos": 54,
+    "especieAsociada": "Lobo",
+    "intensidad": 2.4299982424758526,
+    "asistio": true,
+    "participantes": [
+      "LO12",
+      "LO6",
+      "LO14"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-10",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-19",
+    "duracionMinutos": 47,
+    "especieAsociada": "Lobo",
+    "intensidad": 8.677601986310162,
+    "asistio": true,
+    "participantes": [
+      "LO16",
+      "LO9",
+      "LO7",
+      "LO18",
+      "LO4",
+      "LO6",
+      "LO17",
+      "LO14"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-11",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-08",
+    "duracionMinutos": 177,
+    "especieAsociada": "Ciervo",
+    "intensidad": 6.616542848359925,
+    "asistio": true,
+    "participantes": [
+      "CI69",
+      "CI73",
+      "CI65"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-12",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-12-12",
+    "duracionMinutos": 38,
+    "especieAsociada": "Lobo",
+    "intensidad": 5.312339219987345,
+    "asistio": true,
+    "participantes": [
+      "LO17",
+      "LO24",
+      "LO11",
+      "LO21",
+      "LO15",
+      "LO19"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-13",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-08",
+    "duracionMinutos": 31,
+    "especieAsociada": "Leon",
+    "intensidad": 5.571993715372952,
+    "asistio": true,
+    "participantes": [
+      "LE50",
+      "LE46",
+      "LE39",
+      "LE47",
+      "LE41"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-14",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-12-07",
+    "duracionMinutos": 177,
+    "especieAsociada": "Leon",
+    "intensidad": 8.24663893561701,
+    "asistio": true,
+    "participantes": [
+      "LE35",
+      "LE30",
+      "LE33",
+      "LE46"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-15",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-12-20",
+    "duracionMinutos": 111,
+    "especieAsociada": "Alce",
+    "intensidad": 8.134693570681797,
+    "asistio": true,
+    "participantes": [
+      "AL92",
+      "AL87",
+      "AL80",
+      "AL82"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-16",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-12-14",
+    "duracionMinutos": 85,
+    "especieAsociada": "Lobo",
+    "intensidad": 3.3484406505123214,
+    "asistio": true,
+    "participantes": [
+      "LO17",
+      "LO14",
+      "LO15",
+      "LO20",
+      "LO22"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-17",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-12-20",
+    "duracionMinutos": 47,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.721866727181033,
+    "asistio": true,
+    "participantes": [
+      "CI57",
+      "CI51",
+      "CI63",
+      "CI65",
+      "CI58",
+      "CI60",
+      "CI75"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-18",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-12-17",
+    "duracionMinutos": 37,
+    "especieAsociada": "Leon",
+    "intensidad": 7.650278467964674,
+    "asistio": true,
+    "participantes": [
+      "LE46",
+      "LE37",
+      "LE32"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-19",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-12-12",
+    "duracionMinutos": 159,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.359003949545235,
+    "asistio": true,
+    "participantes": [
+      "LO2",
+      "LO17",
+      "LO14",
+      "LO10",
+      "LO24",
+      "LO3"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-20",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-12-23",
+    "duracionMinutos": 137,
+    "especieAsociada": "Leon",
+    "intensidad": 8.480324083587693,
+    "asistio": true,
+    "participantes": [
+      "LE47",
+      "LE45",
+      "LE35",
+      "LE30",
+      "LE39",
+      "LE27",
+      "LE37"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-21",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-27",
+    "duracionMinutos": 164,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.5538381667182188,
+    "asistio": true,
+    "participantes": [
+      "LO12",
+      "LO10",
+      "LO9",
+      "LO18",
+      "LO20"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-22",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-12-05",
+    "duracionMinutos": 150,
+    "especieAsociada": "Alce",
+    "intensidad": 9.440150029739458,
+    "asistio": true,
+    "participantes": [
+      "AL86",
+      "AL92",
+      "AL98",
+      "AL91",
+      "AL94",
+      "AL97",
+      "AL85"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-23",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-12-15",
+    "duracionMinutos": 128,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.09612214873314,
+    "asistio": true,
+    "participantes": [
+      "CI58",
+      "CI67",
+      "CI56",
+      "CI68",
+      "CI74",
+      "CI71",
+      "CI65",
+      "CI75"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-24",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-12-13",
+    "duracionMinutos": 80,
+    "especieAsociada": "Leon",
+    "intensidad": 8.26920018989328,
+    "asistio": true,
+    "participantes": [
+      "LE28",
+      "LE49",
+      "LE30"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-25",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-12-26",
+    "duracionMinutos": 149,
+    "especieAsociada": "Alce",
+    "intensidad": 7.18268835387888,
+    "asistio": true,
+    "participantes": [
+      "AL81",
+      "AL95",
+      "AL91",
+      "AL83",
+      "AL87",
+      "AL90",
+      "AL86",
+      "AL96"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-26",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-12-27",
+    "duracionMinutos": 117,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.8687033728391444,
+    "asistio": true,
+    "participantes": [
+      "LO20",
+      "LO24",
+      "LO18",
+      "LO11"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-27",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-12-25",
+    "duracionMinutos": 78,
+    "especieAsociada": "Ciervo",
+    "intensidad": 4.9366877262874835,
+    "asistio": true,
+    "participantes": [
+      "CI66",
+      "CI55",
+      "CI61",
+      "CI56",
+      "CI62"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-28",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-12-19",
+    "duracionMinutos": 30,
+    "especieAsociada": "Leon",
+    "intensidad": 9.814785884909103,
+    "asistio": true,
+    "participantes": [
+      "LE45",
+      "LE43",
+      "LE31",
+      "LE34",
+      "LE27",
+      "LE36"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-29",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-12-07",
+    "duracionMinutos": 164,
+    "especieAsociada": "Lobo",
+    "intensidad": 2.0582121864974083,
+    "asistio": true,
+    "participantes": [
+      "LO3",
+      "LO16",
+      "LO14",
+      "LO7",
+      "LO2",
+      "LO21",
+      "LO8",
+      "LO1"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-30",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2026-12-07",
+    "duracionMinutos": 139,
+    "especieAsociada": "Lobo",
+    "intensidad": 3.390715812627471,
+    "asistio": true,
+    "participantes": [
+      "LO3",
+      "LO4",
+      "LO22",
+      "LO5",
+      "LO17",
+      "LO25",
+      "LO14",
+      "LO8"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-31",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-05",
+    "duracionMinutos": 111,
+    "especieAsociada": "Lobo",
+    "intensidad": 4.265571780638418,
+    "asistio": true,
+    "participantes": [
+      "LO4",
+      "LO17",
+      "LO16",
+      "LO11",
+      "LO1",
+      "LO18",
+      "LO6"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-32",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-12-02",
+    "duracionMinutos": 90,
+    "especieAsociada": "Alce",
+    "intensidad": 8.218269612580357,
+    "asistio": true,
+    "participantes": [
+      "AL85",
+      "AL89",
+      "AL90",
+      "AL94",
+      "AL87",
+      "AL88",
+      "AL95",
+      "AL97"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-33",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2026-12-21",
+    "duracionMinutos": 92,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.108508254955343,
+    "asistio": true,
+    "participantes": [
+      "CI68",
+      "CI63",
+      "CI67"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-34",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-12-09",
+    "duracionMinutos": 119,
+    "especieAsociada": "Alce",
+    "intensidad": 1.5721660843234315,
+    "asistio": true,
+    "participantes": [
+      "AL97",
+      "AL100",
+      "AL90",
+      "AL79",
+      "AL81"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-35",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2026-12-22",
+    "duracionMinutos": 91,
+    "especieAsociada": "Leon",
+    "intensidad": 8.283827584469112,
+    "asistio": true,
+    "participantes": [
+      "LE26",
+      "LE30",
+      "LE27",
+      "LE47",
+      "LE33"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-36",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-12-27",
+    "duracionMinutos": 175,
+    "especieAsociada": "Alce",
+    "intensidad": 5.937080347182372,
+    "asistio": true,
+    "participantes": [
+      "AL82",
+      "AL81",
+      "AL84"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-37",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2026-12-14",
+    "duracionMinutos": 122,
+    "especieAsociada": "Lobo",
+    "intensidad": 8.891200347549244,
+    "asistio": true,
+    "participantes": [
+      "LO8",
+      "LO17",
+      "LO10",
+      "LO3",
+      "LO15"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-38",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2026-12-22",
+    "duracionMinutos": 86,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.1882824267170888,
+    "asistio": true,
+    "participantes": [
+      "LO24",
+      "LO11",
+      "LO10",
+      "LO3",
+      "LO23",
+      "LO5",
+      "LO17"
+    ]
+  },
+  {
+    "nombre": "Ritual-Diciembre-39",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2026-12-14",
+    "duracionMinutos": 87,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.087784389192299,
+    "asistio": true,
+    "participantes": [
+      "LO22",
+      "LO11",
+      "LO24",
+      "LO4",
+      "LO8"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-1",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2027-01-14",
+    "duracionMinutos": 43,
+    "especieAsociada": "Alce",
+    "intensidad": 7.21444573055202,
+    "asistio": true,
+    "participantes": [
+      "AL92",
+      "AL77",
+      "AL100",
+      "AL79",
+      "AL96",
+      "AL99",
+      "AL95",
+      "AL93",
+      "AL89"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-2",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2027-01-15",
+    "duracionMinutos": 127,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.765320638498113,
+    "asistio": true,
+    "participantes": [
+      "CI59",
+      "CI58",
+      "CI60",
+      "CI57",
+      "CI68",
+      "CI56",
+      "CI71",
+      "CI65",
+      "CI53",
+      "CI73"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-3",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2027-01-10",
+    "duracionMinutos": 90,
+    "especieAsociada": "Lobo",
+    "intensidad": 2.236944261061045,
+    "asistio": true,
+    "participantes": [
+      "LO22",
+      "LO24",
+      "LO11",
+      "LO8"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-4",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2027-01-11",
+    "duracionMinutos": 174,
+    "especieAsociada": "Leon",
+    "intensidad": 6.048537786430146,
+    "asistio": true,
+    "participantes": [
+      "LE49",
+      "LE30",
+      "LE36",
+      "LE41",
+      "LE39",
+      "LE34"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-5",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-25",
+    "duracionMinutos": 136,
+    "especieAsociada": "Ciervo",
+    "intensidad": 6.3925552754007935,
+    "asistio": true,
+    "participantes": [
+      "CI63",
+      "CI64",
+      "CI58",
+      "CI52",
+      "CI54",
+      "CI68",
+      "CI56"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-6",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2027-01-12",
+    "duracionMinutos": 147,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.363983157511054,
+    "asistio": true,
+    "participantes": [
+      "CI58",
+      "CI61",
+      "CI72"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-7",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2027-01-12",
+    "duracionMinutos": 150,
+    "especieAsociada": "Ciervo",
+    "intensidad": 1.100649941919067,
+    "asistio": true,
+    "participantes": [
+      "CI62",
+      "CI56",
+      "CI51",
+      "CI59",
+      "CI73",
+      "CI57",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-8",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2027-01-09",
+    "duracionMinutos": 69,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.006240446073047,
+    "asistio": true,
+    "participantes": [
+      "LO3",
+      "LO5",
+      "LO11",
+      "LO6",
+      "LO1",
+      "LO21",
+      "LO22",
+      "LO17"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-9",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-03",
+    "duracionMinutos": 132,
+    "especieAsociada": "Ciervo",
+    "intensidad": 7.223016428331002,
+    "asistio": true,
+    "participantes": [
+      "CI73",
+      "CI59",
+      "CI69"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-10",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2027-01-15",
+    "duracionMinutos": 56,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.65928929805208,
+    "asistio": true,
+    "participantes": [
+      "CI63",
+      "CI71",
+      "CI58",
+      "CI68"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-11",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-25",
+    "duracionMinutos": 85,
+    "especieAsociada": "Lobo",
+    "intensidad": 6.828667362203352,
+    "asistio": true,
+    "participantes": [
+      "LO1",
+      "LO11",
+      "LO19"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-12",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2027-01-04",
+    "duracionMinutos": 124,
+    "especieAsociada": "Alce",
+    "intensidad": 2.480669412168949,
+    "asistio": true,
+    "participantes": [
+      "AL92",
+      "AL84",
+      "AL95",
+      "AL87",
+      "AL83"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-13",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2027-01-07",
+    "duracionMinutos": 45,
+    "especieAsociada": "Alce",
+    "intensidad": 9.662772015080657,
+    "asistio": true,
+    "participantes": [
+      "AL76",
+      "AL85",
+      "AL89",
+      "AL100",
+      "AL91",
+      "AL97",
+      "AL87"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-14",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2027-01-09",
+    "duracionMinutos": 56,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.6208460378310523,
+    "asistio": true,
+    "participantes": [
+      "CI71",
+      "CI67",
+      "CI62"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-15",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-07",
+    "duracionMinutos": 136,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.916253951673887,
+    "asistio": true,
+    "participantes": [
+      "CI52",
+      "CI71",
+      "CI55",
+      "CI58",
+      "CI62",
+      "CI57",
+      "CI68"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-16",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-27",
+    "duracionMinutos": 163,
+    "especieAsociada": "Ciervo",
+    "intensidad": 9.463705452506105,
+    "asistio": true,
+    "participantes": [
+      "CI55",
+      "CI61",
+      "CI69",
+      "CI63"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-17",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2027-01-27",
+    "duracionMinutos": 58,
+    "especieAsociada": "Lobo",
+    "intensidad": 1.6223844385921844,
+    "asistio": true,
+    "participantes": [
+      "LO11",
+      "LO21",
+      "LO3",
+      "LO2",
+      "LO14",
+      "LO8"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-18",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2027-01-06",
+    "duracionMinutos": 96,
+    "especieAsociada": "Lobo",
+    "intensidad": 3.8668808112479924,
+    "asistio": true,
+    "participantes": [
+      "LO19",
+      "LO6",
+      "LO24",
+      "LO23",
+      "LO16",
+      "LO11",
+      "LO22",
+      "LO9",
+      "LO14"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-19",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2027-01-11",
+    "duracionMinutos": 45,
+    "especieAsociada": "Alce",
+    "intensidad": 7.5491762494977035,
+    "asistio": true,
+    "participantes": [
+      "AL88",
+      "AL82",
+      "AL96",
+      "AL87",
+      "AL85",
+      "AL98",
+      "AL99"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-20",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2027-01-16",
+    "duracionMinutos": 70,
+    "especieAsociada": "Ciervo",
+    "intensidad": 3.8760048495558332,
+    "asistio": true,
+    "participantes": [
+      "CI74",
+      "CI60"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-21",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2027-01-16",
+    "duracionMinutos": 170,
+    "especieAsociada": "Leon",
+    "intensidad": 5.433269248085529,
+    "asistio": true,
+    "participantes": [
+      "LE32",
+      "LE29",
+      "LE43",
+      "LE31",
+      "LE33",
+      "LE42"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-22",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2027-01-12",
+    "duracionMinutos": 117,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.875462766891495,
+    "asistio": true,
+    "participantes": [
+      "LO10",
+      "LO12",
+      "LO24",
+      "LO25",
+      "LO7",
+      "LO8",
+      "LO19",
+      "LO9"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-23",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-09",
+    "duracionMinutos": 31,
+    "especieAsociada": "Leon",
+    "intensidad": 1.8011460835361415,
+    "asistio": true,
+    "participantes": [
+      "LE36",
+      "LE33",
+      "LE43",
+      "LE26"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-24",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-24",
+    "duracionMinutos": 122,
+    "especieAsociada": "Alce",
+    "intensidad": 4.735812820627255,
+    "asistio": true,
+    "participantes": [
+      "AL86",
+      "AL79",
+      "AL76",
+      "AL95",
+      "AL80",
+      "AL100",
+      "AL77",
+      "AL81"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-25",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2027-01-13",
+    "duracionMinutos": 113,
+    "especieAsociada": "Alce",
+    "intensidad": 3.965385965766962,
+    "asistio": true,
+    "participantes": [
+      "AL97",
+      "AL100",
+      "AL80",
+      "AL81"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-26",
+    "tipo": "AULLIDO_COLECTIVO",
+    "fecha": "2027-01-23",
+    "duracionMinutos": 117,
+    "especieAsociada": "Leon",
+    "intensidad": 3.299081605108424,
+    "asistio": true,
+    "participantes": [
+      "LE26",
+      "LE45",
+      "LE37",
+      "LE48",
+      "LE39"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-27",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-09",
+    "duracionMinutos": 141,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.608889770172455,
+    "asistio": true,
+    "participantes": [
+      "LO13",
+      "LO22",
+      "LO24",
+      "LO5",
+      "LO3",
+      "LO20",
+      "LO6"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-28",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2027-01-09",
+    "duracionMinutos": 36,
+    "especieAsociada": "Ciervo",
+    "intensidad": 8.510370942783078,
+    "asistio": true,
+    "participantes": [
+      "CI60",
+      "CI66",
+      "CI57",
+      "CI67",
+      "CI65",
+      "CI53",
+      "CI54"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-29",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2027-01-25",
+    "duracionMinutos": 110,
+    "especieAsociada": "Lobo",
+    "intensidad": 4.877996767431619,
+    "asistio": true,
+    "participantes": [
+      "LO11",
+      "LO5",
+      "LO3",
+      "LO12",
+      "LO21"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-30",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-06",
+    "duracionMinutos": 102,
+    "especieAsociada": "Leon",
+    "intensidad": 6.068685262429136,
+    "asistio": true,
+    "participantes": [
+      "LE35",
+      "LE40",
+      "LE29",
+      "LE37",
+      "LE36",
+      "LE38",
+      "LE50"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-31",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-08",
+    "duracionMinutos": 50,
+    "especieAsociada": "Lobo",
+    "intensidad": 8.141836504654655,
+    "asistio": true,
+    "participantes": [
+      "LO6",
+      "LO23",
+      "LO21",
+      "LO2",
+      "LO22",
+      "LO10",
+      "LO20",
+      "LO13"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-32",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2027-01-04",
+    "duracionMinutos": 144,
+    "especieAsociada": "Alce",
+    "intensidad": 8.230282762361416,
+    "asistio": true,
+    "participantes": [
+      "AL86",
+      "AL92",
+      "AL77",
+      "AL95",
+      "AL98",
+      "AL91",
+      "AL90",
+      "AL78",
+      "AL84"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-33",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2027-01-27",
+    "duracionMinutos": 103,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.585356656432583,
+    "asistio": true,
+    "participantes": [
+      "LO25",
+      "LO16",
+      "LO19",
+      "LO9",
+      "LO13"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-34",
+    "tipo": "ASAMBLEA_DE_RUGIDOS",
+    "fecha": "2027-01-11",
+    "duracionMinutos": 68,
+    "especieAsociada": "Ciervo",
+    "intensidad": 2.7744055677753034,
+    "asistio": true,
+    "participantes": [
+      "CI71",
+      "CI55",
+      "CI75",
+      "CI57",
+      "CI56",
+      "CI61",
+      "CI68",
+      "CI51"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-35",
+    "tipo": "VUELO_CEREMONIAL",
+    "fecha": "2027-01-24",
+    "duracionMinutos": 39,
+    "especieAsociada": "Alce",
+    "intensidad": 3.012461002147159,
+    "asistio": true,
+    "participantes": [
+      "AL84",
+      "AL87",
+      "AL76",
+      "AL93",
+      "AL77",
+      "AL78",
+      "AL88",
+      "AL100"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-36",
+    "tipo": "CAMINATA_NOCTURNA",
+    "fecha": "2027-01-26",
+    "duracionMinutos": 150,
+    "especieAsociada": "Leon",
+    "intensidad": 2.3797080273714304,
+    "asistio": true,
+    "participantes": [
+      "LE45",
+      "LE44",
+      "LE40"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-37",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2027-01-05",
+    "duracionMinutos": 42,
+    "especieAsociada": "Lobo",
+    "intensidad": 9.02033773758793,
+    "asistio": true,
+    "participantes": [
+      "LO17",
+      "LO3",
+      "LO14",
+      "LO8",
+      "LO21",
+      "LO20"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-38",
+    "tipo": "CEREMONIA_DE_MANADA",
+    "fecha": "2027-01-15",
+    "duracionMinutos": 127,
+    "especieAsociada": "Alce",
+    "intensidad": 4.5690064945467075,
+    "asistio": true,
+    "participantes": [
+      "AL77",
+      "AL89",
+      "AL80",
+      "AL92"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-39",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2027-01-15",
+    "duracionMinutos": 32,
+    "especieAsociada": "Leon",
+    "intensidad": 1.9423412097260009,
+    "asistio": true,
+    "participantes": [
+      "LE40",
+      "LE38",
+      "LE47",
+      "LE32",
+      "LE27"
+    ]
+  },
+  {
+    "nombre": "Ritual-Enero-40",
+    "tipo": "DANZA_DEL_AGUA",
+    "fecha": "2027-01-08",
+    "duracionMinutos": 145,
+    "especieAsociada": "Lobo",
+    "intensidad": 7.688056938120542,
+    "asistio": true,
+    "participantes": [
+      "LO2",
+      "LO17",
+      "LO3",
+      "LO8",
+      "LO6",
+      "LO25",
+      "LO7"
+    ]
+  }
+]

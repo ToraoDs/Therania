@@ -8,9 +8,7 @@ public class Encuentro {
     private static final double MINIMO_RATIO = 0.0;
 
     // Registra el resultado de un encuentro entre predador y presa
-    public static void registrarEncuentro(CiudadanoTherian predador,
-                                          CiudadanoTherian presa,
-                                          boolean predadorGano) {
+    public static void registrarEncuentro(CiudadanoTherian predador, CiudadanoTherian presa, boolean predadorGano) {
         if (predadorGano) {
             // Predador captura → sube ratioCaza
             predador.setRatioCaza(

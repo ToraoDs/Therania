@@ -1,0 +1,2934 @@
+[
+  {
+    "nombre": "Aiden",
+    "apellido": "Ravenmoor",
+    "id": "LO1",
+    "fechaNacimiento": "1996-03-11",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 28.63,
+    "puntuacionManada": 9,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-06-11",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 86
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 9
+      }
+    ]
+  },
+  {
+    "nombre": "Iris",
+    "apellido": "Swiftpaw",
+    "id": "LO2",
+    "fechaNacimiento": "1981-03-12",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 66.9,
+    "puntuacionManada": 83,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-02-03",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 83
+      }
+    ]
+  },
+  {
+    "nombre": "Haze",
+    "apellido": "Thornback",
+    "id": "LO3",
+    "fechaNacimiento": "1974-03-14",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 54.65,
+    "puntuacionManada": 80,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-08-05",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-07-01",
+        "rol": "Omega",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2026-07-01",
+        "rol": "Omega",
+        "compromiso": 80
+      }
+    ]
+  },
+  {
+    "nombre": "Echo",
+    "apellido": "Frostholm",
+    "id": "LO4",
+    "fechaNacimiento": "2004-11-01",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 38.9,
+    "puntuacionManada": 11,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-01-25",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 41
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 11
+      }
+    ]
+  },
+  {
+    "nombre": "Lyra",
+    "apellido": "Darkfang",
+    "id": "LO5",
+    "fechaNacimiento": "1980-09-10",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 63.3,
+    "puntuacionManada": 75,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-01-04",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 49
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 75
+      }
+    ]
+  },
+  {
+    "nombre": "Luna",
+    "apellido": "Ashfire",
+    "id": "LO6",
+    "fechaNacimiento": "1974-02-20",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 44.78,
+    "puntuacionManada": 12,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-02-12",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 50
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 12
+      }
+    ]
+  },
+  {
+    "nombre": "Ember",
+    "apellido": "Embercrest",
+    "id": "LO7",
+    "fechaNacimiento": "1979-03-03",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 51.51,
+    "puntuacionManada": 32,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-01-17",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-07-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2026-07-01",
+        "rol": "Omega",
+        "compromiso": 32
+      }
+    ]
+  },
+  {
+    "nombre": "Frost",
+    "apellido": "Stormclaw",
+    "id": "LO8",
+    "fechaNacimiento": "1994-02-12",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 46.09,
+    "puntuacionManada": 12,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-01-04",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 23
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 12
+      }
+    ]
+  },
+  {
+    "nombre": "Zion",
+    "apellido": "Silverrun",
+    "id": "LO9",
+    "fechaNacimiento": "1972-10-18",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 48.74,
+    "puntuacionManada": 33,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-11-19",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 33
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-08-01",
+        "rol": "Omega",
+        "compromiso": 33
+      },
+      {
+        "fechaIngreso": "2026-08-01",
+        "rol": "Omega",
+        "compromiso": 33
+      }
+    ]
+  },
+  {
+    "nombre": "Aiden",
+    "apellido": "Embercrest",
+    "id": "LO10",
+    "fechaNacimiento": "1986-12-08",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 49.11,
+    "puntuacionManada": 46,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-04-14",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 59
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-09-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2026-09-01",
+        "rol": "Omega",
+        "compromiso": 46
+      }
+    ]
+  },
+  {
+    "nombre": "Raven",
+    "apellido": "Wildmane",
+    "id": "LO11",
+    "fechaNacimiento": "1986-06-10",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 57.98,
+    "puntuacionManada": 19,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-01-13",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 19
+      }
+    ]
+  },
+  {
+    "nombre": "Iris",
+    "apellido": "Nightwood",
+    "id": "LO12",
+    "fechaNacimiento": "1987-03-04",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 44.69,
+    "puntuacionManada": 24,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-04-14",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 24
+      }
+    ]
+  },
+  {
+    "nombre": "Jade",
+    "apellido": "Darkfang",
+    "id": "LO13",
+    "fechaNacimiento": "1983-03-18",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 64.1,
+    "puntuacionManada": 69,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-01-13",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 23
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 69
+      }
+    ]
+  },
+  {
+    "nombre": "Iris",
+    "apellido": "Frostholm",
+    "id": "LO14",
+    "fechaNacimiento": "1990-10-22",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 69.42,
+    "puntuacionManada": 78,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-04-04",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 72
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 78
+      }
+    ]
+  },
+  {
+    "nombre": "Luna",
+    "apellido": "Wildmane",
+    "id": "LO15",
+    "fechaNacimiento": "1992-12-21",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 25.6,
+    "puntuacionManada": 9,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-07-09",
+        "rol": "Miembro",
+        "compromiso": 17
+      }
+    ]
+  },
+  {
+    "nombre": "Sora",
+    "apellido": "Ironpelt",
+    "id": "LO16",
+    "fechaNacimiento": "1976-12-18",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 52.1,
+    "puntuacionManada": 75,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-01-13",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 75
+      }
+    ]
+  },
+  {
+    "nombre": "Jade",
+    "apellido": "Darkfang",
+    "id": "LO17",
+    "fechaNacimiento": "1988-12-13",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 56.58,
+    "puntuacionManada": 53,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-05-03",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 30
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 53
+      }
+    ]
+  },
+  {
+    "nombre": "Orion",
+    "apellido": "Ashfire",
+    "id": "LO18",
+    "fechaNacimiento": "1985-10-23",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 41.73,
+    "puntuacionManada": 0,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-12-12",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 66
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 0
+      }
+    ]
+  },
+  {
+    "nombre": "Haze",
+    "apellido": "Thornback",
+    "id": "LO19",
+    "fechaNacimiento": "2004-02-21",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 41.82,
+    "puntuacionManada": 11,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-05-18",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 36
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2027-01-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2027-01-01",
+        "rol": "Omega",
+        "compromiso": 11
+      }
+    ]
+  },
+  {
+    "nombre": "Blaze",
+    "apellido": "Embercrest",
+    "id": "LO20",
+    "fechaNacimiento": "1977-07-10",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 48.34,
+    "puntuacionManada": 31,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-06-03",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 18
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-08-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2026-08-01",
+        "rol": "Omega",
+        "compromiso": 31
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Embercrest",
+    "id": "LO21",
+    "fechaNacimiento": "1983-10-18",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 57.6,
+    "puntuacionManada": 92,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 92
+      }
+    ]
+  },
+  {
+    "nombre": "Dusk",
+    "apellido": "Ashfire",
+    "id": "LO22",
+    "fechaNacimiento": "1992-04-25",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 31.35,
+    "puntuacionManada": 35,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 35
+      }
+    ]
+  },
+  {
+    "nombre": "Raven",
+    "apellido": "Ironpelt",
+    "id": "LO23",
+    "fechaNacimiento": "1974-10-25",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 51.75,
+    "puntuacionManada": 95,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 95
+      }
+    ]
+  },
+  {
+    "nombre": "Nova",
+    "apellido": "Coldwater",
+    "id": "LO24",
+    "fechaNacimiento": "1981-02-09",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 20.1,
+    "puntuacionManada": 10,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 10
+      }
+    ]
+  },
+  {
+    "nombre": "Blaze",
+    "apellido": "Moonwhisper",
+    "id": "LO25",
+    "fechaNacimiento": "1987-07-12",
+    "estadoCiudadania": "Activo",
+    "especie": "Lobo",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 43.65,
+    "puntuacionManada": 77,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-11-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2026-11-01",
+        "rol": "Omega",
+        "compromiso": 77
+      }
+    ]
+  },
+  {
+    "nombre": "Jade",
+    "apellido": "Ravenmoor",
+    "id": "LE26",
+    "fechaNacimiento": "1990-05-20",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 43.65,
+    "puntuacionManada": 45,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-05-20",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 10
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 45
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 45
+      },
+      {
+        "fechaIngreso": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 45
+      }
+    ]
+  },
+  {
+    "nombre": "Kira",
+    "apellido": "Coldwater",
+    "id": "LE27",
+    "fechaNacimiento": "1986-05-27",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 52.78,
+    "puntuacionManada": 25,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-02-25",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 90
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 25
+      }
+    ]
+  },
+  {
+    "nombre": "Kira",
+    "apellido": "Darkfang",
+    "id": "LE28",
+    "fechaNacimiento": "1995-12-27",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 74.21,
+    "puntuacionManada": 97,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-03-23",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 42
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-08-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2026-08-01",
+        "rol": "Beta",
+        "compromiso": 97
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Stormclaw",
+    "id": "LE29",
+    "fechaNacimiento": "1980-02-14",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 44.3,
+    "puntuacionManada": 54,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-12-28",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 53
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-09-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2026-09-01",
+        "rol": "Omega",
+        "compromiso": 54
+      }
+    ]
+  },
+  {
+    "nombre": "Iris",
+    "apellido": "Duskfall",
+    "id": "LE30",
+    "fechaNacimiento": "2000-11-07",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 47.48,
+    "puntuacionManada": 15,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-08-26",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-07-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2026-07-01",
+        "rol": "Omega",
+        "compromiso": 15
+      }
+    ]
+  },
+  {
+    "nombre": "Dusk",
+    "apellido": "Darkfang",
+    "id": "LE31",
+    "fechaNacimiento": "1984-02-09",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 26.37,
+    "puntuacionManada": 12,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-12-08",
+        "rol": "Miembro",
+        "compromiso": 38
+      }
+    ]
+  },
+  {
+    "nombre": "Dusk",
+    "apellido": "Frostholm",
+    "id": "LE32",
+    "fechaNacimiento": "1992-06-04",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 42.45,
+    "puntuacionManada": 44,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-07-06",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 55
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-08-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2026-08-01",
+        "rol": "Omega",
+        "compromiso": 44
+      }
+    ]
+  },
+  {
+    "nombre": "Aiden",
+    "apellido": "Thornback",
+    "id": "LE33",
+    "fechaNacimiento": "1993-04-15",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 27.07,
+    "puntuacionManada": 21,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-03-17",
+        "rol": "Miembro",
+        "compromiso": 9
+      }
+    ]
+  },
+  {
+    "nombre": "Sora",
+    "apellido": "Silverrun",
+    "id": "LE34",
+    "fechaNacimiento": "1996-07-23",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 47.62,
+    "puntuacionManada": 77,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-12-16",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 25
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 77
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Stormclaw",
+    "id": "LE35",
+    "fechaNacimiento": "2003-09-28",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 41.64,
+    "puntuacionManada": 47,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-06-13",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 33
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-12-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2026-12-01",
+        "rol": "Omega",
+        "compromiso": 47
+      }
+    ]
+  },
+  {
+    "nombre": "Frost",
+    "apellido": "Embercrest",
+    "id": "LE36",
+    "fechaNacimiento": "1974-11-05",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 38.75,
+    "puntuacionManada": 22,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-02-23",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 22
+      }
+    ]
+  },
+  {
+    "nombre": "Dusk",
+    "apellido": "Duskfall",
+    "id": "LE37",
+    "fechaNacimiento": "1990-06-10",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 63.73,
+    "puntuacionManada": 97,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-10-13",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 76
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 97
+      }
+    ]
+  },
+  {
+    "nombre": "Aiden",
+    "apellido": "Ravenmoor",
+    "id": "LE38",
+    "fechaNacimiento": "1996-03-02",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 28.25,
+    "puntuacionManada": 0,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-10-16",
+        "rol": "Miembro",
+        "compromiso": 39
+      }
+    ]
+  },
+  {
+    "nombre": "Lyra",
+    "apellido": "Silverrun",
+    "id": "LE39",
+    "fechaNacimiento": "2003-02-15",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 67.68,
+    "puntuacionManada": 80,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-06-27",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 55
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 80
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Thornback",
+    "id": "LE40",
+    "fechaNacimiento": "2001-02-02",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 49.72,
+    "puntuacionManada": 69,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-08-08",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 69
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-06-01",
+        "rol": "Omega",
+        "compromiso": 69
+      },
+      {
+        "fechaIngreso": "2026-06-01",
+        "rol": "Omega",
+        "compromiso": 69
+      }
+    ]
+  },
+  {
+    "nombre": "Lyra",
+    "apellido": "Moonwhisper",
+    "id": "LE41",
+    "fechaNacimiento": "1981-02-14",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 58.06,
+    "puntuacionManada": 72,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-08-18",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 73
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 72
+      }
+    ]
+  },
+  {
+    "nombre": "Storm",
+    "apellido": "Embercrest",
+    "id": "LE42",
+    "fechaNacimiento": "1991-11-08",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 40.43,
+    "puntuacionManada": 39,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-05-02",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 100
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2027-01-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2027-01-01",
+        "rol": "Omega",
+        "compromiso": 39
+      }
+    ]
+  },
+  {
+    "nombre": "Echo",
+    "apellido": "Wildmane",
+    "id": "LE43",
+    "fechaNacimiento": "1989-11-11",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 38.77,
+    "puntuacionManada": 43,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-08-15",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 43
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Thornback",
+    "id": "LE44",
+    "fechaNacimiento": "1991-11-20",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 63.43,
+    "puntuacionManada": 88,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-07-16",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 87
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 88
+      }
+    ]
+  },
+  {
+    "nombre": "Cyan",
+    "apellido": "Ashfire",
+    "id": "LE45",
+    "fechaNacimiento": "1987-02-13",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 41.45,
+    "puntuacionManada": 3,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-03-24",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 91
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-11-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2026-11-01",
+        "rol": "Omega",
+        "compromiso": 3
+      }
+    ]
+  },
+  {
+    "nombre": "Kira",
+    "apellido": "Wildmane",
+    "id": "LE46",
+    "fechaNacimiento": "1994-08-03",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 7.8,
+    "puntuacionManada": 4,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 4
+      }
+    ]
+  },
+  {
+    "nombre": "Frost",
+    "apellido": "Stormclaw",
+    "id": "LE47",
+    "fechaNacimiento": "1970-06-07",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 50.55,
+    "puntuacionManada": 91,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 91
+      }
+    ]
+  },
+  {
+    "nombre": "Echo",
+    "apellido": "Darkfang",
+    "id": "LE48",
+    "fechaNacimiento": "2004-10-15",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 39.6,
+    "puntuacionManada": 68,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 68
+      }
+    ]
+  },
+  {
+    "nombre": "Zion",
+    "apellido": "Ashfire",
+    "id": "LE49",
+    "fechaNacimiento": "1986-08-19",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Omega",
+    "iaa": 26.25,
+    "puntuacionManada": 37,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 37
+      }
+    ]
+  },
+  {
+    "nombre": "Orion",
+    "apellido": "Wildmane",
+    "id": "LE50",
+    "fechaNacimiento": "1995-12-17",
+    "estadoCiudadania": "Activo",
+    "especie": "Leon",
+    "esPredador": true,
+    "rol": "Beta",
+    "iaa": 50.4,
+    "puntuacionManada": 96,
+    "ratioCaza": 25.0,
+    "ratioEscape": 0.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 96
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Silverrun",
+    "id": "CI51",
+    "fechaNacimiento": "1982-01-12",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 57.76,
+    "puntuacionManada": 61,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-08-14",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 16
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 61
+      }
+    ]
+  },
+  {
+    "nombre": "Dusk",
+    "apellido": "Wildmane",
+    "id": "CI52",
+    "fechaNacimiento": "1973-09-16",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 64.01,
+    "puntuacionManada": 80,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-11-24",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 80
+      }
+    ]
+  },
+  {
+    "nombre": "Frost",
+    "apellido": "Moonwhisper",
+    "id": "CI53",
+    "fechaNacimiento": "1972-05-22",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 44.93,
+    "puntuacionManada": 35,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-11-25",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 27
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 35
+      }
+    ]
+  },
+  {
+    "nombre": "Cyan",
+    "apellido": "Stormclaw",
+    "id": "CI54",
+    "fechaNacimiento": "1983-01-07",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 46.04,
+    "puntuacionManada": 20,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-11-20",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-07-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2026-07-01",
+        "rol": "Omega",
+        "compromiso": 20
+      }
+    ]
+  },
+  {
+    "nombre": "Ember",
+    "apellido": "Duskfall",
+    "id": "CI55",
+    "fechaNacimiento": "1988-01-24",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 56.25,
+    "puntuacionManada": 25,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-02-06",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 25
+      }
+    ]
+  },
+  {
+    "nombre": "Haze",
+    "apellido": "Embercrest",
+    "id": "CI56",
+    "fechaNacimiento": "1988-01-19",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 40.89,
+    "puntuacionManada": 15,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-01-26",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 90
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-12-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2026-12-01",
+        "rol": "Omega",
+        "compromiso": 15
+      }
+    ]
+  },
+  {
+    "nombre": "Nova",
+    "apellido": "Ashfire",
+    "id": "CI57",
+    "fechaNacimiento": "1989-10-18",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 39.39,
+    "puntuacionManada": 3,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-01-02",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 94
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 3
+      }
+    ]
+  },
+  {
+    "nombre": "Aiden",
+    "apellido": "Frostholm",
+    "id": "CI58",
+    "fechaNacimiento": "1986-10-23",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 43.7,
+    "puntuacionManada": 17,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-06-12",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 28
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-12-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2026-12-01",
+        "rol": "Omega",
+        "compromiso": 17
+      }
+    ]
+  },
+  {
+    "nombre": "Echo",
+    "apellido": "Ironpelt",
+    "id": "CI59",
+    "fechaNacimiento": "2003-09-14",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 43.94,
+    "puntuacionManada": 9,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-05-03",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-09-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2026-09-01",
+        "rol": "Omega",
+        "compromiso": 9
+      }
+    ]
+  },
+  {
+    "nombre": "Iris",
+    "apellido": "Nightwood",
+    "id": "CI60",
+    "fechaNacimiento": "1972-09-25",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 68.4,
+    "puntuacionManada": 73,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-10-04",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 71
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 73
+      }
+    ]
+  },
+  {
+    "nombre": "Cyan",
+    "apellido": "Wildmane",
+    "id": "CI61",
+    "fechaNacimiento": "1999-02-17",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 45.07,
+    "puntuacionManada": 44,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-09-17",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 40
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2026-10-01",
+        "rol": "Omega",
+        "compromiso": 44
+      }
+    ]
+  },
+  {
+    "nombre": "Raven",
+    "apellido": "Embercrest",
+    "id": "CI62",
+    "fechaNacimiento": "1976-02-18",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 37.85,
+    "puntuacionManada": 8,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-10-17",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 8
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Ashfire",
+    "id": "CI63",
+    "fechaNacimiento": "1985-08-15",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 55.05,
+    "puntuacionManada": 43,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-05-03",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 43
+      }
+    ]
+  },
+  {
+    "nombre": "Ember",
+    "apellido": "Silverrun",
+    "id": "CI64",
+    "fechaNacimiento": "1980-12-13",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 27.02,
+    "puntuacionManada": 12,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-09-21",
+        "rol": "Miembro",
+        "compromiso": 14
+      }
+    ]
+  },
+  {
+    "nombre": "Luna",
+    "apellido": "Duskfall",
+    "id": "CI65",
+    "fechaNacimiento": "1973-07-11",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 27.37,
+    "puntuacionManada": 9,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-09-25",
+        "rol": "Miembro",
+        "compromiso": 13
+      }
+    ]
+  },
+  {
+    "nombre": "Nyx",
+    "apellido": "Wildmane",
+    "id": "CI66",
+    "fechaNacimiento": "1993-05-25",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 66.7,
+    "puntuacionManada": 72,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-07-11",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 72
+      }
+    ]
+  },
+  {
+    "nombre": "Dante",
+    "apellido": "Moonwhisper",
+    "id": "CI67",
+    "fechaNacimiento": "2004-07-20",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 50.42,
+    "puntuacionManada": 35,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-09-08",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-06-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2026-06-01",
+        "rol": "Omega",
+        "compromiso": 35
+      }
+    ]
+  },
+  {
+    "nombre": "Sage",
+    "apellido": "Ashfire",
+    "id": "CI68",
+    "fechaNacimiento": "1987-11-25",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 59.77,
+    "puntuacionManada": 89,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-03-16",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 13
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 89
+      }
+    ]
+  },
+  {
+    "nombre": "Blaze",
+    "apellido": "Thornback",
+    "id": "CI69",
+    "fechaNacimiento": "1985-10-18",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 51.55,
+    "puntuacionManada": 46,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-07-08",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 82
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 46
+      }
+    ]
+  },
+  {
+    "nombre": "Jade",
+    "apellido": "Embercrest",
+    "id": "CI70",
+    "fechaNacimiento": "2005-05-18",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 59.62,
+    "puntuacionManada": 64,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-10-03",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 92
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 64
+      }
+    ]
+  },
+  {
+    "nombre": "Luna",
+    "apellido": "Ravenmoor",
+    "id": "CI71",
+    "fechaNacimiento": "1993-09-01",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 52.35,
+    "puntuacionManada": 79,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-06-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2026-06-01",
+        "rol": "Omega",
+        "compromiso": 79
+      }
+    ]
+  },
+  {
+    "nombre": "Gale",
+    "apellido": "Moonwhisper",
+    "id": "CI72",
+    "fechaNacimiento": "2000-04-09",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 40.65,
+    "puntuacionManada": 65,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "fechaSalida": "2026-11-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2026-11-01",
+        "rol": "Omega",
+        "compromiso": 65
+      }
+    ]
+  },
+  {
+    "nombre": "Frost",
+    "apellido": "Wildmane",
+    "id": "CI73",
+    "fechaNacimiento": "1988-03-21",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 33.15,
+    "puntuacionManada": 43,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 43
+      }
+    ]
+  },
+  {
+    "nombre": "Dante",
+    "apellido": "Nightwood",
+    "id": "CI74",
+    "fechaNacimiento": "1983-10-02",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 37.5,
+    "puntuacionManada": 54,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 54
+      }
+    ]
+  },
+  {
+    "nombre": "Iris",
+    "apellido": "Wildmane",
+    "id": "CI75",
+    "fechaNacimiento": "1970-05-14",
+    "estadoCiudadania": "Activo",
+    "especie": "Ciervo",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 34.95,
+    "puntuacionManada": 51,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 51
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Omega",
+        "compromiso": 51
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Embercrest",
+    "id": "AL76",
+    "fechaNacimiento": "1990-06-01",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 28.37,
+    "puntuacionManada": 2,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-06-08",
+        "rol": "Miembro",
+        "compromiso": 32
+      }
+    ]
+  },
+  {
+    "nombre": "Zion",
+    "apellido": "Nightwood",
+    "id": "AL77",
+    "fechaNacimiento": "1993-03-11",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 50.53,
+    "puntuacionManada": 60,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-08-20",
+        "rol": "Miembro",
+        "compromiso": 8
+      }
+    ]
+  },
+  {
+    "nombre": "Sage",
+    "apellido": "Silverrun",
+    "id": "AL78",
+    "fechaNacimiento": "2000-07-19",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 61.52,
+    "puntuacionManada": 36,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-01-02",
+        "rol": "Miembro",
+        "compromiso": 73
+      }
+    ]
+  },
+  {
+    "nombre": "Orion",
+    "apellido": "Darkfang",
+    "id": "AL79",
+    "fechaNacimiento": "1990-08-19",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 45.13,
+    "puntuacionManada": 89,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-05-10",
+        "rol": "Miembro",
+        "compromiso": 23
+      }
+    ]
+  },
+  {
+    "nombre": "Zion",
+    "apellido": "Embercrest",
+    "id": "AL80",
+    "fechaNacimiento": "1976-11-25",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 56.77,
+    "puntuacionManada": 68,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-09-18",
+        "rol": "Miembro",
+        "compromiso": 93
+      }
+    ]
+  },
+  {
+    "nombre": "Dusk",
+    "apellido": "Wildmane",
+    "id": "AL81",
+    "fechaNacimiento": "1991-10-04",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 41.62,
+    "puntuacionManada": 61,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-12-27",
+        "rol": "Miembro",
+        "compromiso": 23
+      }
+    ]
+  },
+  {
+    "nombre": "Haze",
+    "apellido": "Stormclaw",
+    "id": "AL82",
+    "fechaNacimiento": "1994-08-22",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 55.2,
+    "puntuacionManada": 36,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2023-02-06",
+        "rol": "Miembro",
+        "compromiso": 79
+      }
+    ]
+  },
+  {
+    "nombre": "Dante",
+    "apellido": "Embercrest",
+    "id": "AL83",
+    "fechaNacimiento": "1999-09-04",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 53.95,
+    "puntuacionManada": 17,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-11-04",
+        "rol": "Miembro",
+        "compromiso": 77
+      }
+    ]
+  },
+  {
+    "nombre": "Nyx",
+    "apellido": "Silverrun",
+    "id": "AL84",
+    "fechaNacimiento": "1989-01-27",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 53.9,
+    "puntuacionManada": 3,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-09-16",
+        "rol": "Miembro",
+        "compromiso": 70
+      }
+    ]
+  },
+  {
+    "nombre": "Lyra",
+    "apellido": "Silverrun",
+    "id": "AL85",
+    "fechaNacimiento": "1979-02-17",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 55.85,
+    "puntuacionManada": 74,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-04-16",
+        "rol": "Miembro",
+        "compromiso": 21
+      }
+    ]
+  },
+  {
+    "nombre": "Blaze",
+    "apellido": "Wildmane",
+    "id": "AL86",
+    "fechaNacimiento": "1988-07-17",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 74.35,
+    "puntuacionManada": 97,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-11-10",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 42
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2026-05-01",
+        "rol": "Beta",
+        "compromiso": 97
+      }
+    ]
+  },
+  {
+    "nombre": "Ember",
+    "apellido": "Thornback",
+    "id": "AL87",
+    "fechaNacimiento": "1972-04-17",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 57.57,
+    "puntuacionManada": 45,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2022-12-25",
+        "rol": "Miembro",
+        "compromiso": 82
+      }
+    ]
+  },
+  {
+    "nombre": "Nova",
+    "apellido": "Stormclaw",
+    "id": "AL88",
+    "fechaNacimiento": "1999-07-14",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 37.4,
+    "puntuacionManada": 3,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-10-27",
+        "rol": "Miembro",
+        "compromiso": 14
+      }
+    ]
+  },
+  {
+    "nombre": "Nova",
+    "apellido": "Frostholm",
+    "id": "AL89",
+    "fechaNacimiento": "1994-10-23",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 50.67,
+    "puntuacionManada": 38,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-07-03",
+        "rol": "Miembro",
+        "compromiso": 42
+      }
+    ]
+  },
+  {
+    "nombre": "Zion",
+    "apellido": "Nightwood",
+    "id": "AL90",
+    "fechaNacimiento": "1980-04-04",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 54.8,
+    "puntuacionManada": 30,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-04-14",
+        "fechaSalida": "2026-05-07",
+        "rol": "Miembro",
+        "compromiso": 98
+      },
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Beta",
+        "compromiso": 30
+      }
+    ]
+  },
+  {
+    "nombre": "Ember",
+    "apellido": "Darkfang",
+    "id": "AL91",
+    "fechaNacimiento": "1995-12-10",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 51.67,
+    "puntuacionManada": 48,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-09-11",
+        "rol": "Miembro",
+        "compromiso": 91
+      }
+    ]
+  },
+  {
+    "nombre": "Gale",
+    "apellido": "Moonwhisper",
+    "id": "AL92",
+    "fechaNacimiento": "1974-02-20",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 61.75,
+    "puntuacionManada": 7,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-05-23",
+        "rol": "Miembro",
+        "compromiso": 79
+      }
+    ]
+  },
+  {
+    "nombre": "Ember",
+    "apellido": "Darkfang",
+    "id": "AL93",
+    "fechaNacimiento": "1989-04-24",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Beta",
+    "iaa": 56.55,
+    "puntuacionManada": 61,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2021-07-25",
+        "rol": "Miembro",
+        "compromiso": 44
+      }
+    ]
+  },
+  {
+    "nombre": "Iris",
+    "apellido": "Thornback",
+    "id": "AL94",
+    "fechaNacimiento": "1995-09-23",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 46.95,
+    "puntuacionManada": 40,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2020-05-23",
+        "rol": "Miembro",
+        "compromiso": 15
+      }
+    ]
+  },
+  {
+    "nombre": "Sora",
+    "apellido": "Frostholm",
+    "id": "AL95",
+    "fechaNacimiento": "1971-06-05",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 28.55,
+    "puntuacionManada": 23,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2024-10-15",
+        "rol": "Miembro",
+        "compromiso": 13
+      }
+    ]
+  },
+  {
+    "nombre": "Ember",
+    "apellido": "Ironpelt",
+    "id": "AL96",
+    "fechaNacimiento": "1976-05-19",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 21.15,
+    "puntuacionManada": 19,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 19
+      }
+    ]
+  },
+  {
+    "nombre": "Ash",
+    "apellido": "Embercrest",
+    "id": "AL97",
+    "fechaNacimiento": "1983-09-26",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 36.45,
+    "puntuacionManada": 45,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": [
+      {
+        "fechaIngreso": "2026-05-07",
+        "rol": "Omega",
+        "compromiso": 45
+      }
+    ]
+  },
+  {
+    "nombre": "Gale",
+    "apellido": "Stormclaw",
+    "id": "AL98",
+    "fechaNacimiento": "1999-03-17",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 24.0,
+    "puntuacionManada": 63,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": []
+  },
+  {
+    "nombre": "Dusk",
+    "apellido": "Ashfire",
+    "id": "AL99",
+    "fechaNacimiento": "2002-08-13",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 14.8,
+    "puntuacionManada": 20,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": []
+  },
+  {
+    "nombre": "Storm",
+    "apellido": "Coldwater",
+    "id": "AL100",
+    "fechaNacimiento": "1993-05-06",
+    "estadoCiudadania": "Activo",
+    "especie": "Alce",
+    "esPredador": false,
+    "rol": "Omega",
+    "iaa": 14.8,
+    "puntuacionManada": 8,
+    "ratioCaza": 0.0,
+    "ratioEscape": 25.0,
+    "duracionCargoMeses": 0,
+    "afiliaciones": []
+  }
+]
