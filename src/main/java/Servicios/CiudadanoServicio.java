@@ -35,11 +35,13 @@ public class CiudadanoServicio {
                 mapa.put("ratioEscape",       c.getRatioEscape());
                 mapa.put("inicioCargoAlfa",   c.getInicioCargoAlfa());
                 mapa.put("duracionCargoMeses",c.getDuracionCargoMeses());
+                mapa.put("historialEspecie",  c.getHistorialEspecie());
 
                 // Historial de afiliaciones
                 List<Map<String, Object>> afiliaciones = new ArrayList<>();
                 for (AfiliacionManada a : c.getManadas()) {
                     Map<String, Object> af = new LinkedHashMap<>();
+                    af.put("nombreManada", a.getNombreManada());
                     af.put("fechaIngreso", a.getFechaIngreso());
                     af.put("fechaSalida",  a.getFechaSalida());
                     af.put("rol",          a.getRol());

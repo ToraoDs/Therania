@@ -27,7 +27,7 @@ public class EspecieServicio {
                     Map<String, Object> mapa = new LinkedHashMap<>();
                     mapa.put("nombre",      especie);
                     mapa.put("esPredador",  c.esPredador());
-                    mapa.put("instinto",    c.instinto());
+                    mapa.put("instinto",    c.describirInstinto());
                     mapa.put("totalCiudadanos", 0);
                     especiesMap.put(especie, mapa);
                 }

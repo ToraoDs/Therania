@@ -88,6 +88,7 @@ public class SimulacionTherania {
         manadas.add(Ciervo.MANADA_ARBOLEDA);
         manadas.add(Alce.MANADA_PRADERA);
         manadas.add(Alce.MANADA_CUMBRE);
+        manadas.add(ManadaDePaso.getInstance());
     }
 
     // ─── Asignacion de ciudadanos a manadas ─────────────────────────────
@@ -96,9 +97,9 @@ public class SimulacionTherania {
         for (CiudadanoTherian c : ciudadanos) {
             String fechaIngreso = generarFechaAleatoria(2020, 2024);
             int compromiso      = random.nextInt(101);
-            AfiliacionManada afiliacion = new AfiliacionManada(
-                fechaIngreso, "Miembro", compromiso, null
-            );
+            Manada manda = obtenerManadaParaCiudadano(c);
+            String nombreManada = (manda != null) ? manda.getNombreManada(): "Sin manada";
+            AfiliacionManada afiliacion = new AfiliacionManada(nombreManada, fechaIngreso, "Miembro", compromiso, null);
             Manada manada = obtenerManadaParaCiudadano(c);
             if (manada != null && !manada.estaLlena()) {
                 try {
@@ -151,11 +152,18 @@ public class SimulacionTherania {
             double intensidad      = 1.0 + (random.nextDouble() * 9.0);
             String especie         = obtenerEspecieAleatoria();
             int duracion           = 30 + random.nextInt(151);
+            Manada manada = obtenerManadaPorEspecie(especie);
+            String nombreManada = (manada != null) ? manada.getNombreManada() : "Sin manada";
 
             Ritual ritual = new Ritual(
-                "Ritual-" + (i + 1), tipo, fecha, duracion, especie, intensidad
+                "Ritual-" + (i + 1),
+                tipo,
+                fecha,
+                duracion,
+                especie,
+                nombreManada,  
+                intensidad
             );
-
             int numParticipantes = 3 + random.nextInt(8);
             List<CiudadanoTherian> candidatos = filtrarPorEspecie(especie);
             for (int j = 0; j < Math.min(numParticipantes, candidatos.size()); j++) {
@@ -168,7 +176,6 @@ public class SimulacionTherania {
                 }
             }
 
-            Manada manada = obtenerManadaPorEspecie(especie);
             if (manada != null) manada.agregarRitual(ritual);
 
             rituales.add(ritual);
@@ -208,9 +215,13 @@ public class SimulacionTherania {
                     break;
                 }
             }
+            ManadaDePaso.getInstance().agregarMiembro(ciudadano, nuevoIAA);
+
             // Entra a nueva manada
             try {
+                ManadaDePaso.getInstance().removerMiembro(ciudadano);
                 AfiliacionManada nuevaAfiliacion = new AfiliacionManada(
+                    manadaCorrecta.getNombreManada(),
                     java.time.LocalDate.now().toString(),
                     ciudadano.getRol(),
                     ciudadano.getPuntuacionManada(),

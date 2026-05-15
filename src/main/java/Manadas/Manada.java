@@ -10,6 +10,7 @@ import java.util.List;
 public class Manada {
 
     private String NombreManada;
+    private String Especie;
     private String Descripcion;
     private int CupoMaximo;
     private double IAAMinimo;  // rango inferior
@@ -19,9 +20,10 @@ public class Manada {
     private String Territorio;
     private List<Ritual> Rituales;
 
-    public Manada(String NombreManada, String Descripcion, int CupoMaximo,
+    public Manada(String NombreManada, String Especie ,String Descripcion, int CupoMaximo,
                   double IAAMinimo, double IAAMaximo, String Lema, String Territorio) {
         this.NombreManada = NombreManada;
+        this. Especie = Especie;
         this.Descripcion = Descripcion;
         this.CupoMaximo = CupoMaximo;
         this.IAAMinimo = IAAMinimo;
@@ -61,6 +63,7 @@ public class Manada {
 
     // Getters
     public String getNombreManada() { return NombreManada; }
+    public String getEspecie() {return Especie;}
     public String getDescripcion() { return Descripcion; }
     public int getCupoMaximo() { return CupoMaximo; }
     public double getIAAMinimo() { return IAAMinimo; }

@@ -23,6 +23,7 @@ public class ManadaServicio {
             for (Manada m : manadas) {
                 Map<String, Object> mapa = new LinkedHashMap<>();
                 mapa.put("nombre",      m.getNombreManada());
+                mapa.put("especie",      m.getEspecie());
                 mapa.put("descripcion", m.getDescripcion());
                 mapa.put("lema",        m.getLema());
                 mapa.put("territorio",  m.getTerritorio());
@@ -30,6 +31,7 @@ public class ManadaServicio {
                 mapa.put("iaaMinimo",   m.getIAAMinimo());
                 mapa.put("iaaMaximo",   m.getIAAMaximo());
                 mapa.put("totalMiembros", m.getMiembros().size());
+                mapa.put("enTransito",   m instanceof ManadaDePaso);
 
                 // IDs de los miembros para no duplicar info
                 List<String> idsMiembros = new ArrayList<>();
@@ -46,6 +48,9 @@ public class ManadaServicio {
                 mapa.put("rituales", nombresRituales);
 
                 datos.add(mapa);
+
+                Manada paso = ManadaDePaso.getInstance();
+                if (!paso.getMiembros().isEmpty()) {}
             }
 
             FileWriter writer = new FileWriter(RUTA);

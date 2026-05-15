@@ -26,6 +26,7 @@ public class RitualServicio {
                 mapa.put("fecha",             r.getFecha());
                 mapa.put("duracionMinutos",   r.getDuracionMinutos());
                 mapa.put("especieAsociada",   r.getEspecieAsociada());
+                mapa.put("manadaResponsable", r.getManadaResponsable()); 
                 mapa.put("intensidad",        r.getIntensidadPercibida());
                 mapa.put("asistio",           r.isAsistio());
 

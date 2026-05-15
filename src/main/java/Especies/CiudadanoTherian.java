@@ -1,5 +1,9 @@
 package Especies;
 import java.util.List;
+
+import Manadas.Manada;
+import Manadas.ManadaDePaso;
+
 import java.util.ArrayList;
 
 public abstract class CiudadanoTherian extends EspecieAutoPercibida{
@@ -18,11 +22,12 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     private int PuntuacionManada;   
     private String InicioCargoAlfa;
     private int DuracionCargoMeses;
+    private List<AfiliacionEfectiva> AfiliacionesEfectivas;
 
 
-    public CiudadanoTherian(String Nombre, String Apellido, String Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador){
+    public CiudadanoTherian(String Nombre, String Apellido, String Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador, String SonidoPredominante, String HabitatSimbolico, String Caracteristicas){
         
-        super(EspecieActual, esPredador);
+        super(EspecieActual, esPredador,SonidoPredominante, HabitatSimbolico, Caracteristicas);
         if (esPredador){
             this.ratioCaza= 25.0;
             this.ratioEscape= 0.0;
@@ -43,6 +48,9 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         this.PuntuacionManada = 0;
         this.InicioCargoAlfa = null;
         this.DuracionCargoMeses = 0;
+        this.HistorialEspecie = new ArrayList<>();
+        AgregarEspecie(EspecieActual);
+        this.AfiliacionesEfectivas = new ArrayList<>();
 
     }
 
@@ -68,6 +76,69 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         return Manadas;
     }
 
+    public void agregarAfiliacionEfectiva(AfiliacionEfectiva ae) {
+        AfiliacionesEfectivas.add(ae);
+    }
+
+
+    public List<AfiliacionEfectiva> getAfiliacionesEfectivas() {
+        return AfiliacionesEfectivas;
+    }
+
+    public void cambiarEspecie(String nuevaEspecie, boolean esPredador,
+                            String sonido, String habitat, String caracteristicas,
+                            List<Manada> todasLasManadas) {
+    // Guardar especie anterior
+    AgregarEspecie(getEspecieActual());
+
+    // Actualizar atributos
+    setEspecieActual(nuevaEspecie);
+    setEsPredador(esPredador);
+    setSonidoPredominante(sonido);
+    setHabitatSimbolico(habitat);
+    setCaracteristicas(caracteristicas);
+
+    // Salir de manada actual → ManadaDePaso
+    for (Manada m : todasLasManadas) {
+        if (m.getMiembros().contains(this)) {
+            m.getMiembros().remove(this);
+            for (AfiliacionManada a : getManadas()) {
+                if (a.estaActivo()) {
+                    a.setFechaSalida(java.time.LocalDate.now().toString());
+                    }
+                }
+            break;
+            }
+        }
+    ManadaDePaso.getInstance().agregarMiembro(this, getIAA());
+
+    // Buscar manada para nueva especie
+    Manada manadaNueva = buscarManadaPorEspecieEIAA(nuevaEspecie, getIAA(), todasLasManadas);
+    if (manadaNueva != null && !manadaNueva.estaLlena()) {
+        ManadaDePaso.getInstance().removerMiembro(this);
+        AfiliacionManada af = new AfiliacionManada(
+            manadaNueva.getNombreManada(),
+            java.time.LocalDate.now().toString(),
+            getRol(), getPuntuacionManada(), null
+        );
+        try {
+            AgregarManada(af);
+            manadaNueva.agregarMiembro(this, getIAA());
+            } catch (TherianException e) { }
+        }
+    }
+
+    private Manada buscarManadaPorEspecieEIAA(String especie, double iaa,
+                                            List<Manada> todasLasManadas) {
+        for (Manada m : todasLasManadas) {
+            if (m.getEspecie().equalsIgnoreCase(especie) 
+                && m.aceptaIAA(iaa) 
+                && !m.estaLlena()) {
+                return m;
+            }
+        }
+        return null;
+    }
 
     // getters
 
@@ -119,6 +190,10 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
 
     public int getDuracionCargoMeses() { 
         return DuracionCargoMeses; 
+    }
+
+    public List<String> getHistorialEspecie() {
+    return HistorialEspecie;
     }
 
     // setters

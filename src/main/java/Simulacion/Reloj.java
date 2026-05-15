@@ -3,7 +3,6 @@ package Simulacion;
 import Especies.*;
 import Manadas.*;
 import Servicios.*;
-import Reportes.*;
 import java.util.*;
 
 public class Reloj {
@@ -63,6 +62,9 @@ public class Reloj {
             this.ciudadanos = sim.getCiudadanos();
             this.manadas    = sim.getManadas();
             this.rituales   = sim.getRituales();
+            if (!manadas.contains(ManadaDePaso.getInstance())) {
+                manadas.add(ManadaDePaso.getInstance());
+            }
             guardarEstado();
         } else {
             System.out.println("Cargando estado previo (" + datosCiudadanos.size() + " ciudadanos)...\n");
@@ -143,6 +145,32 @@ public class Reloj {
             System.out.println("Sin Alfa Honorario este mes.");
         }
 
+            // Reubicar ciudadanos en tránsito
+        List<CiudadanoTherian> enTransito = new ArrayList<>(
+            ManadaDePaso.getInstance().getMiembros()
+        );
+
+        for (CiudadanoTherian c : enTransito) {
+            Manada manadaNueva = obtenerManadaCorrecta(c, c.getIAA());
+        if (manadaNueva != null && !manadaNueva.estaLlena()) {
+            ManadaDePaso.getInstance().removerMiembro(c);
+            AfiliacionManada af = new AfiliacionManada(
+                manadaNueva.getNombreManada(),
+                anioActual + "-" + String.format("%02d", mesActual) + "-01",
+                c.getRol(),
+                c.getPuntuacionManada(),
+                null
+            );
+            try {
+                c.AgregarManada(af);
+                manadaNueva.agregarMiembro(c, c.getIAA());
+                eventos.add("  ✓ " + c.getNombre() + " " + c.getApellido()
+                    + " salió de ManadaDePaso → " + manadaNueva.getNombreManada());
+                } 
+                catch (TherianException e) { }
+            }
+        }
+
         // 5 - Guardar estado en JSON
         guardarEstado();
         System.out.println("Estado guardado en JSON.");
@@ -165,6 +193,9 @@ public class Reloj {
                 String.format("%04d-%02d-%02d", anioActual, mesActual, 1 + random.nextInt(28)),
                 30 + random.nextInt(151),
                 especie,
+                obtenerManadaPorEspecie(especie) != null
+                    ? obtenerManadaPorEspecie(especie).getNombreManada()
+                    : "Sin manada",   // ← nuevo argumento
                 1.0 + random.nextDouble() * 9.0
             );
 
@@ -195,6 +226,7 @@ public class Reloj {
             for (Manada m : manadas) {
                 if (m.getMiembros().contains(ciudadano)) {
                     m.getMiembros().remove(ciudadano);
+                    ManadaDePaso.getInstance().agregarMiembro(ciudadano, ciudadano.getIAA());
                     for (AfiliacionManada a : ciudadano.getManadas()) {
                         if (a.estaActivo()) {
                             a.setFechaSalida(anioActual + "-"
@@ -205,12 +237,7 @@ public class Reloj {
                 }
             }
             try {
-                AfiliacionManada nueva = new AfiliacionManada(
-                    anioActual + "-" + String.format("%02d", mesActual) + "-01",
-                    ciudadano.getRol(),
-                    ciudadano.getPuntuacionManada(),
-                    null
-                );
+                AfiliacionManada nueva = new AfiliacionManada(manadaCorrecta.getNombreManada(), anioActual + "-" + String.format("%02d", mesActual) + "-01",ciudadano.getRol(),ciudadano.getPuntuacionManada(),null);
                 ciudadano.AgregarManada(nueva);
                 manadaCorrecta.agregarMiembro(ciudadano, nuevoIAA);
                 return manadaCorrecta.getNombreManada();
@@ -304,6 +331,7 @@ public class Reloj {
         lista.add(Ciervo.MANADA_ARBOLEDA);
         lista.add(Alce.MANADA_PRADERA);
         lista.add(Alce.MANADA_CUMBRE);
+        lista.add(ManadaDePaso.getInstance());
         return lista;
     }
 
@@ -335,6 +363,7 @@ public class Reloj {
             if (afiliaciones != null) {
                 for (Map<String, Object> a : afiliaciones) {
                     AfiliacionManada af = new AfiliacionManada(
+                        (String) a.get("nombreManada"),
                         (String) a.get("fechaIngreso"),
                         (String) a.get("rol"),
                         ((Number) a.get("compromiso")).intValue(),

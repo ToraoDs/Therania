@@ -1,12 +1,14 @@
 package Especies;
 public class AfiliacionManada {
 
+    private String nombreManada;
     private String FechaIngreso;
     private String Rol;
     private int Compromiso;
     private String FechaSalida;
 
-    public AfiliacionManada(String FechaIngreso, String Rol, int Compromiso, String FechaSalida){
+    public AfiliacionManada(String nombreManada, String FechaIngreso, String Rol, int Compromiso, String FechaSalida){
+        this.nombreManada = nombreManada;
         this.FechaIngreso = FechaIngreso;
         this.Rol = Rol;
         this.Compromiso = Compromiso;
@@ -14,6 +16,10 @@ public class AfiliacionManada {
     }
 
     // Setters
+    public void setNombreManada(String nombreManada){
+        this.nombreManada = nombreManada;
+    }
+
     public void setFechaIngreso(String FechaIngreso){
         this.FechaIngreso = FechaIngreso;
     }
@@ -32,6 +38,10 @@ public class AfiliacionManada {
 
 
     // Getters
+
+    public String getNombreManada(){
+        return nombreManada;
+    }
     public String getFechaIngreso(){
         return FechaIngreso;
     }

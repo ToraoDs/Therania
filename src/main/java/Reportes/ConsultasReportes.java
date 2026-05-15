@@ -1,7 +1,4 @@
 package Reportes;
-
-import Especies.*;
-import Manadas.*;
 import Servicios.*;
 import java.util.*;
 
