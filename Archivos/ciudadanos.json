@@ -8,7 +8,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 36.08,
+    "iaa": 33.08,
     "puntuacionManada": 9,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -54,7 +54,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 79.08,
+    "iaa": 80.77,
     "puntuacionManada": 83,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -116,6 +116,90 @@
       },
       {
         "fechaIngreso": "2030-02-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-03-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2032-03-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-11-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2032-11-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-09-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2033-09-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-07-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2034-07-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-07-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2035-07-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-06-01",
+        "rol": "Beta",
+        "compromiso": 83
+      },
+      {
+        "fechaIngreso": "2036-06-01",
         "rol": "Beta",
         "compromiso": 83
       }
@@ -130,7 +214,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 60.05,
+    "iaa": 57.65,
     "puntuacionManada": 80,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -170,7 +254,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 44.35,
+    "iaa": 40.94,
     "puntuacionManada": 11,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -232,6 +316,78 @@
       },
       {
         "fechaIngreso": "2030-07-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-05-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2031-05-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-02-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2032-02-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-03-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2033-03-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-02-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2034-02-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-12-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2034-12-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-12-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2035-12-01",
         "rol": "Omega",
         "compromiso": 11
       }
@@ -246,7 +402,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 72.82,
+    "iaa": 79.41,
     "puntuacionManada": 75,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -290,6 +446,78 @@
       },
       {
         "fechaIngreso": "2030-07-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-02-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2031-02-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-03-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2032-03-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-02-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2033-02-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-10-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2035-10-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-06-01",
+        "rol": "Beta",
+        "compromiso": 75
+      },
+      {
+        "fechaIngreso": "2036-06-01",
         "rol": "Beta",
         "compromiso": 75
       }
@@ -304,7 +532,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 46.19,
+    "iaa": 46.37,
     "puntuacionManada": 12,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -378,6 +606,90 @@
       },
       {
         "fechaIngreso": "2030-05-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-12-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2030-12-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-12-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2031-12-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-11-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2032-11-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-01-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2034-01-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-10-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2034-10-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-10-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2035-10-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-07-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2036-07-01",
         "rol": "Omega",
         "compromiso": 12
       }
@@ -392,7 +704,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 56.74,
+    "iaa": 53.37,
     "puntuacionManada": 32,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -466,6 +778,90 @@
       },
       {
         "fechaIngreso": "2030-01-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-11-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2030-11-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-10-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2031-10-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-11-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2032-11-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-07-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2033-07-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-04-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2034-04-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-05-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2035-05-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-03-01",
+        "rol": "Omega",
+        "compromiso": 32
+      },
+      {
+        "fechaIngreso": "2036-03-01",
         "rol": "Omega",
         "compromiso": 32
       }
@@ -480,7 +876,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 42.63,
+    "iaa": 43.11,
     "puntuacionManada": 12,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -554,6 +950,90 @@
       },
       {
         "fechaIngreso": "2030-07-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-12-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2030-12-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-03-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2032-03-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-01-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2033-01-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-01-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2034-01-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-09-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2034-09-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-07-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2035-07-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-10-01",
+        "rol": "Omega",
+        "compromiso": 12
+      },
+      {
+        "fechaIngreso": "2036-10-01",
         "rol": "Omega",
         "compromiso": 12
       }
@@ -568,7 +1048,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 57.19,
+    "iaa": 53.59,
     "puntuacionManada": 33,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -632,7 +1112,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 53.19,
+    "iaa": 53.65,
     "puntuacionManada": 46,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -706,6 +1186,78 @@
       },
       {
         "fechaIngreso": "2029-12-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-11-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2030-11-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-09-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2031-09-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-06-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2033-06-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-05-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2034-05-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-06-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2035-06-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-05-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2036-05-01",
         "rol": "Omega",
         "compromiso": 46
       }
@@ -720,7 +1272,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 61.58,
+    "iaa": 52.58,
     "puntuacionManada": 19,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -747,8 +1299,8 @@
     "estadoCiudadania": "Activo",
     "especie": "Lobo",
     "esPredador": true,
-    "rol": "Omega",
-    "iaa": 47.36,
+    "rol": "Beta",
+    "iaa": 51.8,
     "puntuacionManada": 24,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -822,6 +1374,90 @@
       },
       {
         "fechaIngreso": "2030-03-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-11-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2030-11-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-09-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2031-09-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-11-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2032-11-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-07-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2033-07-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-09-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2034-09-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-04-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2035-04-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-03-01",
+        "rol": "Omega",
+        "compromiso": 24
+      },
+      {
+        "fechaIngreso": "2036-03-01",
         "rol": "Omega",
         "compromiso": 24
       }
@@ -836,7 +1472,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 65.3,
+    "iaa": 72.35,
     "puntuacionManada": 69,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -850,6 +1486,24 @@
       },
       {
         "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2032-04-01",
+        "rol": "Beta",
+        "compromiso": 69
+      },
+      {
+        "fechaIngreso": "2032-04-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 69
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2036-11-01",
+        "rol": "Beta",
+        "compromiso": 69
+      },
+      {
+        "fechaIngreso": "2036-11-01",
         "rol": "Beta",
         "compromiso": 69
       }
@@ -864,7 +1518,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 75.13,
+    "iaa": 74.05,
     "puntuacionManada": 78,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -914,6 +1568,90 @@
       },
       {
         "fechaIngreso": "2030-06-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-06-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2031-06-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-05-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2032-05-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-02-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2034-02-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2035-01-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2035-01-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-12-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2035-12-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-10-01",
+        "rol": "Beta",
+        "compromiso": 78
+      },
+      {
+        "fechaIngreso": "2036-10-01",
         "rol": "Beta",
         "compromiso": 78
       }
@@ -928,7 +1666,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 32.02,
+    "iaa": 34.88,
     "puntuacionManada": 9,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -936,8 +1674,20 @@
     "afiliaciones": [
       {
         "fechaIngreso": "2024-07-09",
+        "fechaSalida": "2035-02-01",
         "rol": "Miembro",
         "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 9
       }
     ]
   },
@@ -950,7 +1700,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 64.97,
+    "iaa": 61.97,
     "puntuacionManada": 75,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -990,7 +1740,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 60.78,
+    "iaa": 55.97,
     "puntuacionManada": 53,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1018,7 +1768,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 37.3,
+    "iaa": 43.27,
     "puntuacionManada": 0,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1086,6 +1836,54 @@
       },
       {
         "fechaIngreso": "2029-10-01",
+        "fechaSalida": "2031-06-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2031-06-01",
+        "fechaSalida": "2033-03-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2033-03-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-10-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2034-10-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-11-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2035-11-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-09-01",
+        "rol": "Omega",
+        "compromiso": 0
+      },
+      {
+        "fechaIngreso": "2036-09-01",
         "rol": "Omega",
         "compromiso": 0
       }
@@ -1100,7 +1898,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 48.05,
+    "iaa": 48.37,
     "puntuacionManada": 11,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1174,6 +1972,90 @@
       },
       {
         "fechaIngreso": "2030-05-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-02-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2031-02-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-04-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2032-04-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-01-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2033-01-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-11-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2033-11-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-11-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2034-11-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-07-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2035-07-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-05-01",
+        "rol": "Omega",
+        "compromiso": 11
+      },
+      {
+        "fechaIngreso": "2036-05-01",
         "rol": "Omega",
         "compromiso": 11
       }
@@ -1188,7 +2070,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 50.54,
+    "iaa": 50.75,
     "puntuacionManada": 31,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1238,6 +2120,54 @@
       },
       {
         "fechaIngreso": "2028-01-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-09-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2030-09-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-05-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2033-05-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-03-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2035-03-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-03-01",
+        "rol": "Omega",
+        "compromiso": 31
+      },
+      {
+        "fechaIngreso": "2036-03-01",
         "rol": "Omega",
         "compromiso": 31
       }
@@ -1252,7 +2182,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 58.8,
+    "iaa": 57.6,
     "puntuacionManada": 92,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1274,7 +2204,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 31.95,
+    "iaa": 28.95,
     "puntuacionManada": 35,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1318,7 +2248,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 23.1,
+    "iaa": 20.7,
     "puntuacionManada": 10,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1340,7 +2270,7 @@
     "especie": "Lobo",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 47.25,
+    "iaa": 48.45,
     "puntuacionManada": 77,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1408,6 +2338,90 @@
       },
       {
         "fechaIngreso": "2030-03-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-12-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2030-12-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-10-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2031-10-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-09-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2032-09-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-07-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2033-07-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-07-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2034-07-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-07-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2035-07-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-05-01",
+        "rol": "Omega",
+        "compromiso": 77
+      },
+      {
+        "fechaIngreso": "2036-05-01",
         "rol": "Omega",
         "compromiso": 77
       }
@@ -1422,7 +2436,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 53.96,
+    "iaa": 55.3,
     "puntuacionManada": 45,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1484,6 +2498,18 @@
       },
       {
         "fechaIngreso": "2028-12-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 45
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-04-01",
+        "rol": "Omega",
+        "compromiso": 45
+      },
+      {
+        "fechaIngreso": "2034-04-01",
         "rol": "Omega",
         "compromiso": 45
       }
@@ -1498,7 +2524,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 61.18,
+    "iaa": 58.78,
     "puntuacionManada": 25,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1526,7 +2552,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 81.9,
+    "iaa": 77.72,
     "puntuacionManada": 97,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1600,6 +2626,90 @@
       },
       {
         "fechaIngreso": "2029-11-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-10-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2030-10-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-08-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2031-08-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-07-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2032-07-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-06-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2033-06-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-04-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2034-04-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-03-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2035-03-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-03-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2036-03-01",
         "rol": "Beta",
         "compromiso": 97
       }
@@ -1614,7 +2724,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 53.95,
+    "iaa": 50.36,
     "puntuacionManada": 54,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1688,6 +2798,90 @@
       },
       {
         "fechaIngreso": "2029-12-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-10-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2030-10-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-09-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2031-09-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-08-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2032-08-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-07-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2033-07-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-06-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2034-06-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-06-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2035-06-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-05-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2036-05-01",
         "rol": "Omega",
         "compromiso": 54
       }
@@ -1701,8 +2895,8 @@
     "estadoCiudadania": "Activo",
     "especie": "Leon",
     "esPredador": true,
-    "rol": "Beta",
-    "iaa": 50.19,
+    "rol": "Omega",
+    "iaa": 45.43,
     "puntuacionManada": 15,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1776,6 +2970,90 @@
       },
       {
         "fechaIngreso": "2030-02-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-11-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2030-11-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-04-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2032-04-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-10-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2032-10-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-09-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2033-09-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-08-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2034-08-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-09-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2035-09-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-06-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2036-06-01",
         "rol": "Omega",
         "compromiso": 15
       }
@@ -1790,7 +3068,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 32.18,
+    "iaa": 33.98,
     "puntuacionManada": 12,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1812,7 +3090,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 49.2,
+    "iaa": 47.27,
     "puntuacionManada": 44,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1886,6 +3164,90 @@
       },
       {
         "fechaIngreso": "2030-02-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-10-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2030-10-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-10-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2031-10-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-11-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2032-11-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-08-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2033-08-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-06-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2034-06-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-04-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2035-04-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-06-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2036-06-01",
         "rol": "Omega",
         "compromiso": 44
       }
@@ -1900,7 +3262,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 29.47,
+    "iaa": 35.47,
     "puntuacionManada": 21,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1922,7 +3284,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 59.02,
+    "iaa": 57.22,
     "puntuacionManada": 77,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -1950,7 +3312,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 51.64,
+    "iaa": 56.0,
     "puntuacionManada": 47,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2024,6 +3386,90 @@
       },
       {
         "fechaIngreso": "2030-01-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-09-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2030-09-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-01-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2032-01-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-08-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2032-08-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-08-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2033-08-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-07-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2034-07-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-04-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2035-04-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-03-01",
+        "rol": "Omega",
+        "compromiso": 47
+      },
+      {
+        "fechaIngreso": "2036-03-01",
         "rol": "Omega",
         "compromiso": 47
       }
@@ -2038,7 +3484,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 44.66,
+    "iaa": 44.94,
     "puntuacionManada": 22,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2100,6 +3546,90 @@
       },
       {
         "fechaIngreso": "2030-03-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-01-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2031-01-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-01-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2032-01-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-02-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2033-02-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-11-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2033-11-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-10-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2034-10-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-07-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2035-07-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-09-01",
+        "rol": "Omega",
+        "compromiso": 22
+      },
+      {
+        "fechaIngreso": "2036-09-01",
         "rol": "Omega",
         "compromiso": 22
       }
@@ -2114,7 +3644,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 68.34,
+    "iaa": 74.58,
     "puntuacionManada": 97,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2128,6 +3658,48 @@
       },
       {
         "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2031-06-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2031-06-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2033-02-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2033-02-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-09-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2036-09-01",
         "rol": "Beta",
         "compromiso": 97
       }
@@ -2142,7 +3714,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 37.18,
+    "iaa": 32.98,
     "puntuacionManada": 0,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2170,7 +3742,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 78.74,
+    "iaa": 74.31,
     "puntuacionManada": 80,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2232,6 +3804,90 @@
       },
       {
         "fechaIngreso": "2030-03-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-03-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2031-03-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-03-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2032-03-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-12-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2032-12-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-02-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2034-02-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-08-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2034-08-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-09-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2035-09-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-09-01",
+        "rol": "Beta",
+        "compromiso": 80
+      },
+      {
+        "fechaIngreso": "2036-09-01",
         "rol": "Beta",
         "compromiso": 80
       }
@@ -2246,7 +3902,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 54.34,
+    "iaa": 56.74,
     "puntuacionManada": 69,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2286,7 +3942,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 68.86,
+    "iaa": 63.36,
     "puntuacionManada": 72,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2300,6 +3956,42 @@
       },
       {
         "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2031-04-01",
+        "rol": "Beta",
+        "compromiso": 72
+      },
+      {
+        "fechaIngreso": "2031-04-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 72
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 72
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 72
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 72
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 72
+      },
+      {
+        "fechaIngreso": "2036-01-01",
         "rol": "Beta",
         "compromiso": 72
       }
@@ -2314,7 +4006,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 45.06,
+    "iaa": 42.71,
     "puntuacionManada": 39,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2364,6 +4056,78 @@
       },
       {
         "fechaIngreso": "2030-07-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-03-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2031-03-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2033-02-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2033-02-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-10-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2034-10-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-10-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2035-10-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-09-01",
+        "rol": "Omega",
+        "compromiso": 39
+      },
+      {
+        "fechaIngreso": "2036-09-01",
         "rol": "Omega",
         "compromiso": 39
       }
@@ -2378,7 +4142,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 41.51,
+    "iaa": 47.74,
     "puntuacionManada": 43,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2440,6 +4204,90 @@
       },
       {
         "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-11-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2030-11-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-03-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2032-03-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-01-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2033-01-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-11-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2033-11-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-10-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2034-10-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-10-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2035-10-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-07-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2036-07-01",
         "rol": "Omega",
         "compromiso": 43
       }
@@ -2454,7 +4302,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 66.43,
+    "iaa": 68.91,
     "puntuacionManada": 88,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2468,6 +4316,36 @@
       },
       {
         "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2033-03-01",
+        "rol": "Beta",
+        "compromiso": 88
+      },
+      {
+        "fechaIngreso": "2033-03-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 88
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-02-01",
+        "rol": "Beta",
+        "compromiso": 88
+      },
+      {
+        "fechaIngreso": "2034-02-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Beta",
+        "compromiso": 88
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Beta",
+        "compromiso": 88
+      },
+      {
+        "fechaIngreso": "2035-02-01",
         "rol": "Beta",
         "compromiso": 88
       }
@@ -2482,7 +4360,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 42.58,
+    "iaa": 44.0,
     "puntuacionManada": 3,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2556,6 +4434,90 @@
       },
       {
         "fechaIngreso": "2030-06-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-03-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2031-03-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-01-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2033-01-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-12-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2034-12-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-11-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2035-11-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-09-01",
+        "rol": "Omega",
+        "compromiso": 3
+      },
+      {
+        "fechaIngreso": "2036-09-01",
         "rol": "Omega",
         "compromiso": 3
       }
@@ -2570,7 +4532,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 19.8,
+    "iaa": 15.0,
     "puntuacionManada": 4,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2592,7 +4554,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 55.95,
+    "iaa": 56.55,
     "puntuacionManada": 91,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2613,8 +4575,8 @@
     "estadoCiudadania": "Activo",
     "especie": "Leon",
     "esPredador": true,
-    "rol": "Beta",
-    "iaa": 51.6,
+    "rol": "Omega",
+    "iaa": 47.4,
     "puntuacionManada": 68,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2670,6 +4632,90 @@
       },
       {
         "fechaIngreso": "2030-01-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-01-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2031-01-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-03-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2032-03-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-01-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2033-01-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-12-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2033-12-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-07-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2034-07-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-08-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2035-08-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-07-01",
+        "rol": "Omega",
+        "compromiso": 68
+      },
+      {
+        "fechaIngreso": "2036-07-01",
         "rol": "Omega",
         "compromiso": 68
       }
@@ -2684,7 +4730,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Omega",
-    "iaa": 30.45,
+    "iaa": 28.65,
     "puntuacionManada": 37,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2706,7 +4752,7 @@
     "especie": "Leon",
     "esPredador": true,
     "rol": "Beta",
-    "iaa": 62.4,
+    "iaa": 57.0,
     "puntuacionManada": 96,
     "ratioCaza": 25.0,
     "ratioEscape": 0.0,
@@ -2728,7 +4774,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 55.78,
+    "iaa": 61.78,
     "puntuacionManada": 61,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -2756,7 +4802,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 64.61,
+    "iaa": 63.41,
     "puntuacionManada": 80,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -2784,7 +4830,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 46.47,
+    "iaa": 45.96,
     "puntuacionManada": 35,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -2858,6 +4904,90 @@
       },
       {
         "fechaIngreso": "2030-05-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-05-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2031-05-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-12-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2031-12-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-11-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2032-11-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-10-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2033-10-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-07-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2034-07-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-12-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2035-12-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-07-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2036-07-01",
         "rol": "Omega",
         "compromiso": 35
       }
@@ -2872,7 +5002,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 47.61,
+    "iaa": 48.91,
     "puntuacionManada": 20,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -2946,6 +5076,90 @@
       },
       {
         "fechaIngreso": "2030-02-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-01-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2031-01-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-10-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2031-10-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-09-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2032-09-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-09-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2033-09-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-05-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2034-05-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-09-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2035-09-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-07-01",
+        "rol": "Omega",
+        "compromiso": 20
+      },
+      {
+        "fechaIngreso": "2036-07-01",
         "rol": "Omega",
         "compromiso": 20
       }
@@ -2960,7 +5174,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 53.85,
+    "iaa": 55.65,
     "puntuacionManada": 25,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -2988,7 +5202,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 37.08,
+    "iaa": 36.25,
     "puntuacionManada": 15,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3032,6 +5246,54 @@
       },
       {
         "fechaIngreso": "2029-10-01",
+        "fechaSalida": "2031-05-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2031-05-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2033-02-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2033-02-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-02-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2034-02-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2035-01-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2035-01-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 15
+      },
+      {
+        "fechaIngreso": "2035-02-01",
         "rol": "Omega",
         "compromiso": 15
       }
@@ -3046,7 +5308,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 27.77,
+    "iaa": 33.17,
     "puntuacionManada": 3,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3092,7 +5354,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 40.66,
+    "iaa": 44.16,
     "puntuacionManada": 17,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3166,6 +5428,66 @@
       },
       {
         "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-12-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2032-12-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-02-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2034-02-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-09-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2034-09-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 17
+      },
+      {
+        "fechaIngreso": "2036-01-01",
         "rol": "Omega",
         "compromiso": 17
       }
@@ -3180,7 +5502,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 43.28,
+    "iaa": 43.32,
     "puntuacionManada": 9,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3254,6 +5576,66 @@
       },
       {
         "fechaIngreso": "2030-05-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-02-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2033-02-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-01-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2034-01-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2035-12-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2035-12-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-11-01",
+        "rol": "Omega",
+        "compromiso": 9
+      },
+      {
+        "fechaIngreso": "2036-11-01",
         "rol": "Omega",
         "compromiso": 9
       }
@@ -3268,7 +5650,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 71.4,
+    "iaa": 74.4,
     "puntuacionManada": 73,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3295,8 +5677,8 @@
     "estadoCiudadania": "Activo",
     "especie": "Ciervo",
     "esPredador": false,
-    "rol": "Omega",
-    "iaa": 44.03,
+    "rol": "Beta",
+    "iaa": 51.28,
     "puntuacionManada": 44,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3370,6 +5752,90 @@
       },
       {
         "fechaIngreso": "2030-04-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-12-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2030-12-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-03-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2032-03-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-12-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2032-12-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-09-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2033-09-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-06-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2034-06-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-07-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2035-07-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-07-01",
+        "rol": "Omega",
+        "compromiso": 44
+      },
+      {
+        "fechaIngreso": "2036-07-01",
         "rol": "Omega",
         "compromiso": 44
       }
@@ -3384,7 +5850,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 41.28,
+    "iaa": 47.23,
     "puntuacionManada": 8,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3446,6 +5912,90 @@
       },
       {
         "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-02-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2031-02-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-01-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2032-01-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-12-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2032-12-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-09-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2033-09-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-12-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2034-12-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-08-01",
+        "rol": "Omega",
+        "compromiso": 8
+      },
+      {
+        "fechaIngreso": "2036-08-01",
         "rol": "Omega",
         "compromiso": 8
       }
@@ -3460,7 +6010,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 52.98,
+    "iaa": 52.43,
     "puntuacionManada": 43,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3498,6 +6048,18 @@
       },
       {
         "fechaIngreso": "2028-01-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-09-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2030-09-01",
         "rol": "Omega",
         "compromiso": 43
       }
@@ -3512,7 +6074,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 28.22,
+    "iaa": 24.62,
     "puntuacionManada": 12,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3534,7 +6096,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 24.37,
+    "iaa": 27.37,
     "puntuacionManada": 9,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3556,7 +6118,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 68.32,
+    "iaa": 65.92,
     "puntuacionManada": 72,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3584,7 +6146,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 51.52,
+    "iaa": 53.36,
     "puntuacionManada": 35,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3622,6 +6184,18 @@
       },
       {
         "fechaIngreso": "2028-12-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-09-01",
+        "rol": "Omega",
+        "compromiso": 35
+      },
+      {
+        "fechaIngreso": "2030-09-01",
         "rol": "Omega",
         "compromiso": 35
       }
@@ -3636,7 +6210,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 57.97,
+    "iaa": 60.37,
     "puntuacionManada": 89,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3663,8 +6237,8 @@
     "estadoCiudadania": "Activo",
     "especie": "Ciervo",
     "esPredador": false,
-    "rol": "Omega",
-    "iaa": 49.79,
+    "rol": "Beta",
+    "iaa": 51.48,
     "puntuacionManada": 46,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3714,6 +6288,90 @@
       },
       {
         "fechaIngreso": "2029-11-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-11-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2030-11-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-10-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2031-10-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-07-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2032-07-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-06-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2033-06-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-06-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2034-06-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-06-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2035-06-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-05-01",
+        "rol": "Omega",
+        "compromiso": 46
+      },
+      {
+        "fechaIngreso": "2036-05-01",
         "rol": "Omega",
         "compromiso": 46
       }
@@ -3728,7 +6386,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 59.02,
+    "iaa": 60.22,
     "puntuacionManada": 64,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3756,7 +6414,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 52.35,
+    "iaa": 53.55,
     "puntuacionManada": 79,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3824,6 +6482,90 @@
       },
       {
         "fechaIngreso": "2029-12-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2030-11-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2030-11-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2031-12-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2031-12-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2032-08-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2032-08-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-07-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2033-07-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-04-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2034-04-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-06-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2035-06-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-04-01",
+        "rol": "Omega",
+        "compromiso": 79
+      },
+      {
+        "fechaIngreso": "2036-04-01",
         "rol": "Omega",
         "compromiso": 79
       }
@@ -3838,7 +6580,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 42.45,
+    "iaa": 44.85,
     "puntuacionManada": 65,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3894,6 +6636,90 @@
       },
       {
         "fechaIngreso": "2030-07-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-03-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2031-03-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-03-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2032-03-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-01-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2033-01-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2033-10-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2033-10-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-10-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2034-10-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2035-10-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2035-10-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2036-01-01",
+        "fechaSalida": "2036-09-01",
+        "rol": "Omega",
+        "compromiso": 65
+      },
+      {
+        "fechaIngreso": "2036-09-01",
         "rol": "Omega",
         "compromiso": 65
       }
@@ -3908,7 +6734,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 33.75,
+    "iaa": 36.75,
     "puntuacionManada": 43,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3916,6 +6742,12 @@
     "afiliaciones": [
       {
         "fechaIngreso": "2026-05-07",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 43
+      },
+      {
+        "fechaIngreso": "2034-03-01",
         "rol": "Omega",
         "compromiso": 43
       }
@@ -3930,7 +6762,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 32.7,
+    "iaa": 40.5,
     "puntuacionManada": 54,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -3962,6 +6794,30 @@
       },
       {
         "fechaIngreso": "2028-11-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2036-12-01",
+        "rol": "Omega",
+        "compromiso": 54
+      },
+      {
+        "fechaIngreso": "2036-12-01",
         "rol": "Omega",
         "compromiso": 54
       }
@@ -3976,7 +6832,7 @@
     "especie": "Ciervo",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 33.15,
+    "iaa": 39.75,
     "puntuacionManada": 51,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4014,6 +6870,36 @@
       },
       {
         "fechaIngreso": "2029-10-01",
+        "fechaSalida": "2031-06-01",
+        "rol": "Omega",
+        "compromiso": 51
+      },
+      {
+        "fechaIngreso": "2031-06-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Omega",
+        "compromiso": 51
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-05-01",
+        "rol": "Omega",
+        "compromiso": 51
+      },
+      {
+        "fechaIngreso": "2032-05-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Omega",
+        "compromiso": 51
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Omega",
+        "compromiso": 51
+      },
+      {
+        "fechaIngreso": "2034-03-01",
         "rol": "Omega",
         "compromiso": 51
       }
@@ -4028,7 +6914,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 30.58,
+    "iaa": 34.18,
     "puntuacionManada": 2,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4050,7 +6936,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 58.33,
+    "iaa": 53.53,
     "puntuacionManada": 60,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4072,7 +6958,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 68.12,
+    "iaa": 63.92,
     "puntuacionManada": 36,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4093,8 +6979,8 @@
     "estadoCiudadania": "Activo",
     "especie": "Alce",
     "esPredador": false,
-    "rol": "Omega",
-    "iaa": 49.15,
+    "rol": "Beta",
+    "iaa": 52.15,
     "puntuacionManada": 89,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4116,7 +7002,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 67.57,
+    "iaa": 59.77,
     "puntuacionManada": 68,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4137,8 +7023,8 @@
     "estadoCiudadania": "Activo",
     "especie": "Alce",
     "esPredador": false,
-    "rol": "Beta",
-    "iaa": 51.22,
+    "rol": "Omega",
+    "iaa": 42.82,
     "puntuacionManada": 61,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4160,7 +7046,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 61.8,
+    "iaa": 58.8,
     "puntuacionManada": 36,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4182,7 +7068,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 53.35,
+    "iaa": 57.55,
     "puntuacionManada": 17,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4204,7 +7090,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 58.7,
+    "iaa": 59.9,
     "puntuacionManada": 3,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4226,7 +7112,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 63.05,
+    "iaa": 64.25,
     "puntuacionManada": 74,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4248,7 +7134,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 83.99,
+    "iaa": 83.77,
     "puntuacionManada": 97,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4292,6 +7178,48 @@
       },
       {
         "fechaIngreso": "2029-10-01",
+        "fechaSalida": "2030-08-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2030-08-01",
+        "fechaSalida": "2031-07-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2031-07-01",
+        "fechaSalida": "2032-06-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2032-06-01",
+        "fechaSalida": "2033-04-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2033-04-01",
+        "fechaSalida": "2034-03-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2034-03-01",
+        "fechaSalida": "2035-02-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2035-02-01",
+        "fechaSalida": "2036-01-01",
+        "rol": "Beta",
+        "compromiso": 97
+      },
+      {
+        "fechaIngreso": "2036-01-01",
         "rol": "Beta",
         "compromiso": 97
       }
@@ -4306,7 +7234,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 59.37,
+    "iaa": 64.17,
     "puntuacionManada": 45,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4328,7 +7256,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 39.2,
+    "iaa": 47.0,
     "puntuacionManada": 3,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4350,7 +7278,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 61.47,
+    "iaa": 57.27,
     "puntuacionManada": 38,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4372,7 +7300,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 65.0,
+    "iaa": 62.0,
     "puntuacionManada": 30,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4400,7 +7328,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 56.28,
+    "iaa": 56.88,
     "puntuacionManada": 48,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4422,7 +7350,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 65.35,
+    "iaa": 62.35,
     "puntuacionManada": 7,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4444,7 +7372,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 63.75,
+    "iaa": 61.95,
     "puntuacionManada": 61,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4466,7 +7394,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Beta",
-    "iaa": 55.95,
+    "iaa": 52.95,
     "puntuacionManada": 40,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4488,7 +7416,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 27.95,
+    "iaa": 25.55,
     "puntuacionManada": 23,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4510,7 +7438,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 24.15,
+    "iaa": 23.55,
     "puntuacionManada": 19,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4532,7 +7460,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 36.45,
+    "iaa": 34.65,
     "puntuacionManada": 45,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4554,7 +7482,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 37.2,
+    "iaa": 28.2,
     "puntuacionManada": 63,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4570,7 +7498,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 25.0,
+    "iaa": 19.0,
     "puntuacionManada": 20,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
@@ -4586,7 +7514,7 @@
     "especie": "Alce",
     "esPredador": false,
     "rol": "Omega",
-    "iaa": 18.4,
+    "iaa": 20.2,
     "puntuacionManada": 8,
     "ratioCaza": 0.0,
     "ratioEscape": 25.0,
