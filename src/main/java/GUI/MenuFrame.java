@@ -1,6 +1,10 @@
 package GUI;
 
 import javax.swing.*;
+
+
+import Simulacion.Reloj;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -12,15 +16,14 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
     private JButton option4Button;
     private JButton option5Button;
     private JButton option6Button;  
-    
+    private final Reloj reloj;
+
     JPanel mainPanel;
 
     private Image imagen;
 
-
-    
-
-    public MenuFrame() {
+    public MenuFrame(Reloj reloj) {
+        this.reloj = reloj;
         setTitle("Therania");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -108,35 +111,37 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         add(panel,BorderLayout.WEST);
         // Agregar el panel al frame
         add(mainPanel,BorderLayout.CENTER);
-        
+
+        SwingUtilities.invokeLater(() -> {
+        Opcion1 O1 = new Opcion1();
+        MPAdd(O1);
+            }
+        );
+            
         setVisible(true);
       }
 //********************************************************************************************************************************    
     @Override
     public void actionPerformed(ActionEvent e) {
-        
-//********************************************************************************************************************************
-        //Botones
         if (e.getSource() == option1Button) {
-            Opcion1 O1 = new Opcion1();
-            MPAdd(O1);
+            Reloj.reanudar();               // mapa → el reloj corre
+            MPAdd(new Opcion1());
         } else if (e.getSource() == option2Button) {
-            Opcion2 O2 = new Opcion2();
-            MPAdd(O2);
+            Reloj.pausar();
+            MPAdd(new Opcion2(reloj));
         } else if (e.getSource() == option3Button) {
-            Opcion3 O3 = new Opcion3();
-            MPAdd(O3);
+            Reloj.pausar();
+            MPAdd(new Opcion3(reloj));
         } else if (e.getSource() == option4Button) {
-            Opcion4 O4 = new Opcion4();
-            MPAdd(O4);
+            Reloj.pausar();
+            MPAdd(new Opcion4());
         } else if (e.getSource() == option5Button) {
-            Opcion5 O5 = new Opcion5();
-            MPAdd(O5);
+            Reloj.pausar();
+            MPAdd(new Opcion5());
         } else if (e.getSource() == option6Button) {
             JOptionPane.showMessageDialog(this, "Cerrando programa");
             System.exit(0);
         }
-
     }
 //********************************************************************************************************************************    
     public void MPAdd(JPanel panel)

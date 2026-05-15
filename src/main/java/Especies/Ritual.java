@@ -6,12 +6,31 @@ import java.util.List;
 public class Ritual {
 
     public enum TipoRitual {
-        AULLIDO_COLECTIVO,
-        CAMINATA_NOCTURNA,
-        ASAMBLEA_DE_RUGIDOS,
-        VUELO_CEREMONIAL,
-        DANZA_DEL_AGUA,
-        CEREMONIA_DE_MANADA
+        AULLIDO_LUNAR, CAZA_EN_MANADA,           // Lobo
+        RUGIDO_REAL, PATRULLA_TERRITORIAL,        // Leon
+        DANZA_DEL_BOSQUE, CONTEMPLACION_NATURAL,  // Ciervo
+        BRAMIDO_MONTANIA, MARCAJE_TERRITORIAL,    // Alce
+        ACECHO_NOCTURNO, CEREMONIA_SOLITARIA,     // Tigre
+        VUELO_SUPREMO, OBSERVACION_ALTA,          // Halcon
+        CANTO_MARINO, CACERIA_GRUPAL,             // Orca
+        GALOPE_LIBRE, VIGILANCIA_GRUPAL,          // Cebra
+        ZAMBULLIDA_POLAR, JUEGO_GLACIAR,          // Foca
+        VUELO_MENSAJERO, CIRCULO_DE_PAZ 
+    }
+
+    public static TipoRitual[] tiposPorEspecie(String especie) {
+    switch (especie) {
+        case "Lobo":   return new TipoRitual[]{TipoRitual.AULLIDO_LUNAR,    TipoRitual.CAZA_EN_MANADA};
+        case "Leon":   return new TipoRitual[]{TipoRitual.RUGIDO_REAL,      TipoRitual.PATRULLA_TERRITORIAL};
+        case "Ciervo": return new TipoRitual[]{TipoRitual.DANZA_DEL_BOSQUE, TipoRitual.CONTEMPLACION_NATURAL};
+        case "Alce":   return new TipoRitual[]{TipoRitual.BRAMIDO_MONTANIA, TipoRitual.MARCAJE_TERRITORIAL};
+        case "Tigre":  return new TipoRitual[]{TipoRitual.ACECHO_NOCTURNO,  TipoRitual.CEREMONIA_SOLITARIA};
+        case "Halcon": return new TipoRitual[]{TipoRitual.VUELO_SUPREMO,    TipoRitual.OBSERVACION_ALTA};
+        case "Orca":   return new TipoRitual[]{TipoRitual.CANTO_MARINO,     TipoRitual.CACERIA_GRUPAL};
+        case "Cebra":  return new TipoRitual[]{TipoRitual.GALOPE_LIBRE,     TipoRitual.VIGILANCIA_GRUPAL};
+        case "Foca":   return new TipoRitual[]{TipoRitual.ZAMBULLIDA_POLAR, TipoRitual.JUEGO_GLACIAR};
+        default:       return new TipoRitual[]{TipoRitual.VUELO_MENSAJERO,  TipoRitual.CIRCULO_DE_PAZ};
+        }
     }
 
     private String NombreRitual;

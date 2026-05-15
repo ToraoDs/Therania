@@ -6,6 +6,9 @@ public class AfiliacionManada {
     private String Rol;
     private int Compromiso;
     private String FechaSalida;
+    private int    mesesTransicion; // 1 = misma especie, 2 = especie diferente
+    private String manadaOrigen;
+    private String manadaDestino;
 
     public AfiliacionManada(String nombreManada, String FechaIngreso, String Rol, int Compromiso, String FechaSalida){
         this.nombreManada = nombreManada;
@@ -13,6 +16,7 @@ public class AfiliacionManada {
         this.Rol = Rol;
         this.Compromiso = Compromiso;
         this.FechaSalida = FechaSalida;
+
     }
 
     // Setters
@@ -28,13 +32,16 @@ public class AfiliacionManada {
         this.Rol = Rol;
     }
 
-    public void setComprimiso(int Compromiso){
+    public void setCompromiso(int Compromiso){
         this.Compromiso = Compromiso;
     }
 
     public void setFechaSalida(String FechaSalida){
         this.FechaSalida = FechaSalida;
     }
+    public void setMesesTransicion(int meses)        { this.mesesTransicion = meses; }
+    public void setManadaOrigen(String manadaOrigen)   { this.manadaOrigen  = manadaOrigen; }
+    public void setManadaDestino(String manadaDestino) { this.manadaDestino = manadaDestino; }
 
 
     // Getters
@@ -61,6 +68,9 @@ public class AfiliacionManada {
     public boolean estaActivo(){
         return FechaSalida == null;
     }
+    public int    getMesesTransicion() { return mesesTransicion; }
+    public String getManadaOrigen()    { return manadaOrigen; }
+    public String getManadaDestino()   { return manadaDestino; }
 
     
 }

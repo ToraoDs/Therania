@@ -40,36 +40,31 @@ public class ConsultasReportes {
             System.out.println("Rango IAA:   " + m.get("iaaMinimo") + " - " + m.get("iaaMaximo"));
 
             // Especie predominante entre los miembros
-            List<String> ids = (List<String>) m.get("miembros");
+            @SuppressWarnings("unchecked")
+            List<Object> ids = (List<Object>) m.get("miembros");
             System.out.println("Especie predominante: " + especiePredominante(ids));
         }
     }
 
-    private static String especiePredominante(List<String> idsMiembros) {
+    private static String especiePredominante(List<Object> idsMiembros) {
         if (idsMiembros == null || idsMiembros.isEmpty()) return "Sin miembros";
 
+        List<Map<String, Object>> todos = CiudadanoServicio.cargarCiudadanos();
         Map<String, Integer> conteo = new HashMap<>();
-        for (String id : idsMiembros) {
-            // Los IDs empiezan con las iniciales de la especie (ej: LO1 = Lobo)
-            String prefijo = id.substring(0, 2);
-            String especie;
-            switch (prefijo) {
-                case "LO": especie = "Lobo";   break;
-                case "LE": especie = "Leon";   break;
-                case "CI": especie = "Ciervo"; break;
-                case "AL": especie = "Alce";   break;
-                case "TI": especie = "Tigre";  break; // ← nuevo
-                case "HA": especie = "Halcon"; break; // ← nuevo
-                case "OR": especie = "Orca";   break; // ← nuevo
-                case "CE": especie = "Cebra";  break; // ← nuevo
-                case "FO": especie = "Foca";   break; // ← nuevo
-                case "PA": especie = "Paloma"; break; // ← nuevo
-                default:   especie = "Desconocida"; break;
+
+        for (Object idObj : idsMiembros) {
+            int idBuscado = ((Number) idObj).intValue();
+            for (Map<String, Object> c : todos) {
+                int idCiudadano = ((Number) c.get("id")).intValue();
+                if (idCiudadano == idBuscado) {
+                    String especie = (String) c.get("especie");
+                    conteo.put(especie, conteo.getOrDefault(especie, 0) + 1);
+                    break;
+                }
             }
-            conteo.put(especie, conteo.getOrDefault(especie, 0) + 1);
         }
 
-        String predominante = "";
+        String predominante = "Sin miembros";
         int max = 0;
         for (Map.Entry<String, Integer> entry : conteo.entrySet()) {
             if (entry.getValue() > max) {
@@ -88,16 +83,23 @@ public class ConsultasReportes {
 
         int total = 0;
         for (Map<String, Object> r : rituales) {
+            // Filtrar por manada responsable
+            String manada = (String) r.get("manadaResponsable");
+            if (manada == null || !manada.equalsIgnoreCase(nombreManada)) continue; // ← filtro
+
             System.out.println("\nRitual:       " + r.get("nombre"));
             System.out.println("Tipo:         " + r.get("tipo"));
             System.out.println("Fecha:        " + r.get("fecha"));
             System.out.println("Duracion:     " + r.get("duracionMinutos") + " min");
             System.out.println("Intensidad:   " + r.get("intensidad"));
-            List<String> participantes = (List<String>) r.get("participantes");
+            @SuppressWarnings("unchecked")
+            List<Object> participantes = (List<Object>) r.get("participantes");
             System.out.println("Participantes:" + (participantes != null ? participantes.size() : 0));
             total++;
         }
-        System.out.println("\nTotal rituales: " + total);
+
+        if (total == 0) System.out.println("No hay rituales para esta manada.");
+        else System.out.println("\nTotal rituales: " + total);
     }
 
     // ─── 4. Historial de rituales por ciudadano ───────────────────────────
@@ -155,26 +157,61 @@ public class ConsultasReportes {
     // ─── 6. Top 20 desde archivo ──────────────────────────────────────────
 
     public static void reporteTop20() {
-        List<Map<String, Object>> ciudadanos = CiudadanoServicio.cargarCiudadanos();
-        System.out.println("\n===== TOP 20 CIUDADANOS POR IAA =====");
+    List<Map<String, Object>> ciudadanos = CiudadanoServicio.cargarCiudadanos();
+  
+    List<Map<String, Object>> rituales   = RitualServicio.cargarRituales();
 
-        // Ordenar por IAA de mayor a menor
-        ciudadanos.sort((a, b) -> {
-            double iaaA = ((Number) a.get("iaa")).doubleValue();
-            double iaaB = ((Number) b.get("iaa")).doubleValue();
-            return Double.compare(iaaB, iaaA);
-        });
+    System.out.println("\n===== TOP 20 CIUDADANOS POR IAA =====");
 
-        int limite = Math.min(20, ciudadanos.size());
-        for (int i = 0; i < limite; i++) {
-            Map<String, Object> c = ciudadanos.get(i);
-            System.out.printf("%2d. %-20s | Especie: %-8s | IAA: %.2f | Rol: %s%n",
-                i + 1,
-                c.get("nombre") + " " + c.get("apellido"),
-                c.get("especie"),
-                ((Number) c.get("iaa")).doubleValue(),
-                c.get("rol")
-            );
+    ciudadanos.sort((a, b) -> Double.compare(
+        ((Number) b.get("iaa")).doubleValue(),
+        ((Number) a.get("iaa")).doubleValue()
+    ));
+
+    int limite = Math.min(20, ciudadanos.size());
+    for (int i = 0; i < limite; i++) {
+        Map<String, Object> c = ciudadanos.get(i);
+        int idC = ((Number) c.get("id")).intValue();
+
+        // Manada actual (última afiliación sin fechaSalida)
+        String manadaActual = "Sin manada";
+        List<Map<String, Object>> afiliaciones =
+            (List<Map<String, Object>>) c.get("afiliaciones");
+        if (afiliaciones != null) {
+            for (Map<String, Object> af : afiliaciones) {
+                if (af.get("fechaSalida") == null) {
+                    manadaActual = (String) af.get("nombreManada");
+                }
+            }
         }
+
+        // Contar rituales y calcular intensidad promedio
+        int totalRituales = 0;
+        double sumaIntensidad = 0;
+        for (Map<String, Object> r : rituales) {
+            List<Object> participantes = (List<Object>) r.get("participantes");
+            if (participantes != null) {
+                for (Object p : participantes) {
+                    if (((Number) p).intValue() == idC) {
+                        totalRituales++;
+                        sumaIntensidad += ((Number) r.get("intensidad")).doubleValue();
+                        break;
+                    }
+                }
+            }
+        }
+        double intensidadProm = totalRituales > 0 ? sumaIntensidad / totalRituales : 0;
+
+        System.out.printf("%2d. %-22s | Especie: %-8s | IAA: %5.2f | Rol: %-10s | Manada: %-22s | Rituales: %3d | Int.Prom: %.1f%n",
+            i + 1,
+            c.get("nombre") + " " + c.get("apellido"),
+            c.get("especie"),
+            ((Number) c.get("iaa")).doubleValue(),
+            c.get("rol"),
+            manadaActual,
+            totalRituales,
+            intensidadProm
+        );
     }
+}
 }

@@ -1,0 +1,16 @@
+# Maven
+target/
+**/target/
+
+# IDE files (IntelliJ, Eclipse, NetBeans)
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# Java binaries and logs
+*.class
+*.jar
+*.war
+*.log

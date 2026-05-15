@@ -18,6 +18,8 @@ public class Opcion5 extends JPanel implements ActionListener {
     // Selector global
     private Choice Tipo;
 
+    private Choice filtro;
+
     private ImageIcon redimensionarIcono(String ruta, int ancho, int alto) {
 
         ImageIcon icono = new ImageIcon(ruta);
@@ -129,6 +131,40 @@ public class Opcion5 extends JPanel implements ActionListener {
         Tipo.addItem("especies");
         Tipo.addItem("manadas");
         Tipo.addItem("rituales");
+
+        filtro = new Choice();
+        filtro.addItem("Todos");
+        PanelC.add(filtro);
+
+        // Cuando cambia el tipo, actualizar opciones del filtro
+        Tipo.addItemListener(ev -> {
+        filtro.removeAll();
+        filtro.addItem("Todos");
+        String seleccion = Tipo.getSelectedItem();
+        switch (seleccion) {
+                case "ciudadanos":
+                for (String esp : new String[]{"Lobo","Leon","Ciervo","Alce","Tigre","Halcon","Orca","Cebra","Foca","Paloma"})
+                        filtro.addItem("Especie: " + esp);
+                break;
+                case "manadas":
+                try {
+                        java.util.List<java.util.Map<String, Object>> manadas =
+                        Servicios.ManadaServicio.cargarManadas();
+                        for (java.util.Map<String, Object> m : manadas)
+                        filtro.addItem("Manada: " + m.get("nombre"));
+                } catch (Exception ignored) {}
+                break;
+                case "rituales":
+                for (String tipo : new String[]{"AULLIDO_LUNAR","CAZA_EN_MANADA","RUGIDO_REAL",
+                        "PATRULLA_TERRITORIAL","DANZA_DEL_BOSQUE","CONTEMPLACION_NATURAL",
+                        "BRAMIDO_MONTANIA","MARCAJE_TERRITORIAL","ACECHO_NOCTURNO","CEREMONIA_SOLITARIA",
+                        "VUELO_SUPREMO","OBSERVACION_ALTA","CANTO_MARINO","CACERIA_GRUPAL",
+                        "GALOPE_LIBRE","VIGILANCIA_GRUPAL","ZAMBULLIDA_POLAR","JUEGO_GLACIAR",
+                        "VUELO_MENSAJERO","CIRCULO_DE_PAZ"})
+                        filtro.addItem("Tipo: " + tipo);
+                break;
+        }
+        });
 
         PanelC.add(Tipo);
 
@@ -343,43 +379,87 @@ class TextAreaRenderer extends JTextArea
 
 //*******************************************************************************************************************
 
-    @Override
-    public void actionPerformed(ActionEvent e)
-    {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+        String archivo   = Tipo.getSelectedItem();
+        String filtroVal = filtro.getSelectedItem();
 
-        String archivo = Tipo.getSelectedItem();
-
-        switch(archivo)
-        {
-
+        switch (archivo) {
                 case "ciudadanos":
-
-                cargarTabla("Archivos/ciudadanos.json");
-
+                if (filtroVal.startsWith("Especie: ")) {
+                        String especie = filtroVal.replace("Especie: ", "");
+                        cargarTablaFiltrada("Archivos/ciudadanos.json", "especie", especie);
+                } else {
+                        cargarTabla("Archivos/ciudadanos.json");
+                }
                 break;
-
                 case "especies":
-
                 cargarTabla("Archivos/especies.json");
-
                 break;
-
                 case "manadas":
-
-                cargarTabla("Archivos/manadas.json");
-
+                if (filtroVal.startsWith("Manada: ")) {
+                        String nombreManada = filtroVal.replace("Manada: ", "");
+                        cargarTablaFiltrada("Archivos/manadas.json", "nombre", nombreManada);
+                } else {
+                        cargarTabla("Archivos/manadas.json");
+                }
                 break;
                 case "rituales":
-
-                    cargarTabla("Archivos/rituales.json");
-
-                    break;
-            default:
-
-                JOptionPane.showMessageDialog(
-                        null,
-                        "Seleccione una opción"
-                );
+                if (filtroVal.startsWith("Tipo: ")) {
+                        String tipo = filtroVal.replace("Tipo: ", "");
+                        cargarTablaFiltrada("Archivos/rituales.json", "tipo", tipo);
+                } else {
+                        cargarTabla("Archivos/rituales.json");
+                }
+                break;
+                default:
+                JOptionPane.showMessageDialog(null, "Seleccione una opción");
         }
+        }
+
+        private void cargarTablaFiltrada(String ruta, String campo, String valor) {
+    try {
+        String contenido = new String(Files.readAllBytes(Paths.get(ruta)));
+        JsonArray arreglo = JsonParser.parseString(contenido).getAsJsonArray();
+
+        // Filtrar
+        JsonArray filtrado = new JsonArray();
+        for (JsonElement el : arreglo) {
+            JsonObject obj = el.getAsJsonObject();
+            JsonElement campEl = obj.get(campo);
+            if (campEl != null && campEl.getAsString().equalsIgnoreCase(valor)) {
+                filtrado.add(obj);
+            }
+        }
+
+        if (filtrado.size() == 0) {
+            JOptionPane.showMessageDialog(null, "No hay resultados para: " + valor);
+            return;
+        }
+
+        DefaultTableModel modelo = new DefaultTableModel();
+        JsonObject primero = filtrado.get(0).getAsJsonObject();
+        for (String clave : primero.keySet()) modelo.addColumn(clave);
+
+        for (JsonElement el : filtrado) {
+            JsonObject fila = el.getAsJsonObject();
+            Object[] datos = new Object[modelo.getColumnCount()];
+            int j = 0;
+            for (String clave : primero.keySet()) {
+                JsonElement val = fila.get(clave);
+                datos[j++] = (val == null || val.isJsonNull()) ? ""
+                           : val.isJsonPrimitive() ? val.getAsString()
+                           : val.toString();
+            }
+            modelo.addRow(datos);
+        }
+
+        T1.setModel(modelo);
+        T1.setRowHeight(30);
+
+    } catch (Exception e) {
+        JOptionPane.showMessageDialog(null, "Error al filtrar: " + e.getMessage());
     }
+}
+        
 }

@@ -98,8 +98,10 @@ public class SimulacionTherania {
         manadas.add(Leon.MANADA_REAL);
         manadas.add(Ciervo.MANADA_ROCIO);
         manadas.add(Ciervo.MANADA_ARBOLEDA);
+        manadas.add(Ciervo.MANADA_ALBA);
         manadas.add(Alce.MANADA_PRADERA);
         manadas.add(Alce.MANADA_CUMBRE);
+        manadas.add(Alce.MANADA_BOSQUE);
         manadas.add(Tigre.MANADA_JUNGLA);
         manadas.add(Tigre.MANADA_CAZADORES);
         manadas.add(Tigre.MANADA_SIBERIA);
@@ -164,7 +166,7 @@ public class SimulacionTherania {
                 case "Lobo":   return Lobo.MANADA_LUNA;
                 case "Leon":   return Leon.MANADA_SAVANA;
                 case "Ciervo": return Ciervo.MANADA_ARBOLEDA;
-                case "Alce":   return Alce.MANADA_PRADERA;
+                case "Alce":   return Alce.MANADA_BOSQUE;
                 case "Tigre":  return Tigre.MANADA_CAZADORES;
                 case "Halcon": return Halcon.MANADA_RAPACES;
                 case "Orca":   return Orca.MANADA_PROFUNDIDAD;
@@ -176,7 +178,7 @@ public class SimulacionTherania {
             switch (especie) {
                 case "Lobo":   return Lobo.MANADA_AURORA;
                 case "Leon":   return Leon.MANADA_REAL;
-                case "Ciervo": return Ciervo.MANADA_ARBOLEDA;
+                case "Ciervo": return Ciervo.MANADA_ALBA;
                 case "Alce":   return Alce.MANADA_CUMBRE;
                 case "Tigre":  return Tigre.MANADA_SIBERIA;
                 case "Halcon": return Halcon.MANADA_AGUILA;

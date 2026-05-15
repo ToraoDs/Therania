@@ -10,8 +10,10 @@ import java.util.*;
 public class CiudadanoServicio {
 
     private static final String RUTA = "Archivos/ciudadanos.json";
-    private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
+    private static final Gson gson = new GsonBuilder()
+        .setPrettyPrinting()
+        .setObjectToNumberStrategy(ToNumberPolicy.LONG_OR_DOUBLE)
+        .create();
     // ─── Guardar ─────────────────────────────────────────────────────────
 
     public static void guardarCiudadanos(List<CiudadanoTherian> ciudadanos) {
@@ -41,14 +43,29 @@ public class CiudadanoServicio {
                 List<Map<String, Object>> afiliaciones = new ArrayList<>();
                 for (AfiliacionManada a : c.getManadas()) {
                     Map<String, Object> af = new LinkedHashMap<>();
-                    af.put("nombreManada", a.getNombreManada());
-                    af.put("fechaIngreso", a.getFechaIngreso());
-                    af.put("fechaSalida",  a.getFechaSalida());
-                    af.put("rol",          a.getRol());
-                    af.put("compromiso",   a.getCompromiso());
+                    af.put("nombreManada",    a.getNombreManada());
+                    af.put("fechaIngreso",    a.getFechaIngreso());
+                    af.put("fechaSalida",     a.getFechaSalida());
+                    af.put("rol",             a.getRol());
+                    af.put("compromiso",      a.getCompromiso());
+                    af.put("mesesTransicion", a.getMesesTransicion());
+                    af.put("manadaOrigen",    a.getManadaOrigen());
+                    af.put("manadaDestino",   a.getManadaDestino());
                     afiliaciones.add(af);
                 }
                 mapa.put("afiliaciones", afiliaciones);
+
+                // Serializar historialIAA
+                List<Map<String, Object>> histIAA = new ArrayList<>();
+                for (Map<String, Double> punto : c.getHistorialIAA()) {
+                    for (Map.Entry<String, Double> entry : punto.entrySet()) {
+                        Map<String, Object> p = new java.util.LinkedHashMap<>();
+                        p.put("mes", entry.getKey());
+                        p.put("iaa", entry.getValue());
+                        histIAA.add(p);
+                    }
+                }
+                mapa.put("historialIAA", histIAA);
 
                 datos.add(mapa);
 
@@ -121,5 +138,19 @@ public class CiudadanoServicio {
             }
         }
         return resultado;
+    }
+
+    // ─── Guardar lista raw (Map) directamente desde la GUI ───────────────────
+
+    public static void guardarCiudadanosRaw(List<Map<String, Object>> datos) {
+        try {
+            new File("Archivos").mkdirs();
+            FileWriter writer = new FileWriter(RUTA);
+            gson.toJson(datos, writer);
+            writer.close();
+        } catch (IOException e) {
+            throw new TherianException(TherianException.TipoError.CIUDADANO_NO_ENCONTRADO,
+                                    "Error al guardar ciudadanos: " + e.getMessage());
+        }
     }
 }

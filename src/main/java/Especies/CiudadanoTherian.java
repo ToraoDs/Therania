@@ -1,5 +1,6 @@
 package Especies;
 import java.util.List;
+import java.util.Map;
 
 import Manadas.Manada;
 import Manadas.ManadaDePaso;
@@ -23,6 +24,7 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     private String InicioCargoAlfa;
     private int DuracionCargoMeses;
     private List<AfiliacionEfectiva> AfiliacionesEfectivas;
+    private List<Map<String, Double>> historialIAA = new ArrayList<>();
 
 
     public CiudadanoTherian(String Nombre, String Apellido, int Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador, String SonidoPredominante, String HabitatSimbolico, String Caracteristicas){
@@ -48,7 +50,6 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         this.PuntuacionManada = 0;
         this.InicioCargoAlfa = null;
         this.DuracionCargoMeses = 0;
-        this.HistorialEspecie = new ArrayList<>();
         AgregarEspecie(EspecieActual);
         this.AfiliacionesEfectivas = new ArrayList<>();
 
@@ -86,50 +87,50 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     }
 
     public void cambiarEspecie(String nuevaEspecie, boolean esPredador,
-                            String sonido, String habitat, String caracteristicas,
-                            List<Manada> todasLasManadas) {
-    // Guardar especie anterior
-    AgregarEspecie(getEspecieActual());
+                                String sonido, String habitat, String caracteristicas,
+                                List<Manada> todasLasManadas) {
 
-    // Actualizar atributos
-    setEspecieActual(nuevaEspecie);
-    setEsPredador(esPredador);
-    setSonidoPredominante(sonido);
-    setHabitatSimbolico(habitat);
-    setCaracteristicas(caracteristicas);
+        // 1 - Guardar especie anterior en historial
+        AgregarEspecie(getEspecieActual());
 
-    // Salir de manada actual → ManadaDePaso
-    for (Manada m : todasLasManadas) {
-        if (m.getMiembros().contains(this)) {
-            m.getMiembros().remove(this);
-            for (AfiliacionManada a : getManadas()) {
-                if (a.estaActivo()) {
-                    a.setFechaSalida(java.time.LocalDate.now().toString());
+        // 2 - Actualizar atributos de especie
+        setEspecieActual(nuevaEspecie);
+        setEsPredador(esPredador);
+        setSonidoPredominante(sonido);
+        setHabitatSimbolico(habitat);
+        setCaracteristicas(caracteristicas);
+
+        // 3 - Salir de manada actual
+        for (Manada m : todasLasManadas) {
+            if (m instanceof ManadaDePaso) continue;
+            if (m.getMiembros().contains(this)) {
+                m.getMiembros().remove(this);
+                for (AfiliacionManada a : getManadas()) {
+                    if (a.estaActivo()) {
+                        a.setFechaSalida(java.time.LocalDate.now().toString());
                     }
                 }
-            break;
+                break;
             }
         }
-    ManadaDePaso.getInstance().agregarMiembro(this, getIAA());
 
-    // Buscar manada para nueva especie
-    Manada manadaNueva = buscarManadaPorEspecieEIAA(nuevaEspecie, getIAA(), todasLasManadas);
-    if (manadaNueva != null && !manadaNueva.estaLlena()) {
-        ManadaDePaso.getInstance().removerMiembro(this);
-        AfiliacionManada af = new AfiliacionManada(
-            manadaNueva.getNombreManada(),
+        // 4 - Crear afiliación en ManadaDePaso con 2 meses de espera
+        AfiliacionManada afPaso = new AfiliacionManada(
+            "Manada de Paso",
             java.time.LocalDate.now().toString(),
             getRol(), getPuntuacionManada(), null
         );
+        afPaso.setMesesTransicion(2);
         try {
-            AgregarManada(af);
-            manadaNueva.agregarMiembro(this, getIAA());
-            } catch (TherianException e) { }
-        }
+            AgregarManada(afPaso);
+        } catch (TherianException e) { }
+
+        // 5 - Entrar a ManadaDePaso
+        // El Reloj se encarga de reasignarlo en avanzarMes()
+        ManadaDePaso.getInstance().agregarMiembro(this, getIAA());
     }
 
-    private Manada buscarManadaPorEspecieEIAA(String especie, double iaa,
-                                            List<Manada> todasLasManadas) {
+    private Manada buscarManadaPorEspecieEIAA(String especie, double iaa, List<Manada> todasLasManadas) {
         for (Manada m : todasLasManadas) {
             if (m.getEspecie().equalsIgnoreCase(especie) 
                 && m.aceptaIAA(iaa) 
@@ -138,6 +139,13 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
             }
         }
         return null;
+    }
+
+    // Método para registrar el IAA de cada mes
+    public void registrarIAAMensual(String mesAnio, double iaa) {
+        Map<String, Double> punto = new java.util.LinkedHashMap<>();
+        punto.put(mesAnio, iaa);
+        historialIAA.add(punto);
     }
 
     // getters
@@ -193,7 +201,11 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     }
 
     public List<String> getHistorialEspecie() {
-    return HistorialEspecie;
+        return HistorialEspecie;
+    }
+
+    public List<Map<String, Double>> getHistorialIAA() {
+        return historialIAA;
     }
 
     // setters

@@ -1,26 +1,62 @@
 [
   {
-    "nombre": "Lobo",
-    "esPredador": true,
-    "instinto": "Los lobos son leales, estratégicos y profundamente sociales. Su instinto los une a su manada con vínculos inquebrantables, guiándose por la confianza y la cooperación.",
-    "totalCiudadanos": 25
-  },
-  {
     "nombre": "Leon",
     "esPredador": true,
     "instinto": "Los leones son lideres naturales. Protegen a su manada, son seguros de sí mismos y con una presencia que inspira respeto.",
-    "totalCiudadanos": 25
+    "totalCiudadanos": 11
+  },
+  {
+    "nombre": "Lobo",
+    "esPredador": true,
+    "instinto": "Los lobos son leales, estratégicos y profundamente sociales. Su instinto los une a su manada con vínculos inquebrantables, guiándose por la confianza y la cooperación.",
+    "totalCiudadanos": 9
   },
   {
     "nombre": "Ciervo",
     "esPredador": false,
     "instinto": "Los ciervos son sensibles e intuitivos ademas, tienen reflejos agudos ante el peligro. Su instinto los guía hacia la elegancia, la cautela y la fuerte conexión con la naturaleza.",
-    "totalCiudadanos": 25
+    "totalCiudadanos": 10
   },
   {
     "nombre": "Alce",
     "esPredador": false,
     "instinto": "Los alces son solitarios y majestuosos, con un fuerte sentido territorial. Su instinto los lleva a la calma pero reaccionan con gran fuerza ante la amenaza.",
-    "totalCiudadanos": 25
+    "totalCiudadanos": 10
+  },
+  {
+    "nombre": "Tigre",
+    "esPredador": true,
+    "instinto": "Los tigres son independientes y de gran determinación. Su instinto los hace actuar en solitario con una concentración absoluta hacia sus objetivos.",
+    "totalCiudadanos": 10
+  },
+  {
+    "nombre": "Halcon",
+    "esPredador": true,
+    "instinto": "Los halcones son precisos, independientes y de visión aguda. Su instinto los impulsa a observar desde las alturas y actuar con determinación en el momento exacto.",
+    "totalCiudadanos": 10
+  },
+  {
+    "nombre": "Orca",
+    "esPredador": true,
+    "instinto": "Las orcas son inteligentes, emotivas y altamente organizadas. Su instinto las lleva a comunicarse con precisión y a construir lazos de por vida.",
+    "totalCiudadanos": 10
+  },
+  {
+    "nombre": "Cebra",
+    "esPredador": false,
+    "instinto": "Las cebras son animales muy alertas, su instinto las impulsa a mantenerse en grupo para protegerse. Son resilientes y se adaptan a distintos entornos.",
+    "totalCiudadanos": 10
+  },
+  {
+    "nombre": "Foca",
+    "esPredador": false,
+    "instinto": "Las focas son juguetonas, curiosas y con una gran inteligencia. Su instinto las lleva a explorar, adaptarse y conectar con otros.",
+    "totalCiudadanos": 10
+  },
+  {
+    "nombre": "Paloma",
+    "esPredador": false,
+    "instinto": "Las palomas son pacíficas, empáticas y orientadas al hogar. Su instinto las guía siempre de regreso a sus seres queridos, con una lealtad serena y constante.",
+    "totalCiudadanos": 10
   }
 ]
