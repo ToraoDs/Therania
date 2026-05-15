@@ -20,14 +20,20 @@ public class Paloma extends CiudadanoTherian{
         return "Las palomas son pacíficas, empáticas y orientadas al hogar. Su instinto las guía siempre de regreso a sus seres queridos, con una lealtad serena y constante.";
     }
 
-    public static final Manada MANADA_NIDO = new Manada("Manada Nido","Paloma", "Palomas hogareñas y pacíficas", 20, 0, 40, "El hogar es donde el corazón descansa","Jardines del Valle Sereno");
-    public static final Manada MANADA_VUELO = new Manada("Manada Vuelo","Paloma", "Palomas empáticas y mensajeras", 20, 41, 70, "Llevamos la paz allá donde vamos","Rutas del Viento Suave");
-    public static final Manada MANADA_CIELO = new Manada("Manada Cielo","Paloma", "Palomas guías y sabias", 20, 71, 100, "El cielo no es el límite, es nuestro hogar","Cúpula del Cielo Infinito");
-
-    public static Manada asignarManada(double iaa) {
-        if (iaa <= 40) return MANADA_NIDO;
-        if (iaa <= 70) return MANADA_VUELO;
-        return MANADA_CIELO;
+    public static final Manada MANADA_COSTA = new Manada(
+        "Manada Costa", "Paloma", "Palomas mensajeras de la costa",
+        20, 0, 40, "La paz viaja con nosotras", "x:760,y:790,r:70");
+    public static final Manada MANADA_MENSAJERAS = new Manada(
+        "Manada Mensajeras", "Paloma", "Palomas de vuelo largo",
+        15, 41, 70, "Llevamos la palabra al mundo", "x:760,y:790,r:70");
+    public static final Manada MANADA_PALOMAR = new Manada(
+        "Manada Palomar", "Paloma", "Palomas élite del sur",
+        10, 71, 100, "En la calma está nuestra grandeza", "x:760,y:790,r:70");
+    
+        public static Manada asignarManada(double iaa) {
+        if (iaa <= 40) return MANADA_COSTA;
+        if (iaa <= 70) return MANADA_MENSAJERAS;
+        return MANADA_PALOMAR;
     }
     
 }

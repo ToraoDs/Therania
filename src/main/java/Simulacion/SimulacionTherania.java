@@ -50,10 +50,16 @@ public class SimulacionTherania {
     // ─── Generacion de ciudadanos ────────────────────────────────────────
 
     private void generarCiudadanos() {
-        for (int i = 0; i < 25; i++) generarCiudadano("Lobo",   true);
-        for (int i = 0; i < 25; i++) generarCiudadano("Leon",   true);
-        for (int i = 0; i < 25; i++) generarCiudadano("Ciervo", false);
-        for (int i = 0; i < 25; i++) generarCiudadano("Alce",   false);
+        for (int i = 0; i < 10; i++) generarCiudadano("Lobo",   true);
+        for (int i = 0; i < 10; i++) generarCiudadano("Leon",   true);
+        for (int i = 0; i < 10; i++) generarCiudadano("Ciervo", false);
+        for (int i = 0; i < 10; i++) generarCiudadano("Alce",   false);
+        for (int i = 0; i < 10; i++) generarCiudadano("Tigre",  true);
+        for (int i = 0; i < 10; i++) generarCiudadano("Halcon", true);
+        for (int i = 0; i < 10; i++) generarCiudadano("Orca",   true);
+        for (int i = 0; i < 10; i++) generarCiudadano("Cebra",  false);
+        for (int i = 0; i < 10; i++) generarCiudadano("Foca",   false);
+        for (int i = 0; i < 10; i++) generarCiudadano("Paloma", false);
     }
 
     private void generarCiudadano(String especie, boolean esPredador) {
@@ -68,7 +74,13 @@ public class SimulacionTherania {
             case "Lobo":   ciudadano = new Lobo(nombre, apellido, id, fecha, estado);   break;
             case "Leon":   ciudadano = new Leon(nombre, apellido, id, fecha, estado);   break;
             case "Ciervo": ciudadano = new Ciervo(nombre, apellido, id, fecha, estado); break;
-            default:       ciudadano = new Alce(nombre, apellido, id, fecha, estado);   break;
+            case "Alce":   ciudadano = new Alce(nombre, apellido, id, fecha, estado);   break;
+            case "Tigre":  ciudadano = new Tigre(nombre, apellido, id, fecha, estado);  break;
+            case "Halcon": ciudadano = new Halcon(nombre, apellido, id, fecha, estado); break;
+            case "Orca":   ciudadano = new Orca(nombre, apellido, id, fecha, estado);   break;
+            case "Cebra":  ciudadano = new Cebra(nombre, apellido, id, fecha, estado);  break;
+            case "Foca":   ciudadano = new Foca(nombre, apellido, id, fecha, estado);   break;
+            default:       ciudadano = new Paloma(nombre, apellido, id, fecha, estado); break;
         }
 
         ciudadano.setPuntuacionManada(random.nextInt(101));
@@ -88,6 +100,24 @@ public class SimulacionTherania {
         manadas.add(Ciervo.MANADA_ARBOLEDA);
         manadas.add(Alce.MANADA_PRADERA);
         manadas.add(Alce.MANADA_CUMBRE);
+        manadas.add(Tigre.MANADA_JUNGLA);
+        manadas.add(Tigre.MANADA_CAZADORES);
+        manadas.add(Tigre.MANADA_SIBERIA);
+        manadas.add(Halcon.MANADA_VIENTO);
+        manadas.add(Halcon.MANADA_RAPACES);
+        manadas.add(Halcon.MANADA_AGUILA);
+        manadas.add(Orca.MANADA_CORRIENTE);
+        manadas.add(Orca.MANADA_PROFUNDIDAD);
+        manadas.add(Orca.MANADA_ABISMO);
+        manadas.add(Cebra.MANADA_LLANURA);
+        manadas.add(Cebra.MANADA_RAYAS);
+        manadas.add(Cebra.MANADA_SAVANA_CEBRA);
+        manadas.add(Foca.MANADA_GLACIAR);
+        manadas.add(Foca.MANADA_NIEVE);
+        manadas.add(Foca.MANADA_ARTICO);
+        manadas.add(Paloma.MANADA_COSTA);
+        manadas.add(Paloma.MANADA_MENSAJERAS);
+        manadas.add(Paloma.MANADA_PALOMAR);
         manadas.add(ManadaDePaso.getInstance());
     }
 
@@ -122,6 +152,12 @@ public class SimulacionTherania {
                 case "Leon":   return Leon.MANADA_DESIERTO;
                 case "Ciervo": return Ciervo.MANADA_ROCIO;
                 case "Alce":   return Alce.MANADA_PRADERA;
+                case "Tigre":  return Tigre.MANADA_JUNGLA;
+                case "Halcon": return Halcon.MANADA_VIENTO;
+                case "Orca":   return Orca.MANADA_CORRIENTE;
+                case "Cebra":  return Cebra.MANADA_LLANURA;
+                case "Foca":   return Foca.MANADA_GLACIAR;
+                case "Paloma": return Paloma.MANADA_COSTA;
             }
         } else if (iaa <= 70) {
             switch (especie) {
@@ -129,6 +165,12 @@ public class SimulacionTherania {
                 case "Leon":   return Leon.MANADA_SAVANA;
                 case "Ciervo": return Ciervo.MANADA_ARBOLEDA;
                 case "Alce":   return Alce.MANADA_PRADERA;
+                case "Tigre":  return Tigre.MANADA_CAZADORES;
+                case "Halcon": return Halcon.MANADA_RAPACES;
+                case "Orca":   return Orca.MANADA_PROFUNDIDAD;
+                case "Cebra":  return Cebra.MANADA_RAYAS;
+                case "Foca":   return Foca.MANADA_NIEVE;
+                case "Paloma": return Paloma.MANADA_MENSAJERAS;
             }
         } else {
             switch (especie) {
@@ -136,11 +178,16 @@ public class SimulacionTherania {
                 case "Leon":   return Leon.MANADA_REAL;
                 case "Ciervo": return Ciervo.MANADA_ARBOLEDA;
                 case "Alce":   return Alce.MANADA_CUMBRE;
+                case "Tigre":  return Tigre.MANADA_SIBERIA;
+                case "Halcon": return Halcon.MANADA_AGUILA;
+                case "Orca":   return Orca.MANADA_ABISMO;
+                case "Cebra":  return Cebra.MANADA_SAVANA_CEBRA;
+                case "Foca":   return Foca.MANADA_ARTICO;
+                case "Paloma": return Paloma.MANADA_PALOMAR;
             }
         }
         return null;
     }
-
     // ─── Generacion de rituales ──────────────────────────────────────────
 
     private void generarRituales() {
@@ -261,13 +308,19 @@ public class SimulacionTherania {
             case "Lobo":   return Lobo.MANADA_LUNA;
             case "Leon":   return Leon.MANADA_SAVANA;
             case "Ciervo": return Ciervo.MANADA_ARBOLEDA;
-            case "Alce":   return Alce.MANADA_BOSQUE;
+            case "Alce":   return Alce.MANADA_PRADERA;
+            case "Tigre":  return Tigre.MANADA_CAZADORES;
+            case "Halcon": return Halcon.MANADA_RAPACES;
+            case "Orca":   return Orca.MANADA_PROFUNDIDAD;
+            case "Cebra":  return Cebra.MANADA_RAYAS;
+            case "Foca":   return Foca.MANADA_NIEVE;
+            case "Paloma": return Paloma.MANADA_MENSAJERAS;
             default:       return null;
         }
     }
 
     private String obtenerEspecieAleatoria() {
-        String[] especies = {"Lobo", "Leon", "Ciervo", "Alce"};
+        String[] especies = {"Lobo", "Leon", "Ciervo", "Alce","Tigre","Halcon","Orca","Cebra","Foca","Paloma"};
         return especies[random.nextInt(especies.length)];
     }
 

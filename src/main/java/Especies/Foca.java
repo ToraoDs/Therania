@@ -15,14 +15,20 @@ public class Foca extends CiudadanoTherian{
         return "Las focas son juguetonas, curiosa y con una gran inteligencia. Su instinto las lleva a explorar, adaptarse y conectar con otros.";
     }
 
-    public static final Manada MANADA_MAREA = new Manada("Manada Marea", "Foca", "Focas curiosas y exploradoras", 20, 0, 40,"El mar nos llama, lo desconocido nos atrae","Costa de las Mareas Bajas");
-    public static final Manada MANADA_CORAL = new Manada("Manada Coral", "Foca","Focas sociales y juguetoras", 20, 41, 70,"La alegría es nuestra forma de resistir","Arrecife del Coral Vivo");
-    public static final Manada MANADA_GLACIAR = new Manada("Manada Glaciar", "Foca","Focas líderes y resilientes", 20, 71, 100,"El frío nos forjó, la perseverancia nos define","Glaciar del Fin del Mundo");
-
-    public static Manada asignarManada(double iaa) {
-        if (iaa <= 40) return MANADA_MAREA;
-        if (iaa <= 70) return MANADA_CORAL;
-        return MANADA_GLACIAR;
+    public static final Manada MANADA_GLACIAR = new Manada(
+        "Manada Glaciar", "Foca", "Focas jóvenes del hielo",
+        20, 0, 40, "El frío es nuestro hogar", "x:530,y:165,r:70");
+    public static final Manada MANADA_NIEVE = new Manada(
+        "Manada Nieve", "Foca", "Focas exploradoras de la tundra",
+        15, 41, 70, "Bajo la nieve late la vida", "x:530,y:165,r:70");
+    public static final Manada MANADA_ARTICO = new Manada(
+        "Manada Ártico", "Foca", "Focas élite del ártico",
+        10, 71, 100, "Somos guardianes del hielo", "x:530,y:165,r:70");
+    
+        public static Manada asignarManada(double iaa) {
+        if (iaa <= 40) return MANADA_GLACIAR;
+        if (iaa <= 70) return MANADA_NIEVE;
+        return MANADA_ARTICO;
     }
     
 }

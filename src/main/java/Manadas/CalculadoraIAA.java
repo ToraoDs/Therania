@@ -11,6 +11,7 @@ import Especies.AfiliacionManada;
 import Especies.CiudadanoTherian;
 import Especies.TherianException;
 
+
 public class CalculadoraIAA {
 
     private static final double PESO_RITUALES   = 0.30;
@@ -89,32 +90,18 @@ public class CalculadoraIAA {
 
     // Alfa Honorario: ciudadano con mayor IAA del grupo elite
     public static CiudadanoTherian obtenerAlfaHonorario(List<Manada> todasLasManadas) {
-        List<CiudadanoTherian> elite = obtenerCiudadanosElite(todasLasManadas);
-        if (elite.isEmpty()) {
+        List<CiudadanoTherian> todos = obtenerTodosLosCiudadanos(todasLasManadas);
+        if (todos.isEmpty()) {
             throw new TherianException(TherianException.TipoError.CIUDADANO_NO_ENCONTRADO,
-                                       "No hay ciudadanos en el grupo elite");
+                                    "No hay ciudadanos en Therania");
         }
-        CiudadanoTherian alfa = elite.get(0);
-        for (CiudadanoTherian c : elite) {
+        CiudadanoTherian alfa = todos.get(0);
+        for (CiudadanoTherian c : todos) {
             if (c.getIAA() > alfa.getIAA()) alfa = c;
         }
         return alfa;
     }
 
-    // Top 20 global del grupo elite ordenado de mayor a menor IAA
-    public static List<CiudadanoTherian> obtenerTop20(List<Manada> todasLasManadas) {
-        List<CiudadanoTherian> elite = obtenerCiudadanosElite(todasLasManadas);
-        if (elite.isEmpty()) {
-            throw new TherianException(TherianException.TipoError.CIUDADANO_NO_ENCONTRADO,
-                                       "No hay ciudadanos en el grupo elite");
-        }
-        Collections.sort(elite, new Comparator<CiudadanoTherian>() {
-            public int compare(CiudadanoTherian a, CiudadanoTherian b) {
-                return Double.compare(b.getIAA(), a.getIAA());
-            }
-        });
-        return elite.subList(0, Math.min(20, elite.size()));
-    }
 
     // Ranking interno de una manada especifica
     public static List<CiudadanoTherian> rankingManada(Manada manada) {
@@ -125,5 +112,26 @@ public class CalculadoraIAA {
             }
         });
         return miembros;
+    }
+
+    public static List<CiudadanoTherian> obtenerTop20(List<Manada> todasLasManadas) {
+    List<CiudadanoTherian> todos = obtenerTodosLosCiudadanos(todasLasManadas);
+    if (todos.isEmpty()) {
+        throw new TherianException(TherianException.TipoError.CIUDADANO_NO_ENCONTRADO,
+                                   "No hay ciudadanos en Therania");
+        }
+    todos.sort((a, b) -> Double.compare(b.getIAA(), a.getIAA()));
+    return todos.subList(0, Math.min(20, todos.size()));
+    }
+
+    private static List<CiudadanoTherian> obtenerTodosLosCiudadanos(List<Manada> todasLasManadas) {
+    List<CiudadanoTherian> todos = new ArrayList<>();
+    for (Manada m : todasLasManadas) {
+        if (m instanceof ManadaDePaso) continue; // excluir ManadaDePaso del ranking
+        for (CiudadanoTherian c : m.getMiembros()) {
+            if (!todos.contains(c)) todos.add(c);
+            }
+        }
+    return todos;
     }
 }

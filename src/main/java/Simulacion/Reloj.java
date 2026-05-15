@@ -331,6 +331,24 @@ public class Reloj {
         lista.add(Ciervo.MANADA_ARBOLEDA);
         lista.add(Alce.MANADA_PRADERA);
         lista.add(Alce.MANADA_CUMBRE);
+        lista.add(Tigre.MANADA_JUNGLA);
+        lista.add(Tigre.MANADA_CAZADORES);
+        lista.add(Tigre.MANADA_SIBERIA);
+        lista.add(Halcon.MANADA_VIENTO);
+        lista.add(Halcon.MANADA_RAPACES);
+        lista.add(Halcon.MANADA_AGUILA);
+        lista.add(Orca.MANADA_CORRIENTE);
+        lista.add(Orca.MANADA_PROFUNDIDAD);
+        lista.add(Orca.MANADA_ABISMO);
+        lista.add(Cebra.MANADA_LLANURA);
+        lista.add(Cebra.MANADA_RAYAS);
+        lista.add(Cebra.MANADA_SAVANA_CEBRA);
+        lista.add(Foca.MANADA_GLACIAR);
+        lista.add(Foca.MANADA_NIEVE);
+        lista.add(Foca.MANADA_ARTICO);
+        lista.add(Paloma.MANADA_COSTA);
+        lista.add(Paloma.MANADA_MENSAJERAS);
+        lista.add(Paloma.MANADA_PALOMAR);
         lista.add(ManadaDePaso.getInstance());
         return lista;
     }

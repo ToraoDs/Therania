@@ -51,6 +51,19 @@ public class CiudadanoServicio {
                 mapa.put("afiliaciones", afiliaciones);
 
                 datos.add(mapa);
+
+                List<Map<String, Object>> afiliacionesEfectivas = new ArrayList<>();
+                for (AfiliacionEfectiva ae : c.getAfiliacionesEfectivas()) {
+                    Map<String, Object> aeMap = new LinkedHashMap<>();
+                    aeMap.put("idCiudadano",        ae.getIdCiudadano());
+                    aeMap.put("nombreRitual",       ae.getNombreRitual());
+                    aeMap.put("fecha",              ae.getFecha());
+                    aeMap.put("intensidad",         ae.getIntensidadPercibida());
+                    aeMap.put("asistio",            ae.isAsistio());
+                    aeMap.put("aporteIAA",          ae.getAporteIAA());
+                    afiliacionesEfectivas.add(aeMap);
+                }
+                mapa.put("afiliacionesEfectivas", afiliacionesEfectivas);
             }
 
             FileWriter writer = new FileWriter(RUTA);

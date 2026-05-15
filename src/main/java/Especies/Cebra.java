@@ -19,13 +19,19 @@ public class Cebra extends CiudadanoTherian{
         return "Las cebras son animales muy alertas, su instinto las impulsa a mantenerse en grupo para protegerse. Son resilientes y se adaptan a distintos entornos.";
     }
 
-    public static final Manada MANADA_SABANA = new Manada("Manada Sabana", "Cebra","Cebras adaptables y resilientes", 20, 0, 40, "En la diferencia encontramos unidad", "Sabana del Sur");
-    public static final Manada MANADA_VIENTO = new Manada("Manada Viento", "Cebra", "Cebras ágiles y alertas", 20, 41, 70, "Corremos juntas, sobrevivimos juntas", "Planicies del Viento Eterno");
-    public static final Manada MANADA_AURORA = new Manada("Manada Aurora","Cebra", "Cebras protectoras y unidas", 20, 71, 100, "Nuestra fuerza está en el grupo", "Campos del Alba");
-
-    public static Manada asignarManada(double iaa) {
-        if (iaa <= 40) {return MANADA_SABANA;}
-        if (iaa <= 70) {return MANADA_VIENTO;}
-        return MANADA_AURORA;
+    public static final Manada MANADA_LLANURA = new Manada(
+        "Manada Llanura", "Cebra", "Cebras libres de la pradera",
+        20, 0, 40, "En la manada está la fuerza", "x:295,y:470,r:75");
+    public static final Manada MANADA_RAYAS = new Manada(
+        "Manada Rayas", "Cebra", "Cebras guardianas del territorio",
+        15, 41, 70, "Nuestras rayas nos hacen únicos", "x:295,y:470,r:75");
+    public static final Manada MANADA_SAVANA_CEBRA = new Manada(
+        "Manada Savana", "Cebra", "Cebras élite de la sabana",
+        10, 71, 100, "La sabana nos pertenece", "x:295,y:470,r:75");
+    
+        public static Manada asignarManada(double iaa) {
+        if (iaa <= 40) {return MANADA_LLANURA;}
+        if (iaa <= 70) {return MANADA_RAYAS;}
+        return MANADA_SAVANA_CEBRA;
     }
 }
