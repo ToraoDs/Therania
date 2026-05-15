@@ -65,7 +65,7 @@ public class SimulacionTherania {
     private void generarCiudadano(String especie, boolean esPredador) {
         String nombre   = NOMBRES[random.nextInt(NOMBRES.length)];
         String apellido = APELLIDOS[random.nextInt(APELLIDOS.length)];
-        String id       = especie.substring(0, 2).toUpperCase() + (ciudadanos.size() + 1);
+        int id = ciudadanos.size() + 1;
         String fecha    = generarFechaAleatoria(1970, 2005);
         String estado   = "Activo";
 

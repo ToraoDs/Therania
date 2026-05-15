@@ -4,7 +4,7 @@ import Manadas.Manada;
 
 public class Lobo extends CiudadanoTherian{
 
-    public Lobo(String nombre, String apellido, String id,String fechaNacimiento, String estadoCiudadania){
+    public Lobo(String nombre, String apellido, int id,String fechaNacimiento, String estadoCiudadania){
 
        super(nombre, apellido, id, fechaNacimiento, estadoCiudadania,"Lobo", true,"Aullido profundo y prolongado", "x:490,y:745,r:75", "Territorial, social, estratégico"); 
     }

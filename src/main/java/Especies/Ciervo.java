@@ -4,7 +4,7 @@ import Manadas.Manada;
 
 public class Ciervo extends CiudadanoTherian{
 
-    public Ciervo(String nombre, String apellido, String id,String fechaNacimiento, String estadoCiudadania){
+    public Ciervo(String nombre, String apellido, int id,String fechaNacimiento, String estadoCiudadania){
 
         super(nombre, apellido, id, fechaNacimiento, estadoCiudadania,
       "Ciervo", false,

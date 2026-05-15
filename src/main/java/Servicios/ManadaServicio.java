@@ -34,7 +34,7 @@ public class ManadaServicio {
                 mapa.put("enTransito",   m instanceof ManadaDePaso);
 
                 // IDs de los miembros para no duplicar info
-                List<String> idsMiembros = new ArrayList<>();
+                List<Integer> idsMiembros = new ArrayList<>();
                 for (CiudadanoTherian c : m.getMiembros()) {
                     idsMiembros.add(c.getId());
                 }

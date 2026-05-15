@@ -31,7 +31,7 @@ public class RitualServicio {
                 mapa.put("asistio",           r.isAsistio());
 
                 // Solo IDs de participantes para no duplicar info
-                List<String> idsParticipantes = new ArrayList<>();
+                List<Integer> idsParticipantes = new ArrayList<>();
                 for (CiudadanoTherian c : r.getParticipantes()) {
                     idsParticipantes.add(c.getId());
                 }
@@ -101,13 +101,18 @@ public class RitualServicio {
 
     // ─── Historial por ciudadano ─────────────────────────────────────────
 
-    public static List<Map<String, Object>> historialPorCiudadano(String idCiudadano) {
+    public static List<Map<String, Object>> historialPorCiudadano(int idCiudadano) {
         List<Map<String, Object>> todos = cargarRituales();
         List<Map<String, Object>> resultado = new ArrayList<>();
         for (Map<String, Object> r : todos) {
-            List<String> participantes = (List<String>) r.get("participantes");
-            if (participantes != null && participantes.contains(idCiudadano)) {
-                resultado.add(r);
+            List<Object> participantes = (List<Object>) r.get("participantes");
+            if (participantes != null) {
+                for (Object p : participantes) {
+                    if (((Number) p).intValue() == idCiudadano) {
+                        resultado.add(r);
+                        break;
+                    }
+                }
             }
         }
         return resultado;

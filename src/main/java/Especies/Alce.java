@@ -4,7 +4,7 @@ import Manadas.Manada;
 
 public class Alce extends CiudadanoTherian {
 
-    public Alce(String nombre, String apellido, String id,String fechaNacimiento, String estadoCiudadania){
+    public Alce(String nombre, String apellido, int id,String fechaNacimiento, String estadoCiudadania){
 
         super(nombre, apellido, id, fechaNacimiento, estadoCiudadania,
       "Alce", false,

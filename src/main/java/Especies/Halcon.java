@@ -4,7 +4,7 @@ import Manadas.Manada;
 
 public class Halcon extends CiudadanoTherian{
     
-    public Halcon(String nombre, String apellido, String id,String fechaNacimiento, String estadoCiudadania){
+    public Halcon(String nombre, String apellido, int id,String fechaNacimiento, String estadoCiudadania){
 
         super(nombre, apellido, id, fechaNacimiento, estadoCiudadania,
       "Halcon", true,

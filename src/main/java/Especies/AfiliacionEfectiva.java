@@ -2,14 +2,14 @@ package Especies;
 
 public class AfiliacionEfectiva {
 
-    private String IdCiudadano;
+    private int IdCiudadano;
     private String NombreRitual;
     private String Fecha;
     private double IntensidadPercibida;
     private boolean Asistio;
     private double AporteIAA;
 
-    public AfiliacionEfectiva(String IdCiudadano, String NombreRitual,
+    public AfiliacionEfectiva(int IdCiudadano, String NombreRitual,
                                String Fecha, double IntensidadPercibida,
                                boolean Asistio) {
         this.IdCiudadano         = IdCiudadano;
@@ -21,7 +21,7 @@ public class AfiliacionEfectiva {
     }
 
     // Getters
-    public String getIdCiudadano()         { return IdCiudadano; }
+    public int getIdCiudadano()         { return IdCiudadano; }
     public String getNombreRitual()        { return NombreRitual; }
     public String getFecha()               { return Fecha; }
     public double getIntensidadPercibida() { return IntensidadPercibida; }

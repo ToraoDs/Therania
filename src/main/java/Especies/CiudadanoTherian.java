@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     private String Nombre;
     private String Apellido;
-    private String Id;
+    private int Id;
     private String FechaNacimiento;
     private String EstadoCiudadania;
     private List<String> HistorialEspecie;
@@ -25,7 +25,7 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     private List<AfiliacionEfectiva> AfiliacionesEfectivas;
 
 
-    public CiudadanoTherian(String Nombre, String Apellido, String Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador, String SonidoPredominante, String HabitatSimbolico, String Caracteristicas){
+    public CiudadanoTherian(String Nombre, String Apellido, int Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador, String SonidoPredominante, String HabitatSimbolico, String Caracteristicas){
         
         super(EspecieActual, esPredador,SonidoPredominante, HabitatSimbolico, Caracteristicas);
         if (esPredador){
@@ -150,7 +150,7 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         return Apellido;
     }
 
-    public String getId(){
+    public int getId(){
         return Id;
     }
 

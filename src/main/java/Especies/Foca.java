@@ -4,7 +4,7 @@ import Manadas.Manada;
 
 public class Foca extends CiudadanoTherian{
 
-    public Foca(String nombre, String apellido, String id,String fechaNacimiento, String estadoCiudadania){
+    public Foca(String nombre, String apellido, int id,String fechaNacimiento, String estadoCiudadania){
 
         super(nombre,apellido,id,fechaNacimiento,estadoCiudadania,"Foca", false, "Gruñidos y ladridos", "x:530,y:165,r:70", "Juguetona, curiosa, social" );    
     }

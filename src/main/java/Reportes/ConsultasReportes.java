@@ -58,7 +58,13 @@ public class ConsultasReportes {
                 case "LE": especie = "Leon";   break;
                 case "CI": especie = "Ciervo"; break;
                 case "AL": especie = "Alce";   break;
-                default:   especie = "Otro";   break;
+                case "TI": especie = "Tigre";  break; // ← nuevo
+                case "HA": especie = "Halcon"; break; // ← nuevo
+                case "OR": especie = "Orca";   break; // ← nuevo
+                case "CE": especie = "Cebra";  break; // ← nuevo
+                case "FO": especie = "Foca";   break; // ← nuevo
+                case "PA": especie = "Paloma"; break; // ← nuevo
+                default:   especie = "Desconocida"; break;
             }
             conteo.put(especie, conteo.getOrDefault(especie, 0) + 1);
         }
@@ -96,7 +102,7 @@ public class ConsultasReportes {
 
     // ─── 4. Historial de rituales por ciudadano ───────────────────────────
 
-    public static void historialRitualesPorCiudadano(String idCiudadano) {
+    public static void historialRitualesPorCiudadano(int idCiudadano) {
         List<Map<String, Object>> rituales = RitualServicio.historialPorCiudadano(idCiudadano);
         System.out.println("\n===== RITUALES DE CIUDADANO: " + idCiudadano + " =====");
         if (rituales.isEmpty()) {
@@ -115,7 +121,7 @@ public class ConsultasReportes {
 
     // ─── 5. Evolucion mensual del IAA ────────────────────────────────────
 
-    public static void evolucionMensualIAA(String idCiudadano) {
+    public static void evolucionMensualIAA(int idCiudadano) {
         List<Map<String, Object>> rituales = RitualServicio.historialPorCiudadano(idCiudadano);
 
         Map<String, Integer> porMes = new LinkedHashMap<>();

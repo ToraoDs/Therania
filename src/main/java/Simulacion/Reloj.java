@@ -358,8 +358,8 @@ public class Reloj {
         for (Map<String, Object> d : datos) {
             String especie = (String) d.get("especie");
             String nombre  = (String) d.get("nombre");
-            String apellido= (String) d.get("apellido");
-            String id      = (String) d.get("id");
+            String apellido = (String) d.get("apellido");
+            int id = ((Number) d.get("id")).intValue();
             String fecha   = (String) d.get("fechaNacimiento");
             String estado  = (String) d.get("estadoCiudadania");
 
