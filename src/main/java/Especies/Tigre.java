@@ -15,10 +15,10 @@ public class Tigre extends CiudadanoTherian {
         return "Los tigres son independientes y de gran determinación. Su instinto los hace actuar en solitario con una concentración absoluta hacia sus objetivos.";
     }
 
-    public static final Manada MANADA_JUNGLA    = new Manada("Manada Jungla",    "Tigre", "Tigres del territorio selvático", 20,  0, 40,  "En la sombra acecha el poder",    ZONA);
-    public static final Manada MANADA_CAZADORES = new Manada("Manada Cazadores", "Tigre", "Tigres de alto rango",            15, 41, 70,  "La paciencia es nuestra arma",    ZONA);
-    public static final Manada MANADA_SIBERIA   = new Manada("Manada Siberia",   "Tigre", "Tigres élite de la cima",         10, 71, 100, "El frío nos fortalece",           ZONA);
-
+    public static final Manada MANADA_JUNGLA    = new Manada("Manada Jungla",    "Tigre", "Tigres del territorio selvático", 20,  0,   40.99, "En la sombra acecha el poder", ZONA);
+    public static final Manada MANADA_CAZADORES = new Manada("Manada Cazadores", "Tigre", "Tigres de alto rango",            15, 41,   70.99, "La paciencia es nuestra arma", ZONA);
+    public static final Manada MANADA_SIBERIA   = new Manada("Manada Siberia",   "Tigre", "Tigres élite de la cima",         10, 71,  100,   "El frío nos fortalece",        ZONA);    
+    
     public static Manada asignarManada(double iaa) {
         if (iaa <= 40) return MANADA_JUNGLA;
         if (iaa <= 70) return MANADA_CAZADORES;

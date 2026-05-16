@@ -28,6 +28,11 @@ public class Opcion4 extends JPanel {
         add(construirPanelCentral(),  BorderLayout.CENTER);
     }
 
+    public Opcion4(int idInicial) {
+        this(); // llama al constructor principal
+        campoBusqueda.setText(String.valueOf(idInicial));
+        cargarTrayectoria(); // carga automáticamente
+    }
     // ─── Panel búsqueda ───────────────────────────────────────────────────
 
     private JPanel construirPanelBusqueda() {
@@ -159,7 +164,7 @@ public class Opcion4 extends JPanel {
             });
         }
 
-        // Leer historialIAA real del JSON del ciudadano
+            // Leer historialIAA real del JSON del ciudadano
             @SuppressWarnings("unchecked")
             List<Map<String, Object>> histIAA =
                 (List<Map<String, Object>>) ciudadano.get("historialIAA");
@@ -275,8 +280,24 @@ public class Opcion4 extends JPanel {
             g2.drawLine(margenIzq, margenSup + alto, margenIzq + ancho, margenSup + alto);
 
             int n = valores.length;
-            int espacioX = ancho / (n - 1);
 
+            if (n == 1) {
+                int px = margenIzq + ancho / 2;
+                int py = margenSup + alto - (int)(valores[0] / 100.0 * alto);
+                g2.setColor(new Color(130, 200, 255));
+                g2.fillOval(px - 6, py - 6, 12, 12);
+                g2.setColor(Color.WHITE);
+                g2.setStroke(new BasicStroke(1.5f));
+                g2.drawOval(px - 6, py - 6, 12, 12);
+                g2.setFont(new Font("Arial", Font.PLAIN, 11));
+                g2.setColor(new Color(200, 220, 255));
+                g2.drawString(String.format("%.0f", valores[0]), px - 10, py - 12);
+                g2.setColor(Color.LIGHT_GRAY);
+                g2.drawString(etiquetas[0], px - 15, margenSup + alto + 18);
+                return;
+            }
+
+            int espacioX = ancho / (n - 1);
             // Área bajo la curva
             int[] pxs = new int[n];
             int[] pys = new int[n];

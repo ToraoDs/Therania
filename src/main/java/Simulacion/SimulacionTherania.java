@@ -193,30 +193,28 @@ public class SimulacionTherania {
     // ─── Generacion de rituales ──────────────────────────────────────────
 
     private void generarRituales() {
-        Ritual.TipoRitual[] tipos = Ritual.TipoRitual.values();
-
         for (int i = 0; i < 500; i++) {
-            String fecha           = generarFechaAleatoria(2024, 2024);
-            Ritual.TipoRitual tipo = tipos[random.nextInt(tipos.length)];
-            double intensidad      = 1.0 + (random.nextDouble() * 9.0);
-            String especie         = obtenerEspecieAleatoria();
-            int duracion           = 30 + random.nextInt(151);
-            Manada manada = obtenerManadaPorEspecie(especie);
+            String fecha      = generarFechaAleatoria(2024, 2024);
+            double intensidad = 1.0 + (random.nextDouble() * 9.0);
+            String especie    = obtenerEspecieAleatoria();
+            int duracion      = 30 + random.nextInt(151);
+            Manada manada     = obtenerManadaPorEspecie(especie);
             String nombreManada = (manada != null) ? manada.getNombreManada() : "Sin manada";
 
+            // ← usar tipos propios de la especie, no aleatorio global
+            Ritual.TipoRitual[] tiposEspecie = Ritual.tiposPorEspecie(especie);
+            Ritual.TipoRitual tipo = tiposEspecie[random.nextInt(tiposEspecie.length)];
+
             Ritual ritual = new Ritual(
-                "Ritual-" + (i + 1),
-                tipo,
-                fecha,
-                duracion,
-                especie,
-                nombreManada,  
-                intensidad
+                "Ritual-" + (i + 1), tipo, fecha,
+                duracion, especie, nombreManada, intensidad
             );
+
             int numParticipantes = 3 + random.nextInt(8);
             List<CiudadanoTherian> candidatos = filtrarPorEspecie(especie);
             for (int j = 0; j < Math.min(numParticipantes, candidatos.size()); j++) {
-                CiudadanoTherian participante = candidatos.get(random.nextInt(candidatos.size()));
+                CiudadanoTherian participante =
+                    candidatos.get(random.nextInt(candidatos.size()));
                 ritual.agregarParticipante(participante);
                 if (!participante.getRituales().isEmpty()) {
                     participante.getRituales()
@@ -226,16 +224,11 @@ public class SimulacionTherania {
             }
 
             if (manada != null) manada.agregarRitual(ritual);
-
             rituales.add(ritual);
         }
 
-        // Actualizar IAA y manada de todos después de los rituales
-        for (CiudadanoTherian c : ciudadanos) {
-            actualizarCiudadano(c);
-        }
+        for (CiudadanoTherian c : ciudadanos) actualizarCiudadano(c);
     }
-
     // ─── Actualizar IAA, rol y manada de un ciudadano ────────────────────
 
     private void actualizarCiudadano(CiudadanoTherian ciudadano) {

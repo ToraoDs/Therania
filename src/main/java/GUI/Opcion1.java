@@ -48,6 +48,21 @@ public class Opcion1 extends JPanel {
         cargarManadas();
         cargarIconos();
         configurarMouse();
+
+        // Refrescar datos del JSON cada 3 segundos mientras el panel está visible
+        javax.swing.Timer timerRefresh = new javax.swing.Timer(3000, e -> {
+            cargarManadas();
+            repaint();
+        });
+        timerRefresh.start();
+
+        // Detener el timer cuando el panel se desmonte para no quedar en memoria
+        addHierarchyListener(e -> {
+            if ((e.getChangeFlags() & java.awt.event.HierarchyEvent.SHOWING_CHANGED) != 0) {
+                if (!isShowing()) timerRefresh.stop();
+                else              timerRefresh.start();
+            }
+        });
     }
 
     private void cargarManadas() {

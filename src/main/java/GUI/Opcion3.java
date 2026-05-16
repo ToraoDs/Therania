@@ -271,7 +271,7 @@ public class Opcion3 extends JPanel {
         // Actualizar etiquetas y reanudar
         lblEspecie.setText(nuevaEspecie);
         lblRol.setText(nuevoRol);
-        Reloj.reanudar();
+        reloj.reanudar();
 
         areaInfo.setText("✔ Cambios guardados correctamente.\n"
             + "  Especie: " + especieAnterior + (cambioEspecie ? " → " + nuevaEspecie : " (sin cambio)") + "\n"

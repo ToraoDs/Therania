@@ -124,20 +124,26 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == option1Button) {
-            Reloj.reanudar();               // mapa → el reloj corre
+            reloj.reanudar();               // mapa → el reloj corre
             MPAdd(new Opcion1());
         } else if (e.getSource() == option2Button) {
-            Reloj.pausar();
+            reloj.pausar();
             MPAdd(new Opcion2(reloj));
         } else if (e.getSource() == option3Button) {
-            Reloj.pausar();
+            reloj.pausar();
             MPAdd(new Opcion3(reloj));
         } else if (e.getSource() == option4Button) {
-            Reloj.pausar();
+            reloj.pausar();
             MPAdd(new Opcion4());
         } else if (e.getSource() == option5Button) {
-            Reloj.pausar();
-            MPAdd(new Opcion5());
+            reloj.pausar();
+            MPAdd(new Opcion5(id -> {
+                reloj.pausar();
+                MPAdd(new Opcion4(id));
+                }
+            )
+        )
+    ;
         } else if (e.getSource() == option6Button) {
             JOptionPane.showMessageDialog(this, "Cerrando programa");
             System.exit(0);
