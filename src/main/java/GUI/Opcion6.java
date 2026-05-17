@@ -1,326 +1,693 @@
 package GUI;
 
+import Especies.*;
+import Manadas.Manada;
+import Manadas.ManadaDePaso;
 import Servicios.CiudadanoServicio;
 import Servicios.ManadaServicio;
 import Simulacion.Reloj;
+import com.google.gson.*;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
-
-import Especies.CiudadanoTherian;
-
+import javax.swing.table.*;
 import java.awt.*;
+import java.awt.event.*;
+import java.nio.file.*;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
-import java.util.LinkedHashMap;
+import java.util.function.Consumer;
 
 public class Opcion6 extends JPanel {
 
-    private JTextField campoBusqueda;
-    private JLabel lblNombre, lblEspecie, lblIAA, lblRol;
-    private JComboBox<String> comboEstado;
-    private JComboBox<String> comboEspecie;
-    private JComboBox<String> comboRol;
-    private JButton btnBuscar, btnGuardar;
-    private JTextArea areaInfo;
     private final Reloj reloj;
+    private final Consumer<Integer> onVerTrayectoria;
 
-    private Map<String, Object> ciudadanoActual = null;
+    private JTextField    campoNombre;
+    private JTextField    campoApellido;
+    private JComboBox<String> comboEspecie;
+    private JTextArea     areaResultado;
+    private JTable        tabla;
 
-    private static final String[] ESTADOS   = {"Activo", "Suspendido", "En Revision"};
-    private static final String[] ESPECIES   = {"Lobo","Leon","Ciervo","Alce","Tigre","Halcon","Orca","Cebra","Foca","Paloma"};
-    private static final String[] ROLES      = {"Alfa","Beta","Omega","Observador"};
+    private JTextField    campoNombreManada;
+    private JTextField    campoLema;
+    private JComboBox<String> comboEspecieManada;
+    private JTextField    campoCupo;
+    private JTextField    campoIAAMin;
+    private JTextField    campoIAAMax;
+    private JLabel        lblTerritorioManada;
+    private String        territorioManada = "x:540,y:540,r:80";
 
-    public Opcion6(Reloj reloj) {
-        this.reloj = reloj;
-        setLayout(new BorderLayout(10, 10));
+    private JTextField    campoNombreEspecie;
+    private JTextField    campoSonido;
+    private JTextField    campoCaracteristicas;
+    private JLabel        lblCoordenadas;
+    private JCheckBox     checkPredadora;
+    private String        habitatSeleccionado = "x:540,y:540,r:80";
+
+    private static final String[] ESPECIES = {
+        "Lobo","Leon","Ciervo","Alce","Tigre",
+        "Halcon","Orca","Cebra","Foca","Paloma"
+    };
+
+    private static final Color BG_PANEL = new Color(40, 40, 55);
+    private static final Color BG_TABLE = new Color(25, 25, 35);
+    private static final Color FG_WHITE = Color.WHITE;
+    private static final Color FG_GRAY  = Color.LIGHT_GRAY;
+    private static final Color ACCENT   = new Color(60, 100, 160);
+    private static final Color ROW_ODD  = new Color(35, 35, 48);
+    private static final Color ROW_EVEN = new Color(28, 28, 40);
+    private static final Color ROW_SEL  = new Color(60, 100, 160, 180);
+
+    // ── Constructor ───────────────────────────────────────────────────────
+    public Opcion6(Reloj reloj, Consumer<Integer> onVerTrayectoria) {
+        this.reloj            = reloj;
+        this.onVerTrayectoria = onVerTrayectoria;
+
+        setLayout(new BorderLayout());
         setBackground(new Color(30, 30, 40));
-        setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+        setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        add(construirPanelBusqueda(), BorderLayout.NORTH);
-        add(construirPanelFormulario(), BorderLayout.CENTER);
-        add(construirPanelInfo(), BorderLayout.SOUTH);
+        JLabel titulo = new JLabel("Registro avanzado", SwingConstants.CENTER);
+        titulo.setFont(new Font("Arial", Font.BOLD, 20));
+        titulo.setForeground(Color.WHITE);
+        titulo.setBorder(BorderFactory.createEmptyBorder(0, 0, 8, 0));
+        add(titulo, BorderLayout.NORTH);
+
+        JTabbedPane tabs = new JTabbedPane();
+        tabs.setBackground(new Color(40, 40, 55));
+        tabs.setForeground(Color.WHITE);
+        tabs.setFont(new Font("Arial", Font.BOLD, 13));
+
+        tabs.addTab("Ciudadano", construirPanelCiudadano());
+        tabs.addTab("Especie",   construirPanelEspecie());
+        tabs.addTab("Manada",    construirPanelManada());
+
+        add(tabs, BorderLayout.CENTER);
+        cargarTablaPersonal();
     }
 
-    // ─── Panel de búsqueda ────────────────────────────────────────────────
-
-    private JPanel construirPanelBusqueda() {
-        JPanel panel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        panel.setBackground(new Color(40, 40, 55));
-        panel.setBorder(tituloBorde("Buscar ciudadano"));
-
-        JLabel lbl = new JLabel("ID ciudadano:");
-        lbl.setForeground(Color.LIGHT_GRAY);
-
-        campoBusqueda = new JTextField(10);
-        btnBuscar = new JButton("Buscar");
-        btnBuscar.setBackground(new Color(60, 100, 160));
-        btnBuscar.setForeground(Color.WHITE);
-        btnBuscar.addActionListener(e -> buscarCiudadano());
-
-        panel.add(lbl);
-        panel.add(campoBusqueda);
-        panel.add(btnBuscar);
-        return panel;
-    }
-
-    // ─── Panel de formulario ──────────────────────────────────────────────
-
-    private JPanel construirPanelFormulario() {
-        JPanel panel = new JPanel(new GridBagLayout());
-        panel.setBackground(new Color(40, 40, 55));
-        panel.setBorder(tituloBorde("Datos del ciudadano"));
-
-        GridBagConstraints g = new GridBagConstraints();
-        g.insets = new Insets(8, 8, 8, 8);
-        g.anchor = GridBagConstraints.WEST;
-
-        // Fila 0: Nombre (solo lectura)
-        g.gridx = 0; g.gridy = 0;
-        panel.add(etiqueta("Nombre:"), g);
-        g.gridx = 1;
-        lblNombre = new JLabel("—");
-        lblNombre.setForeground(Color.WHITE);
-        panel.add(lblNombre, g);
-
-        // Fila 1: Especie actual (solo lectura)
-        g.gridx = 0; g.gridy = 1;
-        panel.add(etiqueta("Especie actual:"), g);
-        g.gridx = 1;
-        lblEspecie = new JLabel("—");
-        lblEspecie.setForeground(new Color(150, 210, 255));
-        panel.add(lblEspecie, g);
-
-        // Fila 2: IAA actual (solo lectura)
-        g.gridx = 0; g.gridy = 2;
-        panel.add(etiqueta("IAA actual:"), g);
-        g.gridx = 1;
-        lblIAA = new JLabel("—");
-        lblIAA.setForeground(new Color(120, 220, 120));
-        panel.add(lblIAA, g);
-
-        // Fila 3: Rol actual (solo lectura)
-        g.gridx = 0; g.gridy = 3;
-        panel.add(etiqueta("Rol actual:"), g);
-        g.gridx = 1;
-        lblRol = new JLabel("—");
-        lblRol.setForeground(new Color(255, 200, 100));
-        panel.add(lblRol, g);
-
-        // Fila 4: Estado (editable)
-        g.gridx = 0; g.gridy = 4;
-        panel.add(etiqueta("Nuevo estado:"), g);
-        g.gridx = 1;
-        comboEstado = new JComboBox<>(ESTADOS);
-        panel.add(comboEstado, g);
-
-        // Fila 5: Especie (editable)
-        g.gridx = 0; g.gridy = 5;
-        panel.add(etiqueta("Nueva especie:"), g);
-        g.gridx = 1;
-        comboEspecie = new JComboBox<>(ESPECIES);
-        panel.add(comboEspecie, g);
-
-        // Fila 6: Rol (editable)
-        g.gridx = 0; g.gridy = 6;
-        panel.add(etiqueta("Nuevo rol:"), g);
-        g.gridx = 1;
-        comboRol = new JComboBox<>(ROLES);
-        panel.add(comboRol, g);
-
-        // Fila 7: Botón guardar
-        g.gridx = 0; g.gridy = 7; g.gridwidth = 2;
-        g.fill = GridBagConstraints.HORIZONTAL;
-        btnGuardar = new JButton("💾  Guardar cambios");
-        btnGuardar.setBackground(new Color(60, 140, 60));
-        btnGuardar.setForeground(Color.WHITE);
-        btnGuardar.setEnabled(false);
-        btnGuardar.addActionListener(e -> guardarCambios());
-        panel.add(btnGuardar, g);
-
-        return panel;
-    }
-
-    // ─── Panel de info / resultado ────────────────────────────────────────
-
-    private JPanel construirPanelInfo() {
+    // ── Tab Ciudadano: formulario + lista ─────────────────────────────────
+    private JPanel construirPanelCiudadano() {
         JPanel panel = new JPanel(new BorderLayout());
-        panel.setBackground(new Color(40, 40, 55));
-        panel.setBorder(tituloBorde("Resultado"));
+        panel.setBackground(new Color(30, 30, 40));
 
-        areaInfo = new JTextArea(4, 40);
-        areaInfo.setEditable(false);
-        areaInfo.setBackground(new Color(25, 25, 35));
-        areaInfo.setForeground(new Color(180, 230, 180));
-        areaInfo.setFont(new Font("Monospaced", Font.PLAIN, 12));
-        panel.add(new JScrollPane(areaInfo), BorderLayout.CENTER);
+        JSplitPane split = new JSplitPane(
+            JSplitPane.HORIZONTAL_SPLIT,
+            construirPanelCrear(),
+            construirPanelLista());
+        split.setDividerLocation(340);
+        split.setResizeWeight(0.4);
+        split.setBackground(new Color(30, 30, 40));
+        split.setBorder(null);
+
+        panel.add(split, BorderLayout.CENTER);
         return panel;
     }
 
-    // ─── Lógica de búsqueda ───────────────────────────────────────────────
+    // ── Formulario de creación de ciudadano ───────────────────────────────
+    private JPanel construirPanelCrear() {
+        JPanel panel = new JPanel(new BorderLayout(0, 10));
+        panel.setBackground(BG_PANEL);
+        panel.setBorder(borde("Nuevo ciudadano"));
 
-    private void buscarCiudadano() {
-        String idTexto = campoBusqueda.getText().trim();
-        if (idTexto.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Ingresa un ID válido.", "Error", JOptionPane.WARNING_MESSAGE);
+        JPanel campos = new JPanel(new GridBagLayout());
+        campos.setBackground(BG_PANEL);
+        GridBagConstraints g = new GridBagConstraints();
+        g.insets  = new Insets(8, 10, 8, 10);
+        g.anchor  = GridBagConstraints.WEST;
+        g.fill    = GridBagConstraints.HORIZONTAL;
+
+        g.gridx = 0; g.gridy = 0; g.weightx = 0;
+        campos.add(etiqueta("Nombre:"), g);
+        g.gridx = 1; g.weightx = 1;
+        campoNombre = new JTextField(14);
+        estilizarCampo(campoNombre);
+        campos.add(campoNombre, g);
+
+        g.gridx = 0; g.gridy = 1; g.weightx = 0;
+        campos.add(etiqueta("Apellido:"), g);
+        g.gridx = 1; g.weightx = 1;
+        campoApellido = new JTextField(14);
+        estilizarCampo(campoApellido);
+        campos.add(campoApellido, g);
+
+        g.gridx = 0; g.gridy = 2; g.weightx = 0;
+        campos.add(etiqueta("Especie:"), g);
+        g.gridx = 1; g.weightx = 1;
+        comboEspecie = new JComboBox<>(ESPECIES);
+        estilizarCombo(comboEspecie);
+        campos.add(comboEspecie, g);
+
+        g.gridx = 0; g.gridy = 3; g.gridwidth = 2;
+        JButton btnCrear = new JButton("✚  Crear ciudadano");
+        btnCrear.setBackground(new Color(50, 130, 60));
+        btnCrear.setForeground(FG_WHITE);
+        btnCrear.setFont(new Font("Arial", Font.BOLD, 13));
+        btnCrear.setFocusPainted(false);
+        btnCrear.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 0));
+        btnCrear.addActionListener(e -> crearCiudadano());
+        campos.add(btnCrear, g);
+
+        g.gridy = 4;
+        areaResultado = new JTextArea(6, 20);
+        areaResultado.setEditable(false);
+        areaResultado.setBackground(new Color(25, 25, 35));
+        areaResultado.setForeground(new Color(180, 230, 180));
+        areaResultado.setFont(new Font("Monospaced", Font.PLAIN, 11));
+        areaResultado.setLineWrap(true);
+        areaResultado.setWrapStyleWord(true);
+        JScrollPane scrollArea = new JScrollPane(areaResultado);
+        scrollArea.setBorder(BorderFactory.createLineBorder(new Color(70, 70, 100)));
+        campos.add(scrollArea, g);
+
+        panel.add(campos, BorderLayout.NORTH);
+        return panel;
+    }
+
+    // ── Lista de ciudadanos creados por el usuario ────────────────────────
+    private JPanel construirPanelLista() {
+        JPanel panel = new JPanel(new BorderLayout(0, 6));
+        panel.setBackground(BG_PANEL);
+        panel.setBorder(borde("Mis ciudadanos  —  doble clic para ver trayectoria"));
+
+        tabla = new JTable() {
+            @Override
+            public Component prepareRenderer(TableCellRenderer r, int row, int col) {
+                Component c = super.prepareRenderer(r, row, col);
+                if (isRowSelected(row)) {
+                    c.setBackground(ROW_SEL);
+                    c.setForeground(FG_WHITE);
+                } else {
+                    c.setBackground(row % 2 == 0 ? ROW_EVEN : ROW_ODD);
+                    c.setForeground(FG_GRAY);
+                }
+                return c;
+            }
+        };
+        tabla.setBackground(BG_TABLE);
+        tabla.setForeground(FG_GRAY);
+        tabla.setGridColor(new Color(55, 55, 75));
+        tabla.setFont(new Font("Arial", Font.PLAIN, 12));
+        tabla.setRowHeight(26);
+        tabla.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        tabla.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+
+        JTableHeader header = tabla.getTableHeader();
+        header.setBackground(new Color(50, 50, 70));
+        header.setForeground(FG_WHITE);
+        header.setFont(new Font("Arial", Font.BOLD, 12));
+
+        tabla.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 2) {
+                    int fila = tabla.getSelectedRow();
+                    if (fila < 0) return;
+                    for (int col = 0; col < tabla.getColumnCount(); col++) {
+                        if ("id".equals(tabla.getColumnName(col))) {
+                            try {
+                                int id = Integer.parseInt(
+                                    tabla.getValueAt(fila, col).toString());
+                                if (onVerTrayectoria != null)
+                                    onVerTrayectoria.accept(id);
+                            } catch (NumberFormatException ignored) {}
+                            break;
+                        }
+                    }
+                }
+            }
+        });
+
+        JScrollPane scroll = new JScrollPane(tabla);
+        scroll.setBackground(BG_TABLE);
+        scroll.getViewport().setBackground(BG_TABLE);
+        scroll.setBorder(BorderFactory.createLineBorder(new Color(70, 70, 100)));
+
+        JButton btnRefrescar = new JButton("↺ Actualizar lista");
+        btnRefrescar.setBackground(ACCENT);
+        btnRefrescar.setForeground(FG_WHITE);
+        btnRefrescar.setFocusPainted(false);
+        btnRefrescar.setBorder(BorderFactory.createEmptyBorder(5, 12, 5, 12));
+        btnRefrescar.addActionListener(e -> cargarTablaPersonal());
+
+        JPanel panelBtn = new JPanel(new FlowLayout(FlowLayout.RIGHT));
+        panelBtn.setBackground(BG_PANEL);
+        panelBtn.add(btnRefrescar);
+
+        panel.add(scroll,   BorderLayout.CENTER);
+        panel.add(panelBtn, BorderLayout.SOUTH);
+        return panel;
+    }
+
+    // ── Tab Especie ───────────────────────────────────────────────────────
+    private JPanel construirPanelEspecie() {
+        JPanel panel = new JPanel(new BorderLayout(0, 10));
+        panel.setBackground(new Color(40, 40, 55));
+        panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        JPanel campos = new JPanel(new GridBagLayout());
+        campos.setBackground(new Color(40, 40, 55));
+        GridBagConstraints g = new GridBagConstraints();
+        g.insets = new Insets(8, 10, 8, 10);
+        g.anchor = GridBagConstraints.WEST;
+        g.fill   = GridBagConstraints.HORIZONTAL;
+
+        g.gridx = 0; g.gridy = 0; g.weightx = 0;
+        campos.add(etiqueta("Nombre de especie:"), g);
+        g.gridx = 1; g.weightx = 1;
+        campoNombreEspecie = new JTextField(14);
+        estilizarCampo(campoNombreEspecie);
+        campos.add(campoNombreEspecie, g);
+
+        g.gridx = 0; g.gridy = 1; g.weightx = 0;
+        campos.add(etiqueta("Sonido predominante:"), g);
+        g.gridx = 1; g.weightx = 1;
+        campoSonido = new JTextField(14);
+        estilizarCampo(campoSonido);
+        campos.add(campoSonido, g);
+
+        g.gridx = 0; g.gridy = 2; g.weightx = 0;
+        campos.add(etiqueta("Características:"), g);
+        g.gridx = 1; g.weightx = 1;
+        campoCaracteristicas = new JTextField(14);
+        estilizarCampo(campoCaracteristicas);
+        campos.add(campoCaracteristicas, g);
+
+        g.gridx = 0; g.gridy = 3; g.weightx = 0;
+        campos.add(etiqueta("¿Es predadora?:"), g);
+        g.gridx = 1;
+        checkPredadora = new JCheckBox("Sí");
+        checkPredadora.setBackground(new Color(40, 40, 55));
+        checkPredadora.setForeground(Color.WHITE);
+        campos.add(checkPredadora, g);
+
+        g.gridx = 0; g.gridy = 4; g.weightx = 0;
+        campos.add(etiqueta("Hábitat en el mapa:"), g);
+        g.gridx = 1;
+        JPanel panelHabitat = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 0));
+        panelHabitat.setBackground(new Color(40, 40, 55));
+        lblCoordenadas = new JLabel("x:540,y:540,r:80");
+        lblCoordenadas.setForeground(new Color(150, 210, 255));
+        JButton btnHabitat = new JButton("🗺 Definir en mapa");
+        btnHabitat.setBackground(new Color(60, 80, 130));
+        btnHabitat.setForeground(Color.WHITE);
+        btnHabitat.setFocusPainted(false);
+        btnHabitat.addActionListener(e -> activarSeleccionHabitat());
+        panelHabitat.add(lblCoordenadas);
+        panelHabitat.add(btnHabitat);
+        campos.add(panelHabitat, g);
+
+        g.gridx = 0; g.gridy = 5; g.gridwidth = 2;
+        JButton btnCrear = new JButton("🐾  Crear especie");
+        btnCrear.setBackground(new Color(80, 60, 130));
+        btnCrear.setForeground(Color.WHITE);
+        btnCrear.setFont(new Font("Arial", Font.BOLD, 13));
+        btnCrear.setFocusPainted(false);
+        btnCrear.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 0));
+        btnCrear.addActionListener(e -> crearEspecie());
+        campos.add(btnCrear, g);
+
+        panel.add(campos, BorderLayout.NORTH);
+        return panel;
+    }
+
+    // ── Tab Manada ────────────────────────────────────────────────────────
+    private JPanel construirPanelManada() {
+        JPanel panel = new JPanel(new BorderLayout(0, 10));
+        panel.setBackground(new Color(40, 40, 55));
+        panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        JPanel campos = new JPanel(new GridBagLayout());
+        campos.setBackground(new Color(40, 40, 55));
+        GridBagConstraints g = new GridBagConstraints();
+        g.insets = new Insets(8, 10, 8, 10);
+        g.anchor = GridBagConstraints.WEST;
+        g.fill   = GridBagConstraints.HORIZONTAL;
+
+        g.gridx = 0; g.gridy = 0; campos.add(etiqueta("Nombre:"), g);
+        g.gridx = 1; campoNombreManada = new JTextField(14);
+        estilizarCampo(campoNombreManada); campos.add(campoNombreManada, g);
+
+        g.gridx = 0; g.gridy = 1; campos.add(etiqueta("Lema:"), g);
+        g.gridx = 1; campoLema = new JTextField(14);
+        estilizarCampo(campoLema); campos.add(campoLema, g);
+
+        g.gridx = 0; g.gridy = 2; campos.add(etiqueta("Especie:"), g);
+        g.gridx = 1;
+        comboEspecieManada = new JComboBox<>(
+            obtenerEspeciesDisponibles().toArray(new String[0]));
+        estilizarCombo(comboEspecieManada);
+        campos.add(comboEspecieManada, g);
+
+        g.gridx = 0; g.gridy = 3; campos.add(etiqueta("Cupo máximo:"), g);
+        g.gridx = 1; campoCupo = new JTextField("20", 14);
+        estilizarCampo(campoCupo); campos.add(campoCupo, g);
+
+        g.gridx = 0; g.gridy = 4; campos.add(etiqueta("IAA mínimo:"), g);
+        g.gridx = 1; campoIAAMin = new JTextField("0", 14);
+        estilizarCampo(campoIAAMin); campos.add(campoIAAMin, g);
+
+        g.gridx = 0; g.gridy = 5; campos.add(etiqueta("IAA máximo:"), g);
+        g.gridx = 1; campoIAAMax = new JTextField("40", 14);
+        estilizarCampo(campoIAAMax); campos.add(campoIAAMax, g);
+
+        g.gridx = 0; g.gridy = 6; campos.add(etiqueta("Territorio:"), g);
+        g.gridx = 1;
+        JPanel panelTerr = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 0));
+        panelTerr.setBackground(new Color(40, 40, 55));
+        lblTerritorioManada = new JLabel(territorioManada);
+        lblTerritorioManada.setForeground(new Color(150, 210, 255));
+        JButton btnTerr = new JButton("🗺 Definir en mapa");
+        btnTerr.setBackground(new Color(60, 80, 130));
+        btnTerr.setForeground(Color.WHITE);
+        btnTerr.setFocusPainted(false);
+        btnTerr.addActionListener(e -> activarSeleccionTerritorioManada());
+        panelTerr.add(lblTerritorioManada);
+        panelTerr.add(btnTerr);
+        campos.add(panelTerr, g);
+
+        g.gridx = 0; g.gridy = 7; g.gridwidth = 2;
+        JButton btnCrear = new JButton("🏕  Crear manada");
+        btnCrear.setBackground(new Color(60, 100, 60));
+        btnCrear.setForeground(Color.WHITE);
+        btnCrear.setFont(new Font("Arial", Font.BOLD, 13));
+        btnCrear.setFocusPainted(false);
+        btnCrear.setBorder(BorderFactory.createEmptyBorder(8, 0, 8, 0));
+        btnCrear.addActionListener(e -> crearManada());
+        campos.add(btnCrear, g);
+
+        panel.add(campos, BorderLayout.NORTH);
+        return panel;
+    }
+
+    // ── Lógica: crear ciudadano ───────────────────────────────────────────
+    private void crearCiudadano() {
+        String nombre   = campoNombre.getText().trim();
+        String apellido = campoApellido.getText().trim();
+        String especie  = (String) comboEspecie.getSelectedItem();
+
+        if (nombre.isEmpty() || apellido.isEmpty()) {
+            JOptionPane.showMessageDialog(this,
+                "Nombre y apellido son obligatorios.", "Error",
+                JOptionPane.WARNING_MESSAGE);
             return;
         }
 
-        try {
-            List<Map<String, Object>> todos = CiudadanoServicio.cargarCiudadanos();
-            ciudadanoActual = null;
-            for (Map<String, Object> c : todos) {
-                int id = ((Number) c.get("id")).intValue();
-                if (id == Integer.parseInt(idTexto)) {
-                    ciudadanoActual = c;
+        int    id    = calcularNuevoId();
+        String fecha = java.time.LocalDate.now().toString();
+
+        CiudadanoTherian nuevo = instanciar(especie, nombre, apellido, id, fecha);
+        nuevo.setCreadoPorUsuario(true);
+        nuevo.setPuntuacionManada(50);
+        nuevo.setIAA(10.0 + new Random().nextInt(16));
+
+        if (reloj.getManadas() != null) {
+            for (Manada m : reloj.getManadas()) {
+                if (m instanceof ManadaDePaso) continue;
+                if (m.getEspecie() != null
+                        && m.getEspecie().equals(especie)
+                        && m.aceptaIAA(nuevo.getIAA())
+                        && !m.estaLlena()) {
+                    try {
+                        AfiliacionManada af = new AfiliacionManada(
+                            m.getNombreManada(), fecha, "Omega", 50, null);
+                        nuevo.AgregarManada(af);
+                        m.agregarMiembro(nuevo, nuevo.getIAA());
+                    } catch (TherianException ignored) {}
                     break;
                 }
             }
-
-            if (ciudadanoActual == null) {
-                areaInfo.setText("No se encontró ciudadano con ID: " + idTexto);
-                limpiarFormulario();
-                return;
-            }
-
-            // Rellenar campos con datos actuales
-            lblNombre.setText(ciudadanoActual.get("nombre") + " " + ciudadanoActual.get("apellido"));
-            lblEspecie.setText((String) ciudadanoActual.get("especie"));
-            lblIAA.setText(String.format("%.2f", ((Number) ciudadanoActual.get("iaa")).doubleValue()));
-            lblRol.setText((String) ciudadanoActual.get("rol"));
-
-            comboEstado.setSelectedItem(ciudadanoActual.get("estadoCiudadania"));
-            comboEspecie.setSelectedItem(ciudadanoActual.get("especie"));
-            comboRol.setSelectedItem(ciudadanoActual.get("rol"));
-
-            btnGuardar.setEnabled(true);
-            areaInfo.setText("Ciudadano encontrado. Modifica los campos y presiona Guardar.");
-
-        } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(this, "El ID debe ser un número.", "Error", JOptionPane.ERROR_MESSAGE);
-        } catch (Exception ex) {
-            areaInfo.setText("Error al buscar: " + ex.getMessage());
-        }
-    }
-
-    // ─── Lógica de guardado ───────────────────────────────────────────────
-
-    private void guardarCambios() {
-        if (ciudadanoActual == null) return;
-
-        String nuevaEspecie    = (String) comboEspecie.getSelectedItem();
-        String nuevoEstado     = (String) comboEstado.getSelectedItem();
-        String nuevoRol        = (String) comboRol.getSelectedItem();
-        String especieAnterior = (String) ciudadanoActual.get("especie");
-        int    idBuscado       = ((Number) ciudadanoActual.get("id")).intValue();
-        boolean cambioEspecie  = !nuevaEspecie.equals(especieAnterior);
-
-        // Intentar modificar objeto real del Reloj
-        CiudadanoTherian ciudadanoReal = null;
-        if (reloj != null && reloj.getCiudadanos() != null) {
-            for (CiudadanoTherian c : reloj.getCiudadanos()) {
-                if (c.getId() == idBuscado) { ciudadanoReal = c; break; }
-            }
         }
 
-        if (ciudadanoReal != null) {
-            // ── Camino A: Reloj activo → modificar objeto real ──
-            ciudadanoReal.setEstadoCiudadania(nuevoEstado);
-            ciudadanoReal.setRol(nuevoRol);
+        if (reloj.getCiudadanos() != null) reloj.getCiudadanos().add(nuevo);
+        CiudadanoServicio.guardarCiudadanos(reloj.getCiudadanos());
+        ManadaServicio.guardarManadas(reloj.getManadas());
 
-            if (cambioEspecie) {
-                String[] att = obtenerAtributosEspecie(nuevaEspecie);
-                ciudadanoReal.cambiarEspecie(
-                    nuevaEspecie, esPredadora(nuevaEspecie),
-                    att[0], att[1], att[2],
-                    reloj.getManadas()
-                );
-            }
-            CiudadanoServicio.guardarCiudadanos(reloj.getCiudadanos());
-            ManadaServicio.guardarManadas(reloj.getManadas());
+        campoNombre.setText("");
+        campoApellido.setText("");
 
-        } else {
-            // ── Camino B: Reloj no listo → modificar JSON directamente ──
-            try {
-                List<Map<String, Object>> todos = CiudadanoServicio.cargarCiudadanos();
-                for (Map<String, Object> c : todos) {
-                    if (((Number) c.get("id")).intValue() == idBuscado) {
-                        c.put("estadoCiudadania", nuevoEstado);
-                        c.put("rol",              nuevoRol);
-                        c.put("especie",          nuevaEspecie);
-                        c.put("esPredador",       esPredadora(nuevaEspecie));
+        areaResultado.setText("✔ Ciudadano creado:\n"
+            + "  Nombre:  " + nombre + " " + apellido + "\n"
+            + "  Especie: " + especie + "\n"
+            + "  ID:      " + id + "\n"
+            + "  IAA:     " + String.format("%.1f", nuevo.getIAA()) + "\n"
+            + "\nDoble clic en la lista para ver su evolución.");
 
-                        if (cambioEspecie) {
-                            // Actualizar historial
-                            Object hist = c.get("historialEspecie");
-                            List<Object> historial = hist instanceof List
-                                ? (List<Object>) hist : new java.util.ArrayList<>();
-                            if (!historial.contains(especieAnterior)) historial.add(especieAnterior);
-                            c.put("historialEspecie", historial);
-                        }
-                        break;
-                    }
-                }
-                CiudadanoServicio.guardarCiudadanosRaw(todos);
-            } catch (Exception ex) {
-                areaInfo.setText("Error al guardar: " + ex.getMessage());
-                return;
-            }
-        }
-
-        // Actualizar etiquetas y reanudar
-        lblEspecie.setText(nuevaEspecie);
-        lblRol.setText(nuevoRol);
+        cargarTablaPersonal();
         reloj.reanudar();
-
-        areaInfo.setText("✔ Cambios guardados correctamente.\n"
-            + "  Especie: " + especieAnterior + (cambioEspecie ? " → " + nuevaEspecie : " (sin cambio)") + "\n"
-            + "  Estado:  " + nuevoEstado + "\n"
-            + "  Rol:     " + nuevoRol + "\n"
-            + (cambioEspecie ? "  → Ingresó a ManadaDePaso por 2 meses." : ""));
     }
 
-        private boolean esPredadora(String especie) {
-            return especie.equals("Lobo")  || especie.equals("Leon") ||
-                especie.equals("Tigre") || especie.equals("Halcon") ||
-                especie.equals("Orca");
+    // ── Lógica: crear especie ─────────────────────────────────────────────
+    private void crearEspecie() {
+        String nombreEsp = campoNombreEspecie.getText().trim();
+        String sonido    = campoSonido.getText().trim();
+        String caract    = campoCaracteristicas.getText().trim();
+        boolean esPred   = checkPredadora.isSelected();
+
+        if (nombreEsp.isEmpty()) {
+            JOptionPane.showMessageDialog(this,
+                "El nombre de la especie es obligatorio.",
+                "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        int    id    = calcularNuevoId();
+        String fecha = java.time.LocalDate.now().toString();
+
+        EspeciePersonalizada nuevo = new EspeciePersonalizada(
+            "Explorador", "Therian", id, fecha, "Activo",
+            nombreEsp, esPred, sonido, habitatSeleccionado, caract);
+        nuevo.setCreadoPorUsuario(true);
+        nuevo.setPuntuacionManada(50);
+        nuevo.setIAA(15.0 + new Random().nextInt(16));
+
+        if (reloj.getCiudadanos() != null) reloj.getCiudadanos().add(nuevo);
+        CiudadanoServicio.guardarCiudadanos(reloj.getCiudadanos());
+
+        JOptionPane.showMessageDialog(this,
+            "✔ Especie creada: " + nombreEsp + "\n"
+            + "  Predadora: " + (esPred ? "Sí" : "No") + "\n"
+            + "  Hábitat: " + habitatSeleccionado + "\n"
+            + "  Se creó un ciudadano de prueba (ID: " + id + ")",
+            "Especie creada", JOptionPane.INFORMATION_MESSAGE);
+
+        campoNombreEspecie.setText("");
+        campoSonido.setText("");
+        campoCaracteristicas.setText("");
+        habitatSeleccionado = "x:540,y:540,r:80";
+        lblCoordenadas.setText(habitatSeleccionado);
+        reloj.reanudar();
     }
 
-    private String[] obtenerAtributosEspecie(String especie) {
-        switch (especie) {
-            case "Lobo":   return new String[]{"Aullido profundo",    "x:490,y:745,r:75", "Territorial, social, estratégico"};
-            case "Leon":   return new String[]{"Rugido grave",        "x:815,y:490,r:75", "Dominante, protector, noble"};
-            case "Ciervo": return new String[]{"Bramido suave",       "x:510,y:490,r:80", "Sensible, ágil, intuitivo"};
-            case "Alce":   return new String[]{"Bramido resonante",   "x:215,y:285,r:80", "Majestuoso, solitario, territorial"};
-            case "Tigre":  return new String[]{"Gruñido sibilante",   "x:245,y:690,r:80", "Solitario, determinado, sigiloso"};
-            case "Halcon": return new String[]{"Chillido penetrante", "x:855,y:215,r:70", "Preciso, independiente, observador"};
-            case "Orca":   return new String[]{"Clicks y silbidos",   "x:110,y:890,r:60", "Inteligente, familiar, organizada"};
-            case "Cebra":  return new String[]{"Ladrido corto",       "x:295,y:470,r:75", "Resiliente, alerta, gregaria"};
-            case "Foca":   return new String[]{"Gruñidos y ladridos", "x:530,y:165,r:70", "Juguetona, curiosa, social"};
-            default:       return new String[]{"Arrullo suave",       "x:760,y:790,r:70", "Pacífica, empática, leal"};
+    // ── Lógica: crear manada ──────────────────────────────────────────────
+    private void crearManada() {
+        String nombre  = campoNombreManada.getText().trim();
+        String lema    = campoLema.getText().trim();
+        String especie = (String) comboEspecieManada.getSelectedItem();
+
+        if (nombre.isEmpty()) {
+            JOptionPane.showMessageDialog(this,
+                "El nombre de la manada es obligatorio.",
+                "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        int    cupo   = parsearInt(campoCupo.getText(),     20);
+        double iaaMin = parsearDouble(campoIAAMin.getText(), 0);
+        double iaaMax = parsearDouble(campoIAAMax.getText(), 40);
+
+        Manada nuevaManada = new Manada(
+            nombre, especie,
+            "Manada personalizada de " + especie,
+            cupo, iaaMin, iaaMax,
+            lema.isEmpty() ? "Unidos somos más fuertes" : lema,
+            territorioManada);
+
+        if (reloj.getManadas() != null) reloj.getManadas().add(nuevaManada);
+        ManadaServicio.guardarManadas(reloj.getManadas());
+
+        JOptionPane.showMessageDialog(this,
+            "✔ Manada creada: " + nombre + "\n"
+            + "  Especie: " + especie + "\n"
+            + "  Cupo: " + cupo + "\n"
+            + "  IAA: " + iaaMin + " - " + iaaMax + "\n"
+            + "  Territorio: " + territorioManada,
+            "Manada creada", JOptionPane.INFORMATION_MESSAGE);
+
+        campoNombreManada.setText("");
+        campoLema.setText("");
+        territorioManada = "x:540,y:540,r:80";
+        lblTerritorioManada.setText(territorioManada);
+        reloj.reanudar();
+    }
+
+    // ── Lógica: cargar tabla personal ─────────────────────────────────────
+    private void cargarTablaPersonal() {
+        try {
+            String contenido = new String(Files.readAllBytes(
+                Paths.get("Archivos/ciudadanos.json")));
+            JsonArray todos = JsonParser.parseString(contenido).getAsJsonArray();
+
+            String[] columnas = {"id","nombre","apellido","especie","iaa","rol","historialIAA"};
+            DefaultTableModel modelo = new DefaultTableModel(columnas, 0) {
+                @Override public boolean isCellEditable(int r, int c) { return false; }
+            };
+
+            for (JsonElement el : todos) {
+                JsonObject c = el.getAsJsonObject();
+                JsonElement cpu = c.get("creadoPorUsuario");
+                if (cpu == null || !cpu.getAsBoolean()) continue;
+
+                String histIAA = "";
+                JsonElement hist = c.get("historialIAA");
+                if (hist != null && hist.isJsonArray()) {
+                    JsonArray arr = hist.getAsJsonArray();
+                    int desde = Math.max(0, arr.size() - 3);
+                    StringBuilder sb = new StringBuilder();
+                    for (int i = desde; i < arr.size(); i++) {
+                        JsonObject p = arr.get(i).getAsJsonObject();
+                        if (sb.length() > 0) sb.append(" | ");
+                        sb.append(String.format("%.1f", p.get("iaa").getAsDouble()));
+                    }
+                    histIAA = sb.toString();
+                }
+
+                modelo.addRow(new Object[]{
+                    c.has("id")       ? c.get("id").getAsInt()              : "?",
+                    c.has("nombre")   ? c.get("nombre").getAsString()       : "",
+                    c.has("apellido") ? c.get("apellido").getAsString()     : "",
+                    c.has("especie")  ? c.get("especie").getAsString()      : "",
+                    c.has("iaa")      ? String.format("%.1f", c.get("iaa").getAsDouble()) : "",
+                    c.has("rol")      ? c.get("rol").getAsString()          : "",
+                    histIAA
+                });
+            }
+            tabla.setModel(modelo);
+            tabla.setRowHeight(26);
+        } catch (Exception e) {
+            if (areaResultado != null)
+                areaResultado.setText("Error al cargar: " + e.getMessage());
         }
     }
 
-    // ─── Helpers ──────────────────────────────────────────────────────────
+    // ── Selección de hábitat/territorio en el mapa ────────────────────────
+    private void activarSeleccionHabitat() {
+        JOptionPane.showMessageDialog(this,
+            "Haz clic en el mapa para definir el hábitat.\n"
+            + "El punto seleccionado se usará como centro.",
+            "Seleccionar hábitat", JOptionPane.INFORMATION_MESSAGE);
 
-    private void limpiarFormulario() {
-        lblNombre.setText("—");
-        lblEspecie.setText("—");
-        lblIAA.setText("—");
-        lblRol.setText("—");
-        btnGuardar.setEnabled(false);
+        Container parent = SwingUtilities.getWindowAncestor(this);
+        if (parent instanceof MenuFrame) {
+            MenuFrame menu = (MenuFrame) parent;
+            Opcion1 op1 = new Opcion1(null);
+            op1.activarModoSeleccionHabitat(coords -> {
+                habitatSeleccionado = coords;
+                lblCoordenadas.setText(coords);
+                menu.MPAdd(this);
+            });
+            menu.MPAdd(op1);
+        }
+    }
+
+    private void activarSeleccionTerritorioManada() {
+        JOptionPane.showMessageDialog(this,
+            "Haz clic en el mapa para definir el territorio de la manada.",
+            "Seleccionar territorio", JOptionPane.INFORMATION_MESSAGE);
+
+        Container parent = SwingUtilities.getWindowAncestor(this);
+        if (parent instanceof MenuFrame) {
+            MenuFrame menu = (MenuFrame) parent;
+            Opcion1 op1 = new Opcion1(null);
+            op1.activarModoSeleccionHabitat(coords -> {
+                territorioManada = coords;
+                lblTerritorioManada.setText(coords);
+                menu.MPAdd(this);
+            });
+            menu.MPAdd(op1);
+        }
+    }
+
+    // ── Helpers ───────────────────────────────────────────────────────────
+    private int calcularNuevoId() {
+        if (reloj.getCiudadanos() != null && !reloj.getCiudadanos().isEmpty())
+            return reloj.getCiudadanos().size() + 1;
+        try {
+            String contenido = new String(Files.readAllBytes(
+                Paths.get("Archivos/ciudadanos.json")));
+            return JsonParser.parseString(contenido).getAsJsonArray().size() + 1;
+        } catch (Exception e) { return 1; }
+    }
+
+    private CiudadanoTherian instanciar(String especie, String nombre,
+                                         String apellido, int id, String fecha) {
+        return switch (especie) {
+            case "Lobo"   -> new Lobo(nombre, apellido, id, fecha, "Activo");
+            case "Leon"   -> new Leon(nombre, apellido, id, fecha, "Activo");
+            case "Ciervo" -> new Ciervo(nombre, apellido, id, fecha, "Activo");
+            case "Alce"   -> new Alce(nombre, apellido, id, fecha, "Activo");
+            case "Tigre"  -> new Tigre(nombre, apellido, id, fecha, "Activo");
+            case "Halcon" -> new Halcon(nombre, apellido, id, fecha, "Activo");
+            case "Orca"   -> new Orca(nombre, apellido, id, fecha, "Activo");
+            case "Cebra"  -> new Cebra(nombre, apellido, id, fecha, "Activo");
+            case "Foca"   -> new Foca(nombre, apellido, id, fecha, "Activo");
+            default       -> new Paloma(nombre, apellido, id, fecha, "Activo");
+        };
+    }
+
+    private List<String> obtenerEspeciesDisponibles() {
+        List<String> lista = new ArrayList<>(Arrays.asList(
+            "Lobo","Leon","Ciervo","Alce","Tigre",
+            "Halcon","Orca","Cebra","Foca","Paloma"));
+        try {
+            String contenido = new String(Files.readAllBytes(
+                Paths.get("Archivos/ciudadanos.json")));
+            JsonArray arr = JsonParser.parseString(contenido).getAsJsonArray();
+            for (JsonElement el : arr) {
+                String esp = el.getAsJsonObject().get("especie").getAsString();
+                if (!lista.contains(esp)) lista.add(esp);
+            }
+        } catch (Exception ignored) {}
+        return lista;
     }
 
     private JLabel etiqueta(String texto) {
         JLabel l = new JLabel(texto);
-        l.setForeground(Color.LIGHT_GRAY);
+        l.setForeground(FG_GRAY);
+        l.setFont(new Font("Arial", Font.BOLD, 12));
         return l;
     }
 
-    private TitledBorder tituloBorde(String titulo) {
+    private void estilizarCampo(JTextField campo) {
+        campo.setBackground(new Color(25, 25, 35));
+        campo.setForeground(FG_WHITE);
+        campo.setCaretColor(FG_WHITE);
+        campo.setBorder(BorderFactory.createCompoundBorder(
+            BorderFactory.createLineBorder(new Color(80, 80, 120)),
+            BorderFactory.createEmptyBorder(3, 6, 3, 6)));
+    }
+
+    private void estilizarCombo(JComboBox<String> combo) {
+        combo.setBackground(BG_PANEL);
+        combo.setForeground(FG_WHITE);
+        combo.setFont(new Font("Arial", Font.PLAIN, 12));
+    }
+
+    private TitledBorder borde(String titulo) {
         TitledBorder b = BorderFactory.createTitledBorder(
             BorderFactory.createLineBorder(new Color(80, 80, 120)), titulo);
-        b.setTitleColor(Color.LIGHT_GRAY);
+        b.setTitleColor(FG_GRAY);
         return b;
+    }
+
+    private int parsearInt(String texto, int defecto) {
+        try { return Integer.parseInt(texto.trim()); }
+        catch (Exception e) { return defecto; }
+    }
+
+    private double parsearDouble(String texto, double defecto) {
+        try { return Double.parseDouble(texto.trim()); }
+        catch (Exception e) { return defecto; }
     }
 }

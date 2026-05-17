@@ -38,6 +38,10 @@ public class CiudadanoServicio {
                 mapa.put("inicioCargoAlfa",   c.getInicioCargoAlfa());
                 mapa.put("duracionCargoMeses",c.getDuracionCargoMeses());
                 mapa.put("historialEspecie",  c.getHistorialEspecie());
+                mapa.put("creadoPorUsuario", c.isCreadoPorUsuario());
+                mapa.put("sonidoPredominante", c.getSonidoPredominante());
+                mapa.put("habitatSimbolico",   c.getHabitatSimbolico());
+                mapa.put("caracteristicas",    c.getCaracteristicas());
 
                 // Historial de afiliaciones
                 List<Map<String, Object>> afiliaciones = new ArrayList<>();

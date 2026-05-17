@@ -25,6 +25,7 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     private int DuracionCargoMeses;
     private List<AfiliacionEfectiva> AfiliacionesEfectivas;
     private List<Map<String, Double>> historialIAA = new ArrayList<>();
+    private boolean creadoPorUsuario = false;
 
 
     public CiudadanoTherian(String Nombre, String Apellido, int Id, String FechaNacimiento, String EstadoCiudadania, String EspecieActual, boolean esPredador, String SonidoPredominante, String HabitatSimbolico, String Caracteristicas){
@@ -148,6 +149,10 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
         historialIAA.add(punto);
     }
 
+    public boolean isCreadoPorUsuario(){ 
+        return creadoPorUsuario; 
+    }
+
     // getters
 
     public String getNombre(){
@@ -240,6 +245,10 @@ public abstract class CiudadanoTherian extends EspecieAutoPercibida{
     
     public void setDuracionCargoMeses(int meses) { 
         this.DuracionCargoMeses = meses; 
+    }
+
+    public void setCreadoPorUsuario(boolean valor) { 
+        this.creadoPorUsuario = valor; 
     }
 
     

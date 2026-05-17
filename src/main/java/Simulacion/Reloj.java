@@ -11,6 +11,7 @@ import Especies.Cebra;
 import Especies.Ciervo;
 import Especies.CiudadanoTherian;
 import Especies.Encuentro;
+import Especies.EspeciePersonalizada;
 import Especies.Foca;
 import Especies.Halcon;
 import Especies.Leon;
@@ -78,7 +79,17 @@ public class Reloj {
         cargarOCrearEstado();
 
         while (!Thread.currentThread().isInterrupted()) { // ← loop infinito
+            
+            while (pausado) {
+                try { Thread.sleep(200); }
+                catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    return;
+                    }
+                }
+
             avanzarMes();
+
             try {
                 Thread.sleep(pausaSegundos * 1000L);
             } catch (InterruptedException e) {
@@ -187,6 +198,32 @@ public class Reloj {
             log("Sin Alfa Honorario este mes.");
         }
 
+        // 5a — Decaimiento de IAA para ciudadanos inactivos
+        for (CiudadanoTherian c : ciudadanos) {
+
+            // Verificar si participó en algún ritual este mes
+            boolean participoEsteMes = false;
+            for (Ritual r : c.getRituales()) {
+                if (r.getFecha() != null && r.getFecha().startsWith(claveMes)) {
+                    participoEsteMes = true;
+                    break;
+                }
+            }
+
+            if (!participoEsteMes) {
+                // Decaimiento: entre 0.5 y 1.0 punto por mes de inactividad
+                double decaimiento = 0.5 + random.nextDouble() * 0.5;
+                double nuevoIAA    = Math.max(0, c.getIAA() - decaimiento);
+                c.setIAA(nuevoIAA);
+
+                if (decaimiento >= 0.8) { // solo loguear si es notable
+                    eventos.add("  📉 " + c.getNombre() + " " + c.getApellido()
+                        + " inactivo — IAA -" + String.format("%.1f", decaimiento)
+                        + " → " + String.format("%.1f", nuevoIAA));
+                }
+            }
+        }
+
         // 5 — Reubicar ciudadanos en tránsito
         List<CiudadanoTherian> enTransito = new ArrayList<>(ManadaDePaso.getInstance().getMiembros());
         for (CiudadanoTherian c : enTransito) {
@@ -283,6 +320,34 @@ public class Reloj {
             }
         }
 
+        // 5b — Nuevos ciudadanos cada 3 meses
+        if (mesActual % 3 == 0) {
+            int cantidad = 1 + random.nextInt(3); // entre 1 y 3 nuevos
+            for (int i = 0; i < cantidad; i++) {
+                CiudadanoTherian nuevo = crearCiudadanoAleatorio();
+
+                // Asignar a manada según especie e IAA inicial
+                Manada manada = obtenerManadaCorrecta(nuevo, nuevo.getIAA());
+                if (manada != null && !manada.estaLlena()) {
+                    try {
+                        AfiliacionManada af = new AfiliacionManada(
+                            manada.getNombreManada(),
+                            anioActual + "-" + String.format("%02d", mesActual) + "-01",
+                            "Omega", 50, null);
+                        nuevo.AgregarManada(af);
+                        manada.agregarMiembro(nuevo, nuevo.getIAA());
+                    } catch (TherianException e) { }
+                }
+
+                ciudadanos.add(nuevo);
+                eventos.add("  🆕 Nuevo ciudadano: " + nuevo.getNombre()
+                    + " " + nuevo.getApellido()
+                    + " (" + nuevo.getEspecieActual() + ")"
+                    + " — ID: " + nuevo.getId());
+            }
+        }
+
+
         // 6 — Guardar y avanzar
         guardarEstado();
         log("Estado guardado en JSON.");
@@ -323,82 +388,52 @@ public class Reloj {
     }
 
     // ─── Verificar cambio de manada ───────────────────────────────────────
-    private String verificarCambioManada(CiudadanoTherian ciudadano, double nuevoIAA) {
+private String verificarCambioManada(CiudadanoTherian ciudadano, double nuevoIAA) {
+    Manada manadaCorrecta = obtenerManadaCorrecta(ciudadano, nuevoIAA);
+    if (manadaCorrecta == null) return null;
 
-        if (ManadaDePaso.getInstance().getMiembros().contains(ciudadano)) return null;
+    boolean yaEstaEnDestino = manadaCorrecta.getMiembros().contains(ciudadano);
+    boolean enTransito = ManadaDePaso.getInstance().getMiembros().contains(ciudadano);
 
-        Manada manadaCorrecta = obtenerManadaCorrecta(ciudadano, nuevoIAA);
+    // Si ya está en la manada correcta o en tránsito, no hacer nada
+    if (yaEstaEnDestino || enTransito) return null;
 
-        if (manadaCorrecta == null) return null;
-
-        boolean yaEsta = manadaCorrecta.getMiembros().contains(ciudadano);
-
-        if (!yaEsta && !manadaCorrecta.estaLlena()) {
-
-            // Capturar nombre de origen ANTES de remover
-            String nombreOrigen = "Sin manada";
-            for (Manada m : manadas) {
-                if (m.getMiembros().contains(ciudadano)) {
-                    nombreOrigen = m.getNombreManada();
-                    m.getMiembros().remove(ciudadano);
-                    for (AfiliacionManada a : ciudadano.getManadas()) {
-                        if (a.estaActivo()) {
-                            a.setFechaSalida(anioActual + "-"+ String.format("%02d", mesActual) + "-01");
-                        }
-                    }
-                    break;
+    // Capturar nombre de origen ANTES de remover
+    String nombreOrigen = "Sin manada";
+    for (Manada m : manadas) {
+        if (m.getMiembros().contains(ciudadano)) {
+            nombreOrigen = m.getNombreManada();
+            // Cerrar afiliación activa
+            for (AfiliacionManada a : ciudadano.getManadas()) {
+                if (a.estaActivo()) {
+                    a.setFechaSalida(anioActual + "-"
+                        + String.format("%02d", mesActual) + "-01");
                 }
             }
-
-            // Meter en ManadaDePaso
-            ManadaDePaso.getInstance().agregarMiembro(ciudadano, ciudadano.getIAA());
-
-            // AfiliacionManada para "Manada de Paso" — NO para el destino todavía
-            try {
-                AfiliacionManada afTransito = new AfiliacionManada(
-                    "Manada de Paso",
-                    anioActual + "-" + String.format("%02d", mesActual) + "-01",
-                    ciudadano.getRol(), ciudadano.getPuntuacionManada(), null);
-                afTransito.setMesesTransicion(1);
-                afTransito.setManadaOrigen(nombreOrigen);
-                afTransito.setManadaDestino(manadaCorrecta.getNombreManada());
-                ciudadano.AgregarManada(afTransito);
-                return manadaCorrecta.getNombreManada();
-
-            } catch (TherianException e) {
-                // Autocorrección: cerrar todas las afiliaciones activas que quedaron abiertas
-                log("  [Autocorrección] Afiliación activa detectada en "
-                    + ciudadano.getNombre() + " — corrigiendo...");
-                try { Thread.sleep(100); } catch (InterruptedException ie) {
-                    Thread.currentThread().interrupt();
-                }
-                for (AfiliacionManada a : ciudadano.getManadas()) {
-                    if (a.estaActivo()) {
-                        a.setFechaSalida(anioActual + "-" + String.format("%02d", mesActual) + "-01");
-                    }
-                }
-                // Reintentar
-                try {
-                    AfiliacionManada afRetry = new AfiliacionManada(
-                        "Manada de Paso",
-                        anioActual + "-" + String.format("%02d", mesActual) + "-01",
-                        ciudadano.getRol(), ciudadano.getPuntuacionManada(), null);
-                    afRetry.setMesesTransicion(1);
-                    afRetry.setManadaOrigen(nombreOrigen);
-                    afRetry.setManadaDestino(manadaCorrecta.getNombreManada());
-                    ciudadano.AgregarManada(afRetry);
-                    log("  [Autocorrección] " + ciudadano.getNombre() + " corregido correctamente.");
-                    return manadaCorrecta.getNombreManada();
-                } catch (TherianException e2) {
-                    log("  [Error persistente] No se pudo reubicar a " + ciudadano.getNombre()
-                        + " — se mantiene en su manada actual.");
-                }
-            }
-            return null;
-
+            m.getMiembros().remove(ciudadano);
+            break;
         }
+    }
+
+    // Meter en ManadaDePaso
+    ManadaDePaso.getInstance().agregarMiembro(ciudadano, ciudadano.getIAA());
+
+    // Crear AfiliacionManada para "Manada de Paso" — NO para el destino todavía
+    try {
+        AfiliacionManada afTransito = new AfiliacionManada(
+            "Manada de Paso",
+            anioActual + "-" + String.format("%02d", mesActual) + "-01",
+            ciudadano.getRol(), ciudadano.getPuntuacionManada(), null);
+        afTransito.setMesesTransicion(1);
+        afTransito.setManadaOrigen(nombreOrigen);
+        afTransito.setManadaDestino(manadaCorrecta.getNombreManada());
+        ciudadano.AgregarManada(afTransito);
+        return manadaCorrecta.getNombreManada();
+    } catch (TherianException e) {
+        System.err.println("Error en cambio de manada: " + e.getMessage());
         return null;
     }
+}
 
     // ─── Helpers ──────────────────────────────────────────────────────────
     private String obtenerNombreManadaActual(CiudadanoTherian c) {
@@ -540,7 +575,15 @@ public class Reloj {
                 case "Orca":   c = new Orca(nombre, apellido, id, fecha, estado);   break;
                 case "Cebra":  c = new Cebra(nombre, apellido, id, fecha, estado);  break;
                 case "Foca":   c = new Foca(nombre, apellido, id, fecha, estado);   break;
-                default:       c = new Paloma(nombre, apellido, id, fecha, estado); break;
+                case "Paloma":  c = new Paloma(nombre, apellido, id, fecha, estado); break;
+                default:
+                    String sonido  = (String) d.getOrDefault("sonidoPredominante", "");
+                    String habitat = (String) d.getOrDefault("habitatSimbolico",   "x:540,y:540,r:80");
+                    String caract  = (String) d.getOrDefault("caracteristicas",    "");
+                    boolean esPred = Boolean.TRUE.equals(d.get("esPredador"));
+                    c = new EspeciePersonalizada(nombre, apellido, id, fecha, estado,
+                                                especie, esPred, sonido, habitat, caract);
+                    break;
             }
 
             c.setIAA(((Number) d.get("iaa")).doubleValue());
@@ -583,6 +626,9 @@ public class Reloj {
                 }
             }
 
+            Object cpu = d.get("creadoPorUsuario");
+            if (cpu instanceof Boolean) c.setCreadoPorUsuario((Boolean) cpu);
+
             lista.add(c);
         }
         return lista;
@@ -617,4 +663,37 @@ public class Reloj {
 
     public List<CiudadanoTherian> getCiudadanos() { return ciudadanos; }
     public List<Manada>           getManadas()    { return manadas;    }
+    public List<Especies.Ritual>  getRituales()   { return rituales;   }
+
+    private CiudadanoTherian crearCiudadanoAleatorio() {
+    String[] NOMBRES   = {"Aria","Blade","Cyan","Dusk","Echo","Frost","Gale","Haze",
+                          "Iris","Jade","Knox","Luna","Mist","Nyx","Onyx","Pixel",
+                          "Quest","Raven","Sage","Thorn","Uma","Vex","Wren","Xen","Yara","Zion"};
+    String[] APELLIDOS = {"Ashfire","Blackwood","Coldwater","Darkfang","Embercrest",
+                          "Frostholm","Ironsong","Moonwhis","Nightwood","Ravenmoor",
+                          "Silverrun","Stormclaw","Swiftpaw","Thornback","Wildmane"};
+    String[] ESPECIES  = {"Lobo","Leon","Ciervo","Alce","Tigre",
+                          "Halcon","Orca","Cebra","Foca","Paloma"};
+
+    String nombre   = NOMBRES[random.nextInt(NOMBRES.length)];
+    String apellido = APELLIDOS[random.nextInt(APELLIDOS.length)];
+    int    id       = ciudadanos.size() + 1;
+    String fecha    = (1970 + random.nextInt(36)) + "-"
+                    + String.format("%02d", 1 + random.nextInt(12)) + "-"
+                    + String.format("%02d", 1 + random.nextInt(28));
+    String especie  = ESPECIES[random.nextInt(ESPECIES.length)];
+
+    return switch (especie) {
+        case "Lobo"   -> new Lobo(nombre, apellido, id, fecha, "Activo");
+        case "Leon"   -> new Leon(nombre, apellido, id, fecha, "Activo");
+        case "Ciervo" -> new Ciervo(nombre, apellido, id, fecha, "Activo");
+        case "Alce"   -> new Alce(nombre, apellido, id, fecha, "Activo");
+        case "Tigre"  -> new Tigre(nombre, apellido, id, fecha, "Activo");
+        case "Halcon" -> new Halcon(nombre, apellido, id, fecha, "Activo");
+        case "Orca"   -> new Orca(nombre, apellido, id, fecha, "Activo");
+        case "Cebra"  -> new Cebra(nombre, apellido, id, fecha, "Activo");
+        case "Foca"   -> new Foca(nombre, apellido, id, fecha, "Activo");
+        default       -> new Paloma(nombre, apellido, id, fecha, "Activo");
+    };
+}
 }

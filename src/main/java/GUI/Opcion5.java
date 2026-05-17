@@ -53,6 +53,14 @@ public class Opcion5 extends JPanel implements ActionListener {
         cargarTabla("Archivos/ciudadanos.json");
     }
 
+    // Constructor con filtro de especie predefinido
+    public Opcion5(String especieFiltro, java.util.function.Consumer<Integer> onVerTrayectoria) {
+        this(onVerTrayectoria);
+        Tipo.setSelectedItem("ciudadanos");
+        filtro.setSelectedItem("Especie: " + especieFiltro);
+        aplicarFiltro();
+    }
+    
     // ── Panel Norte: título + iconos + controles ──────────────────────────
     private JPanel construirPanelNorte() {
         JPanel norte = new JPanel(new BorderLayout(0, 6));
