@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.2)  16 MAY 2026 17:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.2)  16 MAY 2026 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,8 +1037,17 @@ Package mdframed Info: mdframed works in twoside mode on input line 41.
 [11]
 
 [12]
+<UML/UML_Therania.PNG, id=176, 702.625pt x 2509.375pt>
+File: UML/UML_Therania.PNG Graphic file (type png)
+<use UML/UML_Therania.PNG>
+Package pdftex.def Info: UML/UML_Therania.PNG  used on input line 244.
+(pdftex.def)             Requested size: 216.09045pt x 771.73355pt.
 
-[13]
+Overfull \vbox (139.5368pt too high) has occurred while \output is active []
+
+
+
+[13 <./UML/UML_Therania.PNG>]
 
 [14]
 
@@ -1056,10 +1065,10 @@ Package rerunfilecheck Info: File `THR26G05.out' has not changed.
 (rerunfilecheck)             Checksum: F8453AFD5EE334F9539FA2A7423227C9;3360.
  ) 
 Here is how much of TeX's memory you used:
- 24992 strings out of 473573
- 474593 string characters out of 5715590
+ 24999 strings out of 473573
+ 474781 string characters out of 5715590
  863198 words of memory out of 5000000
- 47725 multiletter control sequences out of 15000+600000
+ 47732 multiletter control sequences out of 15000+600000
  579372 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,107p,615b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1069,9 +1078,9 @@ fb><C:/Users/Juan D/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.p
 fb><C:/Users/Juan D/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pf
 b><C:/Users/Juan D/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb
 >
-Output written on THR26G05.pdf (16 pages, 171273 bytes).
+Output written on THR26G05.pdf (16 pages, 390018 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
+ 233 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
 
