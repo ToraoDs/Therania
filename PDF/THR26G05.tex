@@ -2,6 +2,7 @@
 \usepackage[spanish]{babel}
 \usepackage{ragged2e} % Necesario para \justify
 \usepackage{mdframed}
+\usepackage{hyperref}
 
 
 \shorttitle{Therania}
@@ -21,9 +22,9 @@
 		\vspace*{1cm}
 		{\Large Proyecto final POO\par}% Subtítulo
 		\vspace*{5cm}
-		{\Large Juan David Moreno Ramírez//20242005116\\Samuel Rojas//...\par}% Nombre del autor
+		{\Large Juan David Moreno Ramírez//20242005116\\Samuel Andrés Rojas Escobar//20252020077\par}% Nombre del autor
 		\vspace*{6cm}
-		{\Large ... \par}% Información adicional
+		{\Large 2026-1 \par}% Información adicional
 		\vspace*{\fill}
 		
 	\end{titlepage}
@@ -38,7 +39,11 @@
 	\begin{center}
 		\begin{mdframed}
 			\begin{center}
-				\textbf{Aquí va el enlace al repositorio de Github}
+				\textbf{\href[]{https://github.com/ToraoDs/Therania}{THERANIA}\\COMMIT:\\
+					%Commit final
+				HASH:\\
+					%hash del commit final
+				}
 			\end{center}
 		\end{mdframed}
 	\end{center}
@@ -94,11 +99,11 @@
 	
 	\vspace*{\fill}
 	
-	...\\
-	
-	\begin{itemize}
-		\item ...
-	\end{itemize}
+		\begin{enumerate}
+			\item  Diseñar e implementar un sistema orientado a objetos que modele fielmente el dominio de Theriania Construir una arquitectura en Java 17 que represente correctamente las entidades del problema —ciudadanos, especies, manadas y rituales— haciendo uso explícito de herencia, polimorfismo y composición, de modo que el diseño refleje la complejidad del dominio sin reducirlo a soluciones simplistas como campos de texto plano.
+			\item  Desarrollar un sistema funcional con persistencia, simulación e interfaz de usuario Implementar todas las funcionalidades mínimas requeridas: registro y consulta de ciudadanos, cálculo del Índice de Afinidad Animal, generación de reportes y ranking del Alfa Honorario, modo simulación con datos aleatorios, y una interfaz gráfica clara y usable, respaldada por una capa de persistencia en archivos JSON.
+			\item  Producir documentación técnica completa que evidencie el proceso y las decisiones de diseño Generar los entregables requeridos —diagramas UML, Javadoc, manual de usuario, cronograma y reflexión sobre uso ético de IA— de forma que cualquier persona pueda entender el sistema, reproducirlo y evaluar las decisiones tomadas durante el desarrollo.
+		\end{enumerate}
 	
 	\vspace*{\fill}
 	
@@ -106,21 +111,121 @@
 	
 	\section*{Cronograma de Trabajo}\label{sec:Cronograma de Trabajo}
 	
-	\vspace*{\fill}
+	El Proyecto se desarrolló en diferentes etapas y dias, las fechas exactas y lo realizado en dichas fechas:
 	
-	\section{...}
-	
-	\vspace*{\fill}
-	
+	\subsection{04/23/2026}
+		\begin{itemize}
+			\item Commit inicial, creación del proyecto.
+			\item Primeras clases del reino de theriana.
+			\item Creación de carpetas de manadas e imagenes.
+			\item Primer boseto de diagrama UML.
+			\item Interfez grafica inicial.
+		\end{itemize}
+	\subsection{04/24/2026}
+		\begin{itemize}
+			\item Ciudadano therian V1 y AfiliacionMnada V1.
+			\item Adición de mapas, funciones de rastreo de mouse y retoques graficos.
+		\end{itemize}
+	\subsection{04/26/2026}
+		\begin{itemize}
+			\item Adición de primeros iconos de especie.
+		\end{itemize}
+	\subsection{04/28/2026}
+		\begin{itemize}
+			\item Adición de iconos totales de especie.
+		\end{itemize}
+	\subsection{04/30/2026}
+		\begin{itemize}
+			\item Actualización de especies y ciudadanos.
+			\item Therians V3.
+		\end{itemize}
+	\subsection{05/02/2026}
+		\begin{itemize}
+			\item Adición de clase "Opcion 5" e implementación de tablas de datos e inicio de gestión de Archivos JSON.
+			\item Clase documentos para manejo de archivos (escritura, lectura y guardado) pasando como parametros la información de las clases presentes en src (de preferencia usando arraylist).
+		\end{itemize}
+	\subsection{05/04/2026}
+		\begin{itemize}
+			\item Documentación del proyecto PDF
+		\end{itemize}
+	\subsection{05/07/2026}
+		\begin{itemize}
+			\item Especies
+			\item Corrección REQ1
+			\item Servicios
+			\item REQ 4 y 5
+			\item REQ 6
+			\item REQ 7 y 8
+			\item REQ 3
+			\item Reportes
+			\item Therian V1
+		\end{itemize}
+	\subsection{05/14/2026}
+		\begin{itemize}
+			\item Corrección de errores de ejecución e implementación directa de GUI
+			\item Lectura de archivos en GUI
+			\item Therian V2
+			\item Therian V3
+			\item Therian V4
+		\end{itemize}
+	\subsection{05/15/2026}
+		\begin{itemize}
+			\item Therian V5
+			\item Therian V6
+			\item Sin JSON
+		\end{itemize}
+	\subsection{05/16/2026}
+		\begin{itemize}
+			\item Gestión documental del proyecto
+			\item Desarrollo total de diagrama UML
+		\end{itemize}
 	\newpage
 	
 	\section*{Manual de usuario}\label{sec:Manual de usuario}
 	
+	\subsection{title}
 	
 	\newpage
 	
 	\section*{Casos de uso}\label{sec:Casos de uso}
 	
+	\subsection{Gestión de ciudadanos}
+		\begin{itemize}
+			\item Registrar ciudadano therian: el sistema permite crear un nuevo ciudadano con sus datos civiles básicos (nombre, identificador único y fecha de nacimiento) y asignarle un estado de ciudadanía inicial.
+			\item Consultar ciudadano: permite buscar y visualizar la información completa de un ciudadano, incluyendo su historial de especies auto-percibidas y sus afiliaciones a manadas.
+			\item Actualizar estado de ciudadanía: el administrador puede modificar el estado de un ciudadano entre activa, suspendida o en revisión según corresponda.
+		\end{itemize}
+	\subsection{Gestión de especies auto-percibidas}
+		\begin{itemize}
+			\item Registrar especie auto-percibida: permite asociar a un ciudadano una especie de la jerarquía disponible (Lobo, Felino, Ave, etc), registrando la fecha de inicio de dicha identidad.
+			\item Consultar historial de especies: muestra la trayectoria completa de especies que un ciudadano ha declarado a lo largo del tiempo, con fechas de inicio y cierre de cada una.
+		\end{itemize}
+	\subsection{Gestión de manadas}
+		\begin{itemize}
+			%\item Crear manada: permite registrar una nueva manada con su nombre distintivo, especie predominante, lema, territorio simbólico y lista de rituales periódicos.
+			\item Afiliar ciudadano a manada: registra el ingreso de un ciudadano a una manada mediante una instancia de AfiliacionManada, especificando su rol (alfa, beta, omega u observador) y su nivel de compromiso declarado.
+			\item Listar manadas activas: muestra el listado completo de manadas con su número de miembros actuales y la especie predominante de cada una.
+			\item Consultar miembros de manada: presenta el detalle de todos los ciudadanos afiliados a una manada específica, incluyendo sus roles y fechas de ingreso.
+		\end{itemize}
+	\subsection{Gestión de rituales}
+		\begin{itemize}
+			%\item Registrar ritual: permite crear un nuevo ritual indicando su tipo (aullido colectivo, caminata nocturna, asamblea de rugidos, sesión de plumas, etc.), fecha, duración, manada responsable y métrica de intensidad percibida.
+			\item Registrar participación en ritual: asocia a un ciudadano como participante de un ritual existente, actualizando automáticamente su indicador de afiliación efectiva.
+			\item Consultar historial de rituales: lista todos los rituales en los que ha participado un ciudadano o todos los llevados a cabo por una manada, con sus detalles completos.
+		
+		\end{itemize}
+	\subsection{Cálculo y reportes}
+		\begin{itemize}
+			\item Calcular Índice de Afinidad Animal (IAA): ejecuta la fórmula definida por el equipo sobre los datos de un ciudadano (rituales asistidos, estabilidad de especie, nivel de compromiso y feedback de manada) para obtener su IAA actualizado.
+			\item Generar ranking del Alfa Honorario: produce el listado de los 20 ciudadanos con mayor IAA global, mostrando su especie actual, manada principal y resumen de historial ritual.
+			\item Ver evolución mensual del IAA: muestra la progresión del índice de afinidad de un ciudadano mes a mes mediante una estructura de puntos (mes, IAA) apta para generación de gráficos.
+
+		\end{itemize}
+	\subsection{Simulación}
+		\begin{itemize}
+			\item Activar modo simulación: genera automáticamente un conjunto de datos de prueba compuesto por al menos 100 ciudadanos, 10 manadas activas, 4 tipos de especie auto-percibida y 500 rituales distribuidos a lo largo de un año, sin intervención manual.
+			\item Cargar / guardar datos JSON: permite serializar el estado completo del sistema en archivos JSON estructurados y deserializarlo en sesiones posteriores, garantizando la persistencia de toda la información entre ejecuciones.
+		\end{itemize}
 	
 	
 	\newpage
@@ -139,6 +244,25 @@
 	
 	\section*{Uso de IA}\label{sec:Uso de IA}
 	
+	\textbf{\subsection{Reflexión sobre el uso ético de la IA en el desarrollo del proyecto}}
+	
+	Durante el desarrollo de este proyecto recurrimos a herramientas de inteligencia artificial, específicamente ChatGPT y GitHub Copilot, en distintos momentos del proceso. Sin embargo, desde el principio tuvimos claro que su papel sería el de un apoyo puntual, no el de un reemplazo de nuestro propio criterio. Esta reflexión busca ser honesta sobre cómo las usamos, para qué sirvieron y dónde decidimos no depender de ellas.
+	
+	\textbf{\subsection{¿Para qué las usamos?}}
+	
+	GitHub Copilot fue útil principalmente en las partes más repetitivas del código: generación de getters y setters, estructuras de bucles conocidas, y autocompletado de bloques que ya sabíamos cómo debían quedar. En esos casos, Copilot aceleró la escritura, pero la decisión de qué escribir y por qué siempre fue nuestra. Nunca aceptamos una sugerencia sin leerla y entenderla primero.\\
+	ChatGPT lo usamos más como una herramienta de consulta cuando nos atascamos en problemas puntuales: errores de serialización en JSON que no lográbamos rastrear, dudas sobre el comportamiento de ciertas clases de Java, o para entender mejor algún concepto antes de implementarlo. La dinámica era siempre la misma: nosotros describíamos el problema con precisión, evaluábamos la respuesta, y decidíamos si tenía sentido aplicarla al contexto específico de nuestro sistema. Muchas veces la respuesta nos daba una pista, pero la solución final la construíamos nosotros.
+	
+	
+	\textbf{\subsection{Lo que no le delegamos a la IA}}
+	
+	El diseño orientado a objetos fue completamente nuestro. La jerarquía de especies, la relación entre ciudadanos y manadas, la lógica del Índice de Afinidad Animal y la arquitectura en capas del sistema son decisiones que tomamos nosotros, con base en lo aprendido en clase y en las restricciones del enunciado. Pedirle a una IA que diseñara eso por nosotros habría vaciado de sentido el ejercicio, y además habríamos obtenido algo que no entenderíamos ni podríamos defender en la sustentación.\\
+	Tampoco usamos IA para generar bloques de código que luego pegáramos sin más. Cuando Copilot sugería algo que no comprendíamos del todo, lo descartábamos o lo investigábamos por nuestra cuenta antes de considerarlo. El código que está en el repositorio lo escribimos, lo leímos y lo probamos nosotros.
+	
+	\textbf{\subsection{Qué aprendimos de este proceso}}
+	
+	Usar IA de forma responsable no significa no usarla, sino saber cuándo y para qué. En un proyecto académico como este, donde el objetivo es aprender a diseñar y programar, depender de la IA para las decisiones importantes habría sido contraproducente: quizás habríamos entregado algo que funciona, pero no habríamos desarrollado el criterio que se supone que debemos adquirir.\\
+	Lo que sí nos pareció valioso fue usarla como se usa cualquier otra herramienta: con un propósito claro, sin perder el hilo de lo que estamos construyendo ni por qué lo estamos construyendo así. Al final, la IA nos ahorró tiempo en cosas menores para poder dedicar más energía a lo que realmente importaba: entender el problema y resolverlo bien.
 	
 	
 	\newpage

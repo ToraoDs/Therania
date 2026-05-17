@@ -15,7 +15,8 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
     private JButton option3Button;
     private JButton option4Button;
     private JButton option5Button;
-    private JButton option6Button;  
+    private JButton option6Button; 
+    private JButton option7Button; 
     private final Reloj reloj;
 
     JPanel mainPanel;
@@ -39,7 +40,7 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         UIManager.put("Button.background", Color.DARK_GRAY);
 //********************************************************************************************************************************
         // Panel para las opciones del menú en la parte izquierda
-        JPanel panel = new JPanel(new GridLayout(6,1));
+        JPanel panel = new JPanel(new GridLayout(7,1));
         panel.setBackground(Color.DARK_GRAY);
 
 
@@ -69,9 +70,14 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         panel.add(option1Button);
 
         // Opción 2
-        option2Button = new JButton("Registrar");
+        option2Button = new JButton("Manadas");
         option2Button.addActionListener(this);
         panel.add(option2Button);
+
+        //Opcion 6
+        option6Button = new JButton("Registrar");
+        option6Button.addActionListener(this);
+        panel.add(option6Button);
 
         // Opción 3
         option3Button = new JButton("Actualizar");
@@ -88,11 +94,11 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         option5Button.addActionListener(this);
         panel.add(option5Button);
 
-        // Opción 6
-        option6Button = new JButton("Salir");
-        option6Button.setBackground(Color.RED); // Color de fondo
-        option6Button.addActionListener(this);
-        panel.add(option6Button);
+        //Opcion 7
+        option7Button = new JButton("Salir");
+        option7Button.setBackground(Color.RED); // Color de fondo
+        option7Button.addActionListener(this);
+        panel.add(option7Button);
        
 //********************************************************************************************************************************
         // Agregar un ComponentListener para detectar cambios en el tamaño del panel
@@ -145,6 +151,10 @@ public class MenuFrame extends javax.swing.JFrame implements ActionListener {
         )
     ;
         } else if (e.getSource() == option6Button) {
+            reloj.pausar();
+            MPAdd(new Opcion6(reloj));
+        }
+        else if (e.getSource() == option7Button) {
             JOptionPane.showMessageDialog(this, "Cerrando programa");
             System.exit(0);
         }

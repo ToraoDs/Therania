@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.2)  14 MAY 2026 12:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.2)  16 MAY 2026 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,24 +914,24 @@ LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `THR26G05.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -993,7 +993,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 15.
  (THR26G05.out) (THR26G05.out)
 \@outlinefile=\write6
 \openout6 = `THR26G05.out'.
@@ -1005,15 +1005,15 @@ File: APA7spanish.txt 2021/08/08 v1.00 apa7 configuration for Spanish
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
 
 
 [1
 
 {C:/Users/Juan D/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Jua
 n D/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
-Package mdframed Info: mdframed works in twoside mode on input line 40.
+Package mdframed Info: mdframed works in twoside mode on input line 41.
 
 
 [2]
@@ -1036,7 +1036,15 @@ Package mdframed Info: mdframed works in twoside mode on input line 40.
 
 [11]
 
-[12] AED endfloat: Processing end Figures and Tables (THR26G05.aux
+[12]
+
+[13]
+
+[14]
+
+[15]
+
+[16] AED endfloat: Processing end Figures and Tables (THR26G05.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -1045,23 +1053,25 @@ LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-09>
  ***********
 Package rerunfilecheck Info: File `THR26G05.out' has not changed.
-(rerunfilecheck)             Checksum: FB2C7F401C7F3468E7BB41F14EB9DFF4;136.
+(rerunfilecheck)             Checksum: F8453AFD5EE334F9539FA2A7423227C9;3360.
  ) 
 Here is how much of TeX's memory you used:
- 24934 strings out of 473573
- 473911 string characters out of 5715590
- 860186 words of memory out of 5000000
- 47697 multiletter control sequences out of 15000+600000
- 573392 words of font info for 42 fonts, out of 8000000 for 9000
+ 24992 strings out of 473573
+ 474593 string characters out of 5715590
+ 863198 words of memory out of 5000000
+ 47725 multiletter control sequences out of 15000+600000
+ 579372 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,107p,452b,492s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,107p,615b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Juan D/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.p
 fb><C:/Users/Juan D/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.p
 fb><C:/Users/Juan D/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.p
-fb>
-Output written on THR26G05.pdf (12 pages, 96036 bytes).
+fb><C:/Users/Juan D/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pf
+b><C:/Users/Juan D/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb
+>
+Output written on THR26G05.pdf (16 pages, 171273 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 230 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
